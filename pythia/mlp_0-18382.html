@@ -1,0 +1,847 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: mlp_0-18382</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: mlp_0-18382</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            <br>Example 1:  USD $4 million (AUD $5.6 million), making<mark> her</mark> a cool $1 million profit<br>Activation  her:10.0, <br>Example 2: <|endoftext|> a school girl sending<mark> her</mark> multiple explicit images if his private parts as he attempted to groom<mark> her</mark> online<br>Activation  her:10.0, <br>Activation  her:10.0, <br>Example 3:  wondering what it means. If, one day, my daughter writes<mark> her</mark> own money autobiography, will<br>Activation  her:10.0, <br>Example 4:  into the stroller was giving<mark> her</mark> the card. Of course, I’m reading into this and<br>Activation  her:10.0, <br>Example 5: <|endoftext|> important to baby,” a wise woman commented at the playground when the only way I could get<mark> her</mark><br>Activation  her:10.0, <br>Example 6:  our four year old daughter for<mark> her</mark> fourth birthday that was on June 3rd and two goldfish.<br>Activation  her:10.0, <br>Example 7: <|endoftext|>ima dropping<mark> her</mark> chairmanship in the Justice committee, which was holding probes on EJK in relation<br>Activation  her:10.0, <br>Example 8: <mark> her</mark> I wasn't happy about this, as Dan had a history of being a womaniser. But<br>Activation  her:10.0, <br>Example 9: <|endoftext|> standing before a church window.<br>She was in<mark> her</mark> early thirties, overweight, dimpled<br>Activation  her:10.0, <br>Example 10: <|endoftext|> flash of sunglasses<mark> her</mark>alding the summer hordes. Perhaps most tellingly of all<br>Activation  her:10.0, <br><br>Top_logits: [' own', 'mits', 'cules', ' Own', ' predecessors', 'itage', '��', 'ald', '�', ' name']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: "her".<br>PREVIOUS TOKENS: Varying tokens.<br><br>Step 1.<br>- The activating token is always "her".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve the pronoun "her" referring to a female person or entity.<br>- The activating token is a pronoun indicating possession or relation.<br><br>Step 3.<br>- The activation values are consistently high for all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I noticed that the examples are all from different contexts, suggesting the neuron is sensitive to the token "her" regardless of context.<br><br>(Part 2)<br>SIMILAR TOKENS: "own", "name".<br>- The top logits list suggests a focus on words related to possession or identity.<br><br>[EXPLANATION]: The pronoun "her" indicating possession or relation, possibly related to identity or self-reference.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>The pronoun &quot;her&quot; indicating possession or relation, possibly related to identity or self-reference.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recall Scores</h2>
+            <div id="recall-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> the bhabar-terai belt of the foothills of the Himalaya from Uttar</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> to eliminate it.5500 NE 109th ct. Suite L | Vancouver,WA 98662 |</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> point, friendship had turned to love.
+Luke didn’t expect, when he brought his crazy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> Morgan Rielly said. “We’re just focused on winning every game between now and the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> is one of the most renowned professionals in the medical business. Dr. Ricardo Garcia Audelo has</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> with BFF Demi Lovato and gets paparazzied doing everything from walking her new puppy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> end before Bella spoke back up.
+“Edward, what does that-?”
+“Ask her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>ock, a teacher who lives in Maryland, will also benefit. Doctors amputated one of her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> her head a crown of twelve stars'. She is a queen of Heaven, like so many maternal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>
+Mrs. Clinton's overtures during her week-long tour of the Middle East and Europe</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>'t make a list so i got her a Chia Hippo. She quickly remembered something she</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> quirky exuberance in each of her subjects. But she warns budding photographers to use caution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> at woman he has glamoured into staying in the house and letting him feed off of her. A</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> his or her period of office.
+3. The board shall apply the income of the bequest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>s mission trip to Mexico in order to practice for her next competition—a decision that changes her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>, was denied insurance because of an unlawful wooden bakehouse adjoining her home. Early policyholders had to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> way and she would feel a strange buzzing in her mind like a swarm of angry hornets</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> for only 15 minutes. Sister and her 2 tobacco chewing brothers wouldn't budge and wouldn't give</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> deserves a home of her own so she can continue to learn what love is rather than just being a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> their personalities in the cooking traditions and rituals of daily lives’. Her inspiration for the book was her own</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> but with what had been going on, she had basically been suffering from neglect. So we took her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> tease her clit, purring like a kitten. Kate blushed bright red, but</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> took a resigned breath through her nose. “It doesn’t work like that. I don’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> hear pleasant words there. Constant admiration of her beauty, attention, birthday greetings, flowers, gifts</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>t stop there — the sisters get in a screaming argument in their limo and Kyle calls her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>.”
+Meanwhile, Melissa’s parents have kicked her out for being pregnant and claiming the baby</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> your gift will be taken back to the moment when she took the photo. It will remind her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Ellis, and a little about what’s coming up for her.
+Harper W. Harris</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> and her family, when the woman made a disparaging comment about Morales' short hair, according</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> down and I saw her wince and I asked, “What’s wrong,”
+She smiled</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>, go
+back to her and let her lead you. Push the statue forward and make
+sure</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> started recapping the day's events in spontaneous song. I longed to hear her summary, but</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> an adoption website. Looking back now, she suspects her dog may have been neglected in his early puppy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> have been a motive for the apparent assassination. Dr. Kilde had spoken widely of her forthcoming new</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> the world's top badminton player has received a boost with her club Banthongy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> compulsion. Any idea why?"
+"You're the one sleeping with her. Why don't</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> family in 1961. She has been playing in bands with her sister since the mid 60s.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> me thinking about Katie Compton and her strange leg cramps, and now her thyroid issues. And I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> photos she posts of herself and her darling outfits are so inspiring!
+We are also growing our hair</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> a slow news day by declaring her tweet the “worst tweet of all time”:
+This may</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>. When Dessert’s mom forgets to pick her up at school, some family lessons</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>, Ko Youngji will launch her own label, Deuxy, this year, with plans for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> of her web. Days turned to weeks. What was she doing? Is she OK? I resisted</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> Bosmans wrestled with a nerve inflammation in her leg. At the same time, she collected geneal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>, she just started to stink. I think she peed her pants. I opened my mouth</span>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Fuzz Scores</h2>
+            <div id="fuzz-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> Morgan Rielly said. “We’re just focused on winning every game between now and the</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> is one of the most renowned professionals in the medical business. Dr. Ricardo Garcia Audelo has</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> the bhabar-terai belt of the foothills of the Himalaya from Uttar</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> point, friendship had turned to love.
+Luke didn’t expect, when he brought his crazy</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> to eliminate it.5500 NE 109th ct. Suite L | Vancouver,WA 98662 |</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> at woman he has glamoured into staying in the house and letting him feed off of<mark> her</mark>. A</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> end before Bella spoke back up.
+“Edward, what does that-?”
+“Ask<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> with BFF Demi Lovato and gets paparazzied doing everything from walking<mark> her</mark> new puppy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>
+Mrs. Clinton's overtures during<mark> her</mark> week-long tour of the Middle East and Europe</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>'t make a list so i got<mark> her</mark> a Chia Hippo. She quickly remembered something she</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>ock, a teacher who lives in Maryland, will also benefit. Doctors amputated one of<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>s mission trip to Mexico in order to practice for<mark> her</mark> next competition—a decision that changes<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> his or<mark> her</mark> period of office.
+3. The board shall apply the income of the bequest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> quirky exuberance in each of<mark> her</mark> subjects. But she warns budding photographers to use caution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|><mark> her</mark> head a crown of twelve stars'. She is a queen of Heaven, like so many maternal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>, was denied insurance because of an unlawful wooden bakehouse adjoining<mark> her</mark> home. Early policyholders had to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> but with what had been going on, she had basically been suffering from neglect. So we took<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> tease<mark> her</mark> clit, purring like a kitten. Kate blushed bright red, but</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> took a resigned breath through<mark> her</mark> nose. “It doesn’t work like that. I don’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>t stop there — the sisters get in a screaming argument in their limo and Kyle calls<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> for only 15 minutes. Sister and<mark> her</mark> 2 tobacco chewing brothers wouldn't budge and wouldn't give</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> deserves a home of<mark> her</mark> own so she can continue to learn what love is rather than just being a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> way and she would feel a strange buzzing in<mark> her</mark> mind like a swarm of angry hornets</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> hear pleasant words there. Constant admiration of<mark> her</mark> beauty, attention, birthday greetings, flowers, gifts</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> their personalities in the cooking traditions and rituals of daily lives’. Her inspiration for the book was<mark> her</mark> own</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>, go
+back to<mark> her</mark> and let<mark> her</mark> lead you. Push the statue forward and make
+sure</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> your gift will be taken back to the moment when she took the photo. It will remind<mark> her</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> down and I saw<mark> her</mark> wince and I asked, “What’s wrong,”
+She smiled</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> started recapping the day's events in spontaneous song. I longed to hear<mark> her</mark> summary, but</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> Ellis, and a little about what’s coming up for<mark> her</mark>.
+Harper W. Harris</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> an adoption website. Looking back now, she suspects<mark> her</mark> dog may have been neglected in his early puppy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> and<mark> her</mark> family, when the woman made a disparaging comment about Morales' short hair, according</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> have been a motive for the apparent assassination. Dr. Kilde had spoken widely of<mark> her</mark> forthcoming new</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>.”
+Meanwhile, Melissa’s parents have kicked<mark> her</mark> out for being pregnant and claiming the baby</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> the world's top badminton player has received a boost with<mark> her</mark> club Banthongy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> me thinking about Katie Compton and<mark> her</mark> strange leg cramps, and now<mark> her</mark> thyroid issues. And I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> a slow news day by declaring<mark> her</mark> tweet the “worst tweet of all time”:
+This may</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>. When Dessert’s mom forgets to pick<mark> her</mark> up at school, some family lessons</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> photos she posts of herself and<mark> her</mark> darling outfits are so inspiring!
+We are also growing our hair</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>, she just started to stink. I think she peed<mark> her</mark> pants. I opened my mouth</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>, Ko Youngji will launch<mark> her</mark> own label, Deuxy, this year, with plans for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> Bosmans wrestled with a nerve inflammation in<mark> her</mark> leg. At the same time, she collected geneal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> of<mark> her</mark> web. Days turned to weeks. What was she doing? Is she OK? I resisted</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> family in 1961. She has been playing in bands with<mark> her</mark> sister since the mid 60s.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> compulsion. Any idea why?"
+"You're the one sleeping with<mark> her</mark>. Why don't</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

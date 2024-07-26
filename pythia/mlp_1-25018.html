@@ -1,0 +1,869 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: mlp_1-25018</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: mlp_1-25018</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            <br>Example 1: <mark>ie</mark> Hershey says the commission is most likely concerned with technical failures and safety of the candidates when choosing<br>Activation ie:10.0, <br>Example 2: <br>Call 01242 655554 and speak to our receptionists Karen, Hester, Marg<mark>ie</mark><br>Example 3: <mark>ie</mark> Sweeney's retirement and the death of the Vincennes State Historic Site manager and southwest regional<br>Example 4:  the hopes of countering moves by rival regional utilities entering its turf.Est<mark>elle</mark> Open-Back L<br>Example 5:  Antoinette and Gabri<mark>elle</mark> (COCO) Chanel and how they were abandoned by<br>Example 6: <|endoftext|> one of true patriotism.<br>I’ll always remember the photograph of Lindsay Gabri<mark>elle</mark><br>Example 7: risinger’s Dorothy is 15-year-old Gabri<mark>elle</mark> Phillips of Lake Orion,<br>Example 8: <|endoftext|> away from family and friends, but nothing had changed at home during that time.”<br>Lou<mark>ise</mark><br>Example 9:  the city, which has no shortage of statues and monuments to leading white men.<br>Michel<mark>le</mark> D<br>Example 10:  out of a bombshell from Cambodia. Now that’s a conversation piece!<br>Michel<mark>le</mark> Leon<br><br>Top_logits: [' subtraction', ' disappro', 'zon', 'icides', ' warnings', ' clouds', 'formaldehyde', 'wn', 'anz', 'omit']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: "ie", "ie", "ie", "elle", "elle", "elle", "elle", "ise", "le", "le".<br>PREVIOUS TOKENS: "Marg", "Sweeney", "Est", "Gabri", "Antoinette", "Lindsay", "Dorothy", "Lou", "Michel".<br><br>Step 1.<br>- The activating tokens are French suffixes and feminine diminutive forms.<br>- The previous tokens are mostly names.<br><br>Step 2.<br>- The examples involve names, often feminine, and French words.<br>- The activating token is a suffix or part of a name.<br><br>Step 3.<br>- The activation values are highest for the examples where the token is a distinct part of a name.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token is often part of a French or feminine name.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated nouns and verbs.<br><br>[EXPLANATION]: French suffixes and feminine diminutive forms in names.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>French suffixes and feminine diminutive forms in names.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recall Scores</h2>
+            <div id="recall-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> in Lanco killing (3773)
+- Interboro board: Super’s services coming to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> Economic Studies is a catalyst for groundbreaking research and critical policy analysis on topics of concern to all Americans</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> quick maneuvers is very dangerous. It will feel like trying to ride an aggressive bull without holding onto</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> common in collegiate biology coursework, with many genetics textbooks devoting at least one chapter to each</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> deep vein thrombosis (DVT) of lower-limb veins, recent guidelines have emphasized on combining</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>.
+Judith Martin, urban planning professor at the University of Minnesota, cites Downtown's numerous restaurants</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>to-back NCAA Super Six appearances in 2008 and 2009.
+Susan Jackson became LSU's</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>), Kimberly Vanbiesbrouck (the stressed-out career mom) and Madeline D</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> love them too.” I suspect Valerie understands the meaning and value of love more than she ever</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> Danielle Kelly from The Neon Museum in Las Vegas. During the interview she mentioned that I must</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> Mr. Obama made some impressive moves:
+Nominated Loretta Lynch as the first African-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>
+Love at first bite: Susanne Eman and Parker Clack met online and bonded over their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>X Airport Arrival Before Oscars 2014!
+Emma Watson keeps it casual chic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> Presentation to the Illinois Holocaust and Genocide Commission from Suzanne Blum Malley on V</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>. I am Denise Katipunera
+I usually hate Marc but these have that sexy shape</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> Schuster ($30)
+by Eliza Murphy
+The heat is on. If not the hottest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>
+"No, I will not load up 'Debbie Does Dagobah'!!!"</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> us at firstname.lastname@example.orgBefore diving into this pan of director Vanessa</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> from the speech completely satisfied.
+Lisa Gilbert, deputy director of Public Citizen’s Congress Watch</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> by Suzanne Weyn
+Ashley: Insurgent by Veronica Roth
+Movies</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>rude. He’s in.
+Purple Rain thinks Madoff and Ramses have a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> with an exciting list. There's one with Kathryn Bernardo and Daniel Padilla, Liza</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> of Comillas, lapped by the waters of the Bay of Biscay.Laura came</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> unlike themselves, he didn't fake such things. He was like Audrey Hepburn's character in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> my MPC =-(Featured Food Blogger
+Stephanie is the author of Spork</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> Mindy and guest characters like Sophia and her friends that it comes at the expense of the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> guides.
+Discovery President Eileen O’Neill said the network hopes to air the film</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> going to happen next. I wonder if Draco will sneak a look at Hermione's dress while</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Suzy?s Crazy Brave Wicked Strong artwork make this item a practical and inspirational</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Created Gisele
+Bounding down the stairs of her Greenwich Village town house to greet a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> team has installed a passive seismic array at Voisey’s Bay. It listens for local</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> surgery two-and-a-half years ago.
+Mabel Lezcano, 38</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> business BrambleBuzz.
+Julia and I talk about the power of Facebook advertising to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> one thing Melisa doesn’t need, it’s another crack in her heart. But when</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> some intriguing looking performance. The clip also has a lot of Keira Knightley and Wright talking about</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>ardashian dark hair returns as she does away with the blonde look
+Gillian Jacobs emerges as</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> now. Gina Rodriguez who plays the role of Jane is said to be losing its virg</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>-Networth ���
+© 2018 Ask Kimberly Lifestyle, Kimberly Clark All</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Bariaa Mourad, Wolf D. Prix, Ursula Maria Probst, Hann</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> 24 minutes.
+|Rebekah helps Eric with a refill|
+|Even a hand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> to play, no messy rubbing out if you make a mistakeThe Only Way Is Essex star Gemma</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> keep an eye on the Astros’ minor league system by reading Jayne’s blog, What</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> But This Exit Is Mine (Unknown Press, 2017).
+Rachel Nix is the associate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> you meet your health care goals. Our practitioners have worked and trained with Cornelia Franz MD, owner</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Nicolet), tough cub reporter Allegra Garcia (Kayla Compton) and brilliant tech-</span>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Fuzz Scores</h2>
+            <div id="fuzz-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> common in collegiate biology coursework, with many genetics textbooks devoting at least one chapter to each</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> in Lanco killing (3773)
+- Interboro board: Super’s services coming to</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> deep vein thrombosis (DVT) of lower-limb veins, recent guidelines have emphasized on combining</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> Economic Studies is a catalyst for groundbreaking research and critical policy analysis on topics of concern to all Americans</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> quick maneuvers is very dangerous. It will feel like trying to ride an aggressive bull without holding onto</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>X Airport Arrival Before Oscars 2014!
+Em<mark>ma</mark> Watson keeps it casual chic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>to-back NCAA Super Six appearances in 2008 and 2009.
+Sus<mark>an</mark> Jackson became LSU's</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>.
+Jud<mark>ith</mark> Martin, urban planning professor at the University of Minnesota, cites Downtown's numerous restaurants</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> Presentation to the Illinois Holocaust and Genocide Commission from Suz<mark>anne</mark> Blum Malley on V</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>
+Love at first bite: Sus<mark>anne</mark> Eman and Parker Clack met online and bonded over their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|><mark> love</mark> them too.” I suspect Val<mark>erie</mark> understands the meaning and value of love more than she ever</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Daniel<mark>le</mark> Kelly from The Neon Museum in Las Vegas. During the interview she mentioned that I must</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>. I am Den<mark>ise</mark> Katipunera
+I usually hate Marc but these have that sexy shape</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>), Kimber<mark>ly</mark> Vanbiesbrouck (the stressed-out career mom) and Mad<mark>eline</mark> D</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Mr. Obama made some impressive moves:
+Nominated Loret<mark>ta</mark> Lynch as the first African-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> by Suz<mark>anne</mark> Weyn
+Ash<mark>ley</mark>: Insurgent by Ver<mark>onica</mark> Roth
+Movies</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> my MPC =-(Featured Food Blogger
+Stephan<mark>ie</mark> is the author of Spork</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> us at firstname.lastname@example.orgBefore diving into this pan of director Van<mark>essa</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>r<mark>ude</mark>. He’s in.
+Purple Rain thinks Madoff and Ramses have a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> with an exciting list. There's one with Kath<mark>ryn</mark> Bernardo and Daniel Padilla, L<mark>iza</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> Schuster ($30)
+by El<mark>iza</mark> Murphy
+The heat is on. If not the hottest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> of Comillas, lapped by the waters of the Bay of Biscay.L<mark>aura</mark> came</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> from the speech completely satisfied.
+L<mark>isa</mark> Gilbert, deputy director of Public Citizen’s Congress Watch</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> unlike themselves, he didn't fake such things. He was like Aud<mark>rey</mark> Hepburn's character in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>
+"No, I will not load up 'Deb<mark>bie</mark> Does Dagobah'!!!"</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> some intriguing looking performance. The clip also has a lot of Ke<mark>ira</mark> Knightley and Wright talking about</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> going to happen next. I wonder if Draco will sneak a look at Herm<mark>ione</mark>'s dress while</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Su<mark>zy</mark>?s Crazy Brave Wicked Strong artwork make this item a practical and inspirational</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> team has installed a passive seismic array at Vo<mark>ise</mark>y’s Bay. It listens for local</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> guides.
+Discovery President Eile<mark>en</mark> O’Neill said the network hopes to air the film</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> business BrambleBuzz.
+Jul<mark>ia</mark> and I talk about the power of Facebook advertising to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> surgery two-and-a-half years ago.
+M<mark>abel Le</mark>zcano, 38</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> one thing Mel<mark>isa</mark> doesn’t need, it’s another crack in her heart. But when</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Created G<mark>isele</mark>
+Bounding down the stairs of her Greenwich Village town house to greet a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> Mind<mark>y</mark> and guest characters like Soph<mark>ia</mark> and her friends that it comes at the expense of the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Bar<mark>ia</mark>a Mourad, Wolf D. Prix, Urs<mark>ula Maria</mark> Probst, Hann</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> keep an eye on the Astros’ minor league system by reading Jay<mark>ne</mark>’s blog, What</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>-Networth ���
+© 2018 Ask Kimber<mark>ly</mark> Lifestyle, Kimber<mark>ly</mark> Clark All</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>ardashian dark hair returns as she does away with the blonde look
+G<mark>illian</mark> Jacobs emerges as</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> you meet your health care goals. Our practitioners have worked and trained with Corn<mark>elia</mark> Franz MD, owner</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> But This Exit Is Mine (Unknown Press, 2017).
+R<mark>achel</mark> Nix is the associate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> to play, no messy rubbing out if you make a mistakeThe Only Way Is Essex star Gem<mark>ma</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> 24 minutes.
+|Rebek<mark>ah</mark> helps Eric with a refill|
+|Even a hand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Nicolet), tough cub reporter Allegra Garcia (Kay<mark>la</mark> Compton) and brilliant tech-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> now. G<mark>ina</mark> Rodriguez who plays the role of<mark> Jane</mark> is said to be losing its virg</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,859 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: attn_1-8147</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: attn_1-8147</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            <br>Example 1:  power of Se<mark>rena</mark>.<br>Rash tells in his interview about the book that he modeled Serena<br>Activation rena:10.0, <br>Example 2:  to have these practices validated by great teachers of soul retrieval healing around the country.<mark> Lori</mark> apprenticed<br>Example 3:  Lyn<mark>da</mark> Lambert<br><mark>Lynda</mark> Lambert (b.1943) was born in Ellwood City,PA<br>Example 4: . Recently, I picked up a small statue of Laksh<mark>mi</mark> that I set up when I am<br>Example 5:  its surprising end, the reader can see that even<mark> P</mark>ember<mark>ton</mark> is no match for the sheer will<br>Example 6:  case for the defense. It is up to McB<mark>ride</mark> and the viewers to solve the murder.<br>Example 7:  it: has her life been a happy one?<br>As<mark> Gerda</mark> negotiates the degradations of<br>Example 8:  did to her. After some serious Orgasms they are all satisfied!<br>Crist<mark>i</mark> and<br>Example 9:  them make it, they don't know any better..."<br><mark>K</mark>el<mark>sey</mark> needs to grow-up<br>Example 10:  I knew we needed her help once we were back home.<mark> Karrie</mark> knows how to market within the<br><br>Top_logits: ['ifically', ' formation', 'ifies', 'inates', 'sov', ' dams', ' depression', ' mediation', 'ises', ' pars']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: "Serena", "Lori", "Lynda", "Lakshmi", "Pemberton", "McBride", "Gerda", "Cristi", "Kelsey", "Karrie".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating tokens are all proper nouns, mostly names of people.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve mentions of specific individuals.<br>- The activating token is a person's name.<br><br>Step 3.<br>- The activation values are all high, indicating the neuron is highly responsive to names.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No additional patterns were found.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list is not informative, containing a mix of suffixes and unrelated words.<br><br>[EXPLANATION]: Proper nouns, specifically names of people.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>Proper nouns, specifically names of people.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recall Scores</h2>
+            <div id="recall-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> are on, hissing impatiently at the still-stunned-by-last-autumn</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>ists have been frequently called, and names on the monuments, and old church records, the present and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> stress is affecting your good side. It can calm your nerves and help stabilize your emotions.
+Using</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> physiological structures, such as damaged epidermal layers, where a break in the epidermal layer is sealed by sut</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> virtue in the course of the present undergo marketplace rally, my publication readers were asking me, “What</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> and surfing, Jones is also a designer and has her swimwear brand. The Hawaiian was inspired to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>.
+Over the years, Cyndi has managed multiple properties and onsite teams. She has been</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>.
+“Oh hello Dom,” Rose said, through gritted teeth, attempting to be courte</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> Mary S. Landon of Burlington, Vt.; brother Thomas A. Johnson of Lewisville</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>, but there are some things I'm not ready to share with you." Hawkgirl gave everyone</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>ught since her break-up with Brunton) also disappears. Her tracks lead into the mere.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>ep, which began at the start of the awards season. When Streep went to hug Bullock</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> chose her recipe because she loves Brussel sprouts. Kobeski, a former teacher,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> with her collaborator Jan van de Weyer which focuses on developing multi-faceted,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>’,meet in her young swimming career,” Coach Otsuki said. “To finish in the top</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>
+Like her Facebook Page
+JSB’s Column |Should I amplify a corporate message with social</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> centre to help children with autism and it had to shut down, leaving them devastated. She and Annie</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>of writes what everyone who thinks two feet beyond their face has known from the start (but it’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Arabia and Egypt.
+Kahl and others noted Obama’s visit to Israel as a candidate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> the cover and work her photographic mojo. With Fiona working her styling magic again, I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> and she’s got a plan that will get on track with your eating.
+Pri</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> herself.
+She finally signed a complaint
+after much hesitation and the con
+stable went for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> above clip as she tells you a lot about herself and what she is wanting from her channel.
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> include Defense Minister Ursula von der Leyen, a Christian Democratic politician’s daughter, and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> our family in Gingerbread. See? Ginger-Mom, Ginger-Dad, and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> her mansion, so she wants the house destroyed.”
+At the word destroyed, Gwack</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> stabbing
+The West Virginia woman accused of stabbing her former boyfriend’s new girlfriend Easter morning</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> her daughter could eventually look up to. There were powerful, strong, and independent women all around</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> her daughters who move into a house that is already occupied by a ghost family. This show,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>This ultra plush and cuddly fabric has a silky surface with rosette emboss</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>.
+As many feminist theorists have written, the union of femininity and emotions works to mutually</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> your fallopian tube.
+The ovaries store your eggs. They also produce hormones, including estrogen</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> to the Chicken Festival in London, KY. There we met up with my sister and my daughter</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> Myrtie Laka of Atlantic city is visiting her sister Mrs. Jacob hager.
+Ch</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> back tears and, with difficulty, said as his voice dropped noticeably, “They’re the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> one with fresh cherries and another stuffed with goat cheese, almonds and fresh raspberries.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> filing cabinets looking up their innate as she got down to spunk up. I looked up i</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>65.
+ROI - S, M, L, XL Max 10KG DPD Next</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> rights violations in Zimbabwe.
+While serving as FSU's Chemical Safety Officer, Renee has</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> vote, but also the total size of the audience that voted. Having said that, I personally tend</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> gigging with bassist Fran Sheehan and singer Brad Delp.
+As his recorded</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> to it. Take a cardio or a spin class with some friends. They usually play good music.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> hours exploring her childhood environment to identify her coping strategies. We found several key strategies she’d</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>ber mouse and her client engage in the process by choice, even when it must be somewhat painful</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> To be able to satisfactorily pass the physical examination administered in behalf of gainful employment in the</span>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Fuzz Scores</h2>
+            <div id="fuzz-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> virtue in the course of the present undergo marketplace rally, my publication readers were asking me, “What</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> are on, hissing impatiently at the still-stunned-by-last-autumn</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> physiological structures, such as damaged epidermal layers, where a break in the epidermal layer is sealed by sut</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark>ists have been frequently called, and names on the monuments, and old church records, the present and</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> stress is affecting your good side. It can calm your nerves and help stabilize your emotions.
+Using</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> with her collaborator<mark> Jan</mark> van de Weyer which focuses on developing multi-faceted,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Mary S<mark>.</mark> L<mark>andon</mark> of Burlington, Vt.; brother Thomas A. Johnson of Lewisville</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>.
+Over the years,<mark> Cyndi</mark> has managed multiple properties and onsite teams. She has been</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> chose her recipe because she loves Brussel sprouts.<mark> Kob</mark>es<mark>ki</mark>, a former teacher,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>ught since her break-up with<mark> Brunton</mark>) also disappears. Her tracks lead into the mere.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> and surfing,<mark> Jones</mark> is also a designer and has her swimwear brand. The Hawaiian was inspired to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>’,meet in her young swimming career,” Coach Ots<mark>uki</mark> said. “To finish in the top</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>, but there are some things I'm not ready to share with you."<mark> Haw</mark>kgirl gave everyone</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>ep, which began at the start of the awards season. When<mark> Stre</mark>ep went to hug Bull<mark>ock</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>.
+“Oh hello<mark> Dom</mark>,”<mark> Rose</mark> said, through gritted teeth, attempting to be courte</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> above clip as she tells you a lot about herself<mark> and</mark> what she is wanting from her channel.
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> include Defense Minister Urs<mark>ula</mark> von der Leyen, a Christian Democratic politician’s daughter<mark>,</mark> and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> centre to help children with autism and it had to shut down, leaving them devastated. She<mark> and</mark> Annie</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> and<mark> she</mark>’s got a plan that will get on track with your eating.
+Pri</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|><mark> herself</mark>.
+She finally signed a complaint
+after much hesitation and the con
+stable went for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Arabia<mark> and Egypt</mark>.
+Kahl and others noted Obama’s visit to Israel as a candidate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> the cover and work<mark> her</mark> photographic mojo. With Fiona working her styling magic again, I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> our family in<mark> Ginger</mark>bread. See? G<mark>inger</mark>-Mom, Ginger-Dad, and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>
+Like her Facebook Page
+JS<mark>B</mark>’s Column |Should I amplify a corporate message with social</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><mark>of</mark> writes what everyone who thinks two feet beyond their face has known from the start (but it’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> back tears<mark> and</mark>, with difficulty, said as his voice dropped noticeably, “They’re the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|><mark> her daughter</mark> could eventually look up to. There were powerful, strong, and independent women all around</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> stabbing
+The West Virginia woman accused of stabbing her former boyfriend’s new girlfriend<mark> Easter</mark> morning</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|><mark> her</mark> mansion, so she wants the house destroyed.”
+At the word destroyed, Gwack</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> to the Chicken Festival in London, KY. There we met up with my sister<mark> and</mark> my daughter</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>.
+As many feminist theorists have written, the union of femin<mark>inity</mark> and emotions works to mutually</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> your fallopian tube.
+The ovar<mark>ies</mark> store your eggs<mark>.</mark> They also produce hormones, including estrogen</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> Myrtie Laka<mark> of</mark> Atlantic city is visiting her sister<mark> Mrs.</mark> Jacob hager<mark>.</mark>
+Ch</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|><mark> her</mark> daughters who move into a house that is already occupied by a ghost family. This show,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>This ultra plush and cuddly fabric has a silky surface with roset<mark>te</mark> emboss</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> to it. Take a<mark> cardio or</mark> a spin class with some friends. They usually play good music.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>ber mouse and<mark> her client</mark> engage in the process by choice, even when it must be somewhat painful</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> gigging with bassist Fran She<mark>ehan</mark> and singer Brad Delp.
+As his recorded</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> filing cabinets looking up their innate as<mark> she</mark> got down to spunk up. I looked up i</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> To be able to satisfactor<mark>ily</mark> pass the physical examination administered in behalf of gainful employment in the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>65.
+RO<mark>I</mark> - S, M, L, XL Max 10KG DPD Next</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> rights violations in Zimbabwe.
+While serving as FSU's Chemical Safety Officer, Rene<mark>e</mark> has</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> one with fresh cher<mark>ries</mark> and another stuffed with goat cheese, almonds and fresh raspberries.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> hours exploring her childhood<mark> environment</mark> to identify her<mark> coping strategies</mark>. We found several key strategies she’d</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> vote, but also the total size of the audience that voted. Having said that<mark>,</mark> I personally tend</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

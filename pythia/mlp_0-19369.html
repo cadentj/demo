@@ -1,0 +1,853 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: mlp_0-19369</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: mlp_0-19369</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            <br>Example 1:  baby.List of Boarding Schools in<mark> His</mark>ar, Haryana<br>Hisar is a district<br>Activation  His:10.0, <br>Example 2: <br>Susan Calman David O’Doherty. Jon Richardson Sally Phillips.<mark> His</mark> TV work also<br>Activation  His:10.0, <br>Example 3:  and Keith Haring.<mark> His</mark> self-titled debut was released in 1981. Some songs I like<br>Activation  His:10.0, <br>Example 4: <|endoftext|> problem-free.<mark> His</mark> soundboards ensured that the required pipes would deliver the anticipated sounds only when<br>Activation  His:10.0, <br>Example 5: <|endoftext|> and his wealth was beyond measure. He had many fields, houses and menservants.<mark> His</mark><br>Activation  His:10.0, <br>Example 6:  the question, “Who created God?”, assuming that<mark> His</mark> existence necessitated a cause. This is<br>Activation  His:10.0, <br>Example 7: <|endoftext|> specialised in making a lot out of a little equipment.<mark> His</mark> latest project is a solo LP<br>Activation  His:10.0, <br>Example 8: <|endoftext|> became unlivable and his property is overrun with items.<mark> His</mark> trailer is 40 years old<br>Activation  His:10.0, <br>Example 9: errorist Task Force is reported missing.<mark> His</mark> body is soon discovered in the woods near the Custer<br>Activation  His:10.0, <br>Example 10:  Shepherd, K2ORS, had a popular radio show on WOR, in New York.<mark> His</mark> radio<br>Activation  His:10.0, <br><br>Top_logits: [' own', ' Majesty', 'croft', ' Own', 'itage', 'rera', 'brew', 'iked', 'dou', 'hift']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKEN: "His".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "His".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples are all descriptive texts, often about a person or their work.<br>- The activating token "His" is used to describe possession or relation.<br><br>Step 3.<br>- The activation values are all the same, indicating that the neuron is very specific to the token "His".<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I think I've got them all.<br><br>(Part 2)<br>SIMILAR TOKENS: "Majesty", "own".<br>- The top logits list suggests a focus on possessive pronouns or words related to possession or royalty.<br><br>[EXPLANATION]: The possessive pronoun "His" in descriptive texts, often indicating possession or relation.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>The possessive pronoun &quot;His&quot; in descriptive texts, often indicating possession or relation.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recall Scores</h2>
+            <div id="recall-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> the surveillance period showed that the rate of VAP considerably decreased from 23.9 in 2013 to 12</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> from E Mexico (where it supports the upper outflow of 95-L) to the central Atlantic waters</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> while you buy your own equipment, Tour professionals get paid to play their’s. Who wants a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> world grows near me,
+I go and lie down where the wood starts.
+Basking</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> be a moviegoer!
+by Katey Rich October 9, 2012 comments
+Anna Karenina</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> Nona. His black clerical suit is still neatly pressed but his haggard face is gray</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> family farm and enjoyed working with tools. His wife of more than 30 years, Kay Sekimachi</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>, the man let out a huge groan. His cheeks tensed, and then released, before</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> fall asleep, I apply the blood of Jesus over my home and thank God that His Word says,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> on the team. In his rookie season he started all sixteen games and caught 55 passes. His sophomore</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> His character isn`t Newton, but himself. But I like that because he is a true comedian</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> meth permit. His only other excuse was, "Oh shit!," according to court records.
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span>Lester Pearson. His study was moved from his Rockcliffe Park home and recreated here, with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> He was also a manic depressive, which resulted in inconsistent and erratic decision making. His withered</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span> when he prepared the Northampton Mortality Tables.11 His pioneering work in life insurance science with The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> was a different story. His resolve to stay away for good was short-lived. He missed terribly</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> launch was to look convincing as alternative prime minister - and he did. His action plan for the first</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Van Haalan got third place in the boys Class 1A high jump. His best jump was</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> false accusations about my wife, then you’re free to go.” His voice was cold and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> races, setting a new record. His first one also came at Preakness, in 1980 with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>CMLS) — he only thinks the home to Howard Stern is worth buying. His rationale:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> metaphor. His ruthlessness became shorthand for a certain heartless clarity of vision that lyricists</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> of young working men in night classes and in 1888 founded The Temple College. His vision for the institution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> Muhammad is His Messenger.
+This highlights two factors. Foremost, there is only One God,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> the dance-mad city of New York. His accommodation, Giolito’s, at</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> gambling habit and an eye for the lazy barmaid he and his wife employ.
+His daughters are</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>
+His total ERA on the season actually went up.02 points to 1.53 with Thursday</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> after Gump’s in San Francisco began showing his work. His first solo exhibition followed in 1958</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>osaurus Rex moniker. His manager, Simon Napier-Bell said he was bisexual,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> us how we are to regard ourselves. Jesus gives us His flesh and blood as real food and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> invention of the "Hispanic" category for affirmative action purposes has done much over the years to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> significant step towards English title number 20.
+His players responded in kind, with right-back Rafael</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> vessels since 1978. His unique handcrafted works are designed with precise attention to detail. Developing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> as a proponent for the destruction of Syria.
+His response to the discovery that numerous military</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> 1970s when Hockney was working in a relatively academic style of drawing. His absolute yet easy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> and familiarize the SO staff and GPST with the procedures of BG/GP exit. The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> matters. Personal references to a senator--his name, any personal pronoun or the ubiquitous "The Senator</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> the Yoast SEO plugin to disable author archives.
+4. Make Your Site Load Faster:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>-hardcore group Lungfish, frontman Daniel Higgs wove poetry out of primordial mystery, multid</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>s ahead-of-his-time “drawing with scissors.” Didn’t hurt that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> be a delicious bomb at my husband's vigil. My husband began
+his vigil with a round table</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Wall swung.
+Disregarding the known wishes of Titus, two of the legion</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>his wife had told Judge Arntson.
+, They have four little children
+at their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> party asserting dedication. Shia v. Pendergrass, 222 S.C. 342,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>. I couldn’t tell if Gotham was on board.
+West bound Atlantic Coast yesterday</span>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Fuzz Scores</h2>
+            <div id="fuzz-scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> while you buy your own equipment, Tour professionals get paid to play their’s. Who wants a</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> world grows near me,
+I go and lie down where the wood starts.
+Basking</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> be a moviegoer!
+by Katey Rich October 9, 2012 comments
+Anna Karenina</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> the surveillance period showed that the rate of VAP considerably decreased from 23.9 in 2013 to 12</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><mark> from E Mexico (where it supports the upper outflow of 95-L) to the central Atlantic waters</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> He was also a manic depressive, which resulted in inconsistent and erratic decision making.<mark> His</mark> withered</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><mark> His</mark> character isn`t Newton, but himself. But I like that because he is a true comedian</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> fall asleep, I apply the blood of Jesus over my home and thank God that<mark> His</mark> Word says,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> when he prepared the Northampton Mortality Tables.11<mark> His</mark> pioneering work in life insurance science with The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>Lester Pearson.<mark> His</mark> study was moved from his Rockcliffe Park home and recreated here, with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>, the man let out a huge groan.<mark> His</mark> cheeks tensed, and then released, before</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> on the team. In his rookie season he started all sixteen games and caught 55 passes.<mark> His</mark> sophomore</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> family farm and enjoyed working with tools.<mark> His</mark> wife of more than 30 years, Kay Sekimachi</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Nona.<mark> His</mark> black clerical suit is still neatly pressed but his haggard face is gray</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> meth permit.<mark> His</mark> only other excuse was, "Oh shit!," according to court records.
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Van Haalan got third place in the boys Class 1A high jump.<mark> His</mark> best jump was</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> launch was to look convincing as alternative prime minister - and he did.<mark> His</mark> action plan for the first</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> metaphor.<mark> His</mark> ruthlessness became shorthand for a certain heartless clarity of vision that lyricists</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>CMLS) — he only thinks the home to Howard Stern is worth buying.<mark> His</mark> rationale:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> races, setting a new record.<mark> His</mark> first one also came at Preakness, in 1980 with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> Muhammad is<mark> His</mark> Messenger.
+This highlights two factors. Foremost, there is only One God,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> was a different story.<mark> His</mark> resolve to stay away for good was short-lived. He missed terribly</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> of young working men in night classes and in 1888 founded The Temple College.<mark> His</mark> vision for the institution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> the dance-mad city of New York.<mark> His</mark> accommodation, Giolito’s, at</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> false accusations about my wife, then you’re free to go.”<mark> His</mark> voice was cold and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> 1970s when Hockney was working in a relatively academic style of drawing.<mark> His</mark> absolute yet easy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>
+<mark>His</mark> total ERA on the season actually went up.02 points to 1.53 with Thursday</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>osaurus Rex moniker.<mark> His</mark> manager, Simon Napier-Bell said he was bisexual,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> us how we are to regard ourselves. Jesus gives us<mark> His</mark> flesh and blood as real food and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> significant step towards English title number 20.
+<mark>His</mark> players responded in kind, with right-back Rafael</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> gambling habit and an eye for the lazy barmaid he and his wife employ.
+<mark>His</mark> daughters are</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> after Gump’s in San Francisco began showing his work.<mark> His</mark> first solo exhibition followed in 1958</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> as a proponent for the destruction of Syria.
+<mark>His</mark> response to the discovery that numerous military</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> invention of the "<mark>His</mark>panic" category for affirmative action purposes has done much over the years to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> vessels since 1978.<mark> His</mark> unique handcrafted works are designed with precise attention to detail. Developing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> the Yoast SEO plugin to disable author archives.
+4. Make Your Site<mark> Load</mark> Faster:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><mark>-hardcore group Lungfish, frontman Daniel Higgs wove poetry out of primordial mystery, multid</mark></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>s ahead-of-<mark>his</mark>-time “drawing with scissors.” Didn’t hurt that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> party asserting dedication. Shia v. Pender<mark>grass</mark>, 222 S.C. 342,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Wall<mark> swung</mark>.
+Disregarding the known wishes of Titus, two of the legion</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>. I couldn’t tell if<mark> Goth</mark>am was on board.
+West bound Atlantic Coast yesterday</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> be a delicious bomb at my husband's vigil. My husband began
+<mark>his</mark> vigil with a round table</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> matters. Personal references to a senator--<mark>his</mark> name, any personal pronoun or the ubiquitous "The Senator</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> and familiarize the SO staff and<mark> GP</mark>ST with the procedures of BG/GP exit. The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|><mark>his</mark> wife had told Judge Arntson.
+, They have four little children
+at their</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    
