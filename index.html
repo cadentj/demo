@@ -1,10 +1,14 @@
 <!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph with Overlay</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
+      font-family: Helvetica, Arial, sans-serif
     }
     #graph-container {
       width: 100%;
@@ -13,17 +17,43 @@
       justify-content: center;
       align-items: center;
     }
+    #overlay {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 300px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+    #desktop-notice {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      #overlay {
+        font-size: 12px;
+        padding: 10px;
+        max-width: 200px;
+      }
+      #desktop-notice {
+        display: block;
+        margin-top: 10px;
+        font-style: italic;
+      }
+    }
   </style>
 </head>
+<body>
+  <div id="graph-container"></div>
+  <div id="overlay">
+    <p>Click on nodes to view explanations and scores.<br><br>Credit to Claude for help desiging feature pages.</p>
+    <p id="desktop-notice">Note: This page is best viewed on larger screen.</p>
+  </div>
 
-
-<div id="graph-container"></div>
-  
-
-<script src="./node_modules/@viz-js/viz/lib/viz-standalone.js"></script>
-<script>
-  
-  var test = `
+  <script src="./node_modules/@viz-js/viz/lib/viz-standalone.js"></script>
+  <script>
+    var test = `
 digraph "Feature circuit" {
 	graph [newrank=true rankdir=BT]
 	node [shape=box style=rounded]
@@ -350,11 +380,13 @@ digraph "Feature circuit" {
 	"resid_4/30220" -> y [color=blue penwidth=0.2663307189941406]
 	"resid_4/ε" -> y [color=blue penwidth=2.4701521396636963]
 }
-  `
 
-  Viz.instance().then(function(viz) {
-    var container = document.getElementById('graph-container');
-    container.appendChild(viz.renderSVGElement(test));
-  });
-  
-</script>
+    `;
+
+    Viz.instance().then(function(viz) {
+      var container = document.getElementById('graph-container');
+      container.appendChild(viz.renderSVGElement(test));
+    });
+  </script>
+</body>
+</html>
