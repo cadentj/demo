@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,33 +78,465 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1:  mostly follows behind its mother. Even though it stops<mark> nursing</mark> at two years of age, it still stays<br>Activation  nursing:10.0, <br>Example 2: <|endoftext|> however, the artistry frequently takes a backseat.<br>The artistry of<mark> nursing</mark> is often<br>Activation  nursing:10.0, <br>Example 3: <|endoftext|>, in the Cleveland suburb of Lakewood, Ohio. In addition, the university hosts<mark> nursing</mark> programs<br>Activation  nursing:10.0, <br>Example 4: .<br>- Assist in planning the<mark> nursing</mark> services portion of the patient’s discharge plan as required<br>Activation  nursing:10.0, <br>Example 5: <|endoftext|> you're<mark> nursing</mark> a minor fashion addiction, cheap clothes are your savior. Online shopping can be<br>Activation  nursing:10.0, <br>Example 6:  Nursing, was one of only 20<mark> nursing</mark> deans nationwide present in Pennsylvania April 11 when Obama and Jill<br>Activation  nursing:10.0, <br>Example 7:  Society for Gastrointestinal Endoscopy, which have been endorsed by every major medical and<mark> nursing</mark> association dealing<br>Activation  nursing:10.0, <br>Example 8:  still<mark> nursing</mark> little pups. I can only imagine what happened to them. I put her in the<br>Activation  nursing:10.0, <br>Example 9: , teacher education, business, and<mark> nursing</mark> disciplines within the context of a liberal arts education. For more<br>Activation  nursing:10.0, <br>Example 10:  in 1951.<br>She received her<mark> nursing</mark> degree from Lincoln School of Nursing in Los Angeles. A registered<br>Activation  nursing:10.0, <br><br>Top_logits: ['usalem', ' whistle', ' behalf', 'essen', 'witz', 'hower', 'opian', 'hall', ' roster', 'omics']
+            Example 1:  mostly follows behind its mother. Even though it stops<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> at two years of age, it still stays<br>Activations: (" nursing" : 10)<br>Example 2: <|endoftext|> however, the artistry frequently takes a backseat.<br>The artistry of<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> is often<br>Activations: (" nursing" : 10)<br>Example 3: <|endoftext|>, in the Cleveland suburb of Lakewood, Ohio. In addition, the university hosts<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> programs<br>Activations: (" nursing" : 10)<br>Example 4: .<br>- Assist in planning the<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> services portion of the patient’s discharge plan as required<br>Activations: (" nursing" : 10)<br>Example 5: <|endoftext|> you're<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> a minor fashion addiction, cheap clothes are your savior. Online shopping can be<br>Activations: (" nursing" : 10)<br>Example 6:  Nursing, was one of only 20<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> deans nationwide present in Pennsylvania April 11 when Obama and Jill<br>Activations: (" nursing" : 10)<br>Example 7:  Society for Gastrointestinal Endoscopy, which have been endorsed by every major medical and<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> association dealing<br>Activations: (" nursing" : 10)<br>Example 8:  still<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> little pups. I can only imagine what happened to them. I put her in the<br>Activations: (" nursing" : 10)<br>Example 9: , teacher education, business, and<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> disciplines within the context of a liberal arts education. For more<br>Activations: (" nursing" : 10)<br>Example 10:  in 1951.<br>She received her<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> degree from Lincoln School of Nursing in Los Angeles. A registered<br>Activations: (" nursing" : 10)<br>Example 11: <|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> bras, which, you know, don't exactly make one feel sex-AY.<br><br>Activations: (" nursing" : 10)<br>Example 12:  at Saint Luke's in Fargo, she headed to Los Angeles and started her<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> career. One of<br>Activations: (" nursing" : 10)<br>Example 13: <span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> home setting."<br>"I liked working with the nursery school population and treating severely impaired and special<br>Activations: (" nursing" : 10)<br>Example 14:  is on the interrelationship among research, theory, and advanced<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> practice. Emphasis will be placed<br>Activations: (" nursing" : 10)<br>Example 15: <|endoftext|> issues. Elderlaw planning with an emphasis on family involvement. Available for home, hospital or<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span><br>Activations: (" nursing" : 10)<br>Example 16:  into account when deciding on a<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> school. These factors will be prioritized differently depending on your existing<br>Activations: (" nursing" : 10)<br>Example 17:  survey of veterinary science and veterinary<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> students. NZ Vet J 54: 141–146.<br><br>Activations: (" nursing" : 10)<br>Example 18: <|endoftext|> liability (slip and fall cases), medical negligence, municipal tort liability,<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> home negligence,<br>Activations: (" nursing" : 10)<br>Example 19: <|endoftext|> hour of<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> care keeping families togetherSLIDESHOW | Photography by Tommy Leonardi C’<br>Activations: (" nursing" : 10)<br>Example 20: <|endoftext|> local schools, businesses, and<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> homes.<br>Dance Unites Festival<br>BAC's<br>Activations: (" nursing" : 10)<br><br>Top_logits: ['usalem', ' whistle', ' behalf', 'essen', 'witz', 'hower', 'opian', 'hall', ' roster', 'omics']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKEN: "nursing".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "nursing".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve the token "nursing" in different contexts.<br>- The token is part of a phrase or sentence describing a profession, service, or program related to healthcare.<br><br>Step 3.<br>- The activation values are all high, indicating the neuron is highly activated for this token.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I didn't miss any.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated words and doesn't provide any insight into the neuron's behavior.<br><br>[EXPLANATION]: The token "nursing" in various contexts related to healthcare.
+            (Part 1)<br>ACTIVATING TOKENS: "nursing".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "nursing".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve the concept of nursing in various contexts.<br>- The activating token is a noun representing a profession, field of study, or activity.<br><br>Step 3.<br>- The activation values are consistently high for all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I didn't miss any.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated nouns and words.<br><br>[EXPLANATION]: The noun "nursing" in various contexts, representing a profession, field of study, or activity.
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The token &quot;nursing&quot; in various contexts related to healthcare.</p>
+                <p>The noun &quot;nursing&quot; in various contexts, representing a profession, field of study, or activity.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
             </div>
-            <span> be alive, to have purpose. We wonder how we might make a difference in society. We question</span>
+            <span><|endoftext|> is still<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> but soon will be munching on leaves, grain, kale, carrots</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> provide the best possible care for all our patients. Our amazing reception and<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> teams are always on hand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Babyhug India has the most comprehensive range of feeding and<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> solutions that are essential in every parent</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> year.”Gerda stands at the window of her<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> home, looking up at the stars.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> administration. Emphasis will be placed on ethical/legal issues encountered in professional<span style="background-color:rgba(57,212,155, 1.0)"> nursing</span> practice. This course</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> may require 85mg per day. Women who are<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> breastfeeding</span> should consume 120mg of vitamin C each day</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> suitable if you are<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> breastfeeding</span> as you may not receive the recommended nutritional requirements for both yourself and your</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> general isn’t for sissies and<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> parenting</span> boys makes it doubly true. Being a nurse helps</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> would give me 40 years if I didn't give them my phone password."
+E<span style="background-color:rgba(57,212,155, 0.9200000000000002)">lder</span>'s</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> an<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> RN</span> school and a degree program that are both accredited and have outstanding reputations within the medical community</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> side wins. Even if they're<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> lobbying</span> about something that's kind of insane.
+I'm complic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> on rotations with pharmacists and<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> pharmacy</span> students and seeing the roles they play in patient care.
+“</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> the results, aspirational pieces, like the<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> distressed</span> brown leather sofa and dining table, will soon have</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> is a multi-target angi<span style="background-color:rgba(57,212,155, 0.8400000000000001)">okin</span>ase inhibitor, which blocks VEGFR, platelet-derived exc</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> and<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> distressed</span> in our rooting out of evil and our punishing of perpetrators. We must not</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> they want to receive love. When Shin-joon receives love he calls his<span style="background-color:rgba(57,212,155, 0.76)"> elder</span> sister, because</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> aide, in a government agency, or with a<span style="background-color:rgba(57,212,155, 0.76)"> lobbying</span> firm, for example. Any of these positions</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> a self-proclaimed metrobilly band, a portmanteau<span style="background-color:rgba(57,212,155, 0.76)"> referring</span> to the music’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>ole, though of course there is interest group<span style="background-color:rgba(57,212,155, 0.76)"> lobbying</span> to keep it place and a lot of room</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>, browser’s user agent, and<span style="background-color:rgba(57,212,155, 0.76)"> referring</span> address to help diagnose problems with our server, to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> Those That Bless Thee - He was<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> referring</span> NOT to wicked Jews because of being of the same race</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span>ize humanity.” Ms. Vritschan was<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> referring</span> to the overall control of the advanced remote directed</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> these there<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> referring</span> in – if; with other. Essays that students during new the second almost are</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> him.
+We<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> mourn</span> the tragic loss, and pray that evil be eradicated from our midst.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> at the family’s estate, and<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> mourn</span> the dead. The settlers to the new land brought their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span>abbatical accordingly. Instead, we find ourselves<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> mourning</span> what might have been, and looking for meaning</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span>founder of Apple Inc – on October 5th, 2011, the world finds itself<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> mourning</span> over the loss</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> with her and really wanted to hire a<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> dou</span>la, precisely because I was missing some of the emotional</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> has 20 classrooms available for 18 sections.
+Both<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> kinder</span>garten and first grade will have four sections</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> well both our baby I were working together. My<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> dou</span>la helped to support us as a family</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>
+Renewal application for a animal<span style="background-color:rgba(57,212,155, 0.52)"> boarding</span> establishment - £160
+Renewal application for a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> M&A. The sole Mumbai partner is finance and<span style="background-color:rgba(57,212,155, 0.52)"> banking</span> lawyer Sawant Singh.
+It has</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> (but hopefully it will be HBAC!), and I recommend EVERY mother I know to have a<span style="background-color:rgba(57,212,155, 0.52)"> dou</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> the stories they have about kite<span style="background-color:rgba(57,212,155, 0.52)"> boarding</span>. this post for all the kids that like to kite</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> on-campus experience for<span style="background-color:rgba(57,212,155, 0.52)"> boarding</span> and day students, as well as a robust online learning program for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> internet<span style="background-color:rgba(57,212,155, 0.44)"> banking</span>, websites at Northern Rock and many other banks crashed as savers tried to access their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> Zirconia
+We accept Credit/ Debit/ Net<span style="background-color:rgba(57,212,155, 0.44)"> banking</span>/ UPI payments via PayU</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> the international<span style="background-color:rgba(57,212,155, 0.44)"> banking</span> industry.
+We deal with all aspects of cash management and cater to the processing capabilities</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span>andex and Sberbank are now terminated.
+Now the corporation wants to provide<span style="background-color:rgba(57,212,155, 0.44)"> banking</span> services,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span>.
+The deadline for deduction of withholding tax on<span style="background-color:rgba(57,212,155, 0.44)"> banking</span> transactions at reduced rate of 0.3pc</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|>izza||Xtras|
+|Ch<span style="background-color:rgba(57,212,155, 0.36000000000000004)">icken</span> Or Veal||Mangia Healthy||P</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> defender, Jessica R.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Kun</span>en, chief appellate defender, for appellant.
+Richard A.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> Dexterity: An MRI Investigation
+Shim, Jae<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Kun</span>
+MetadataShow full item record</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> have e<span style="background-color:rgba(57,212,155, 0.36000000000000004)">rections</span> during sleep, which may suggest that there may be a psychological cause of the erectile</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> between the most common formats:
+|Simple decimal standard||36.20<span style="background-color:rgba(57,212,155, 0.36000000000000004)">655</span>||36.157</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> Healey<span style="background-color:rgba(57,212,155, 0.28)"> welcomed</span> the jury back. They were not scheduled to start until 10:00AM, but</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> all the stuff like that just makes me feel so<span style="background-color:rgba(57,212,155, 0.28)"> welcomed</span>. And Seb has been amazing, he</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> subhas institute of technology
+gideon v wainwright decision
+laughing<span style="background-color:rgba(57,212,155, 0.28)"> ow</span>l distribution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> heavily
+on his chest.
+An<span style="background-color:rgba(57,212,155, 0.28)"> ow</span>l arrived the next morning with a large package and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> shouting.
+Gloria came up and<span style="background-color:rgba(57,212,155, 0.28)"> welcomed</span> Amelia; Able left me to tie</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>aker Driver Dimensions and Measurements - all dimensions in mm (approx.)
+Frequency and Impedance</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> cotton wick.
@@ -107,7 +546,57 @@ All candles are hand poured in small batches in San Diego, CA.
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> from the Higuchi-KU Endowment Fund and is a Norlin Distinguished Alumn</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> black Australians might want to reject it. Whatever the mutual denial of the past, the future must be</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> in paradise while Centara takes care of everything.
+As a Thailand’s leading hotel operator,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, 2013. Retrieved January 7, 2014.
+- North America's big freeze seen from space</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> am in terms of how I treat other people — also certainly how I parent my child. She went</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Richmond, Virginia (known locally as River City), and even to her own backyard. In the course</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span>ards and Commissions...
@@ -117,16 +606,48 @@ Mission Statement To enhance the</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span>ruits Gamers for Bloodline Rebellion with Teaser Trailer
-Namco Band</span>
+            <span> would never have had the nerve to stand up to the menacing Tuco (Raymond Cruz),</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, E1A, L2A, M1A, M1B.|
+|AE</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> be alive, to have purpose. We wonder how we might make a difference in society. We question</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> So, if you're running 32-bit Vista, you should end up with the 32-bit</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> (HPV) Gardasil vaccine was safe has officially been proven false. The public has had</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> is customer care.
@@ -135,733 +656,218 @@ Consultancy Roles in the North East England, UK Garbage Dis</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> year of nursing experience required.
-Must be a licensed driver with an automobile that is insured in</span>
+            <span> Anwar Ibrahim has promised to install a Dayak as the chief minister if Pakatan Raky</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> instead they will guide you in every assignment related to nursing assignment help, management, engineering, nursing,</span>
+            <span> about that!
+- --Rand Linden 19:09, 19 August 2009 (UTC)
+</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span>, adolescent mothers, and the use of pacifiers have a greater chance of interrupting exclusive breastfeeding.</span>
+            <span> the experience of Christ in my heart?” “It doesn’t matter how much you know, it</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> you navigate the best ways to serve your children.
-Which are such awesome parenting movies to watch?</span>
+            <span>|
+|Abstract:||Part of the strategic goal number one of the University of Hawai��</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> is still nursing but soon will be munching on leaves, grain, kale, carrots</span>
+            <span>ruits Gamers for Bloodline Rebellion with Teaser Trailer
+Namco Band</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> nursing in public. So why does …
-Sesame Street is debuting a new curriculum</span>
+            <span><|endoftext|> out of his<span style="background-color:rgba(57,212,155, 0.2)"> territory</span>. The ow<span style="background-color:rgba(57,212,155, 0.2)">l</span> was an Oregon lifer for me, #178.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> rat models revealed that the proteolytic enzymes nattokinase and serrapeptase may have a</span>
+            <span> or RN. Plus<span style="background-color:rgba(57,212,155, 0.2)"> as</span> nursing assistants,<span style="background-color:rgba(57,212,155, 0.2)"> their</span> prime job duty is to aid the licensed nurses that they</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> then moved to Texas to study nursing at Cisco Junior College and San Angelo University. Vous V</span>
+            <span> banking career with Republic Bank<span style="background-color:rgba(57,212,155, 0.2)"> in</span> 1973,<span style="background-color:rgba(57,212,155, 0.2)"> then</span> moved to InterFirst Bank Addison in 1976 where he</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> comments, the more inspired I feel, since
-my need for support, respect for different parenting styles</span>
+            <span> the regular sizes at<span style="background-color:rgba(57,212,155, 0.2)"> 50</span>
+cents<span style="background-color:rgba(57,212,155, 0.2)"> and</span> $2.
+Friday, May 20, 1910
+K</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> more. See the best sites!
-Website and community for dads with advice for fathers on parenting</span>
+            <span> of Medicine, University<span style="background-color:rgba(57,212,155, 0.2)"> of</span> California,<span style="background-color:rgba(57,212,155, 0.2)"> San</span> Francisco and Dorothy Caputo, MA, RN, BC-</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> Need of Elder Care in Dallas?
-Providing elder care for an aging parent, elderly spouse</span>
+            <span><|endoftext|> assets.
+<span style="background-color:rgba(57,212,155, 0.2)">•</span> African Americans<span style="background-color:rgba(57,212,155, 0.2)"> are</span> underrepresented in the state’s elder population due to lower</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> is that the ACORN-SAT dataset commences in 1910, rather than 1950, and hence</span>
+            <span> rack cabinet.
+Managed<span style="background-color:rgba(57,212,155, 0.2)"> and</span> configured by<span style="background-color:rgba(57,212,155, 0.2)"> the</span> UniFi Network Controller with UniFi mobile app support,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> you to put your energy…and hope? Will lobbying the Senate get Harry Reid to allow a vote</span>
+            <span><|endoftext|> have already been<span style="background-color:rgba(57,212,155, 0.2)"> published</span> that potentially<span style="background-color:rgba(57,212,155, 0.2)">,</span> the decision was the outcome of lobbying both from human rights groups</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> preparing children for kindergarten and in assessing whether their child is ready to attend, most schools provide book</span>
+            <span><|endoftext|> program.
+<span style="background-color:rgba(57,212,155, 0.2)">Te</span>achers expect<span style="background-color:rgba(57,212,155, 0.2)"> children</span> to develop certain physical skills before they enter kindergarten, too</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> elder care can begin as a result of an accident or warning signs that indicate a need for long term</span>
+            <span> adult makes the final<span style="background-color:rgba(57,212,155, 0.2)"> tone</span> of the<span style="background-color:rgba(57,212,155, 0.2)"> poem</span> wistful and almost mournful. The adult narrator is</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> England.
-As briefed by her adviser William Cecil, Elizabeth inherits a distressed England besie</span>
+            <span> said, referring to self<span style="background-color:rgba(57,212,155, 0.2)">-</span>defense protocols<span style="background-color:rgba(57,212,155, 0.2)"> and</span> the type of missions that Americans cannot conduct unilaterally</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><|endoftext|> for their semester<span style="background-color:rgba(57,212,155, 0.2)"> credit</span>. The<span style="background-color:rgba(57,212,155, 0.2)"> scene</span>, a f ash.on-, abel boarding school,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><|endoftext|> okay with the<span style="background-color:rgba(57,212,155, 0.2)"> wait</span> for some<span style="background-color:rgba(57,212,155, 0.2)"> s</span>ushi. 🙂
+The host welcomed us into the busy restaurant</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>-chicken-sal<span style="background-color:rgba(57,212,155, 0.2)">ad</span>/
+<span style="background-color:rgba(57,212,155, 0.2)"> :</span> http://stickygooeycreamychewy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span>ired thought Medicare,<span style="background-color:rgba(57,212,155, 0.2)"> private</span> savings and<span style="background-color:rgba(57,212,155, 0.2)"> private</span> insurance would be the primary payers if they needed nursing home</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
             <span>
-Having these two people in place isn’t enough, though. We elder orphans need</span>
+This is a<span style="background-color:rgba(57,212,155, 0.2)"> tim</span>eless E<span style="background-color:rgba(57,212,155, 0.2)">SL</span> flashcard game for kindergarten and will be a winner each</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> of the early rollout of the payment by results system in South Yorkshire, where all acute trusts had</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> students return to school next week. The precautionary measure includes all students – including kindergartners and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>ize humanity.” Ms. Vritschan was referring to the overall control of the advanced remote directed</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> investment banking division, clients or shareholders not to mention impacting their own remuneration.
-At</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>.
-Resolved that as a mark of our respect we wear the usual badge of mourning for</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> extra, no meal."
-Pros: "friendly staff, ease of boarding"
-Pros:</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>by-case basis.
-Animal boarding conditions - dog (word 25kb opens in new window)</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>/joint ventures for aircraft leasing and banking clients.
-In addition to his asset finance experience,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> good guy has the potential do more damage than any douchebags ever could. ADD TO GOOD</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> spell-gem configuration, you might end up banking it instead. While there are “currency” items</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> traditional banking system, similar to how Social Security exists alongside private retirement options.
-Long Island Postal</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> to learn and ready to continue building on the foundation created during nursery, kindergarten, and first grade</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>irondacks and they are all worth jumping into! Whether you prefer rafting, paddle boarding</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> your website might be performing.
-Casumo comes in with a nice range of banking options</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> - Ruins (SC3:AE)
-- Kunpaetku Shrine - Dream Rem</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> that erections where no disorder exists improve. If it were not for web selling this situation wouldn't</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> have derived the feathered-serpent from the image of an owl fetching a serpent</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and other defining features, our decorative laminates are specially made from Japanese technology to cater to the dis</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> family in and welcomed them to live the American dream. Yet, Ilhan acts like an entitled br</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> MIDI & Gear
-Errors or Corrections? Send them here.The DQC Advisory Board consists</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> a significant revenue flow for their company as it made use of their exclusive and long-time banking</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> glory of Vancouver’s landscape, the North Shore Mountain range. Upon arrival, guests are welcomed into</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> Too bad that's their only single that made the mainstream.
-User: zippdementia Title</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> is customer care.
-Consultancy Roles in the North East England, UK Garbage Dis</mark></span>
+            <span><|endoftext|> “The Match<span style="background-color:rgba(57,212,155, 0.2)">maker</span>.”Ant<span style="background-color:rgba(57,212,155, 0.2)">ak</span>ya is located at latitude 36.20655 and longitude 36</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> cotton wick.
-All candles are hand poured in small batches in San Diego, CA.
-</mark></span>
+            <span>.
+Is She<span style="background-color:rgba(57,212,155, 0.2)"> Ready</span>?
+<span style="background-color:rgba(57,212,155, 0.2)">Read</span>iness for kindergarten involves both the child and the school setting</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark>ards and Commissions...
-Alamo Area Council of Governments
-Mission Statement To enhance the</mark></span>
+            <span><|endoftext|> perhaps banking on when<span style="background-color:rgba(57,212,155, 0.2)"> they</span> decided to<span style="background-color:rgba(57,212,155, 0.2)"> make</span> him an example.
+Before his sentencing, Weev</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> be alive, to have purpose. We wonder how we might make a difference in society. We question</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark>ruits Gamers for Bloodline Rebellion with Teaser Trailer
-Namco Band</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> then moved to Texas to study<mark> nursing</mark> at Cisco Junior College and San Angelo University. Vous V</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> you navigate the best ways to serve your children.
-Which are such awesome<mark> parenting</mark> movies to watch?</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> more. See the best sites!
-Website and community for dads with advice for fathers on<mark> parenting</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> instead they will guide you in every assignment related to<mark> nursing</mark> assignment help, management, engineering,<mark> nursing</mark>,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> year of<mark> nursing</mark> experience required.
-Must be a licensed driver with an automobile that is insured in</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> is still<mark> nursing</mark> but soon will be munching on leaves, grain, kale, carrots</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>, adolescent mothers, and the use of pacifiers have a greater chance of interrupting exclusive<mark> breastfeeding</mark>.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> rat models revealed that the proteolytic enzymes natt<mark>okin</mark>ase and serrapeptase may have a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|><mark> nursing</mark> in public. So why does …
-Sesame Street is debuting a new curriculum</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> comments, the more inspired I feel, since
-my need for support, respect for different<mark> parenting</mark> styles</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><mark> elder</mark> care can begin as a result of an accident or warning signs that indicate a need for long term</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>ize humanity.” Ms. Vritschan was<mark> referring</mark> to the overall control of the advanced remote directed</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> of the early rollout of the payment by results system in South Yorkshire, where all acute<mark> trusts</mark> had</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>
-Having these two people in place isn’t enough, though. We<mark> elder</mark> orphans need</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> England.
-As briefed by her adviser William Cecil, Elizabeth inherits a<mark> distressed</mark> England besie</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> is that the ACORN-SAT dataset commences in<mark> 1910</mark>, rather than 1950, and hence</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> students return to school next week. The precautionary measure includes all students – including<mark> kinder</mark>gartners and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> Need of Elder Care in Dallas?
-Providing<mark> elder</mark> care for an aging parent, elderly spouse</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> preparing children for<mark> kinder</mark>garten and in assessing whether their child is ready to attend, most schools provide book</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> you to put your energy…and hope? Will<mark> lobbying</mark> the Senate get Harry Reid to allow a vote</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>by-case basis.
-Animal<mark> boarding</mark> conditions - dog (word 25kb opens in new window)</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>/joint ventures for aircraft leasing and<mark> banking</mark> clients.
-In addition to his asset finance experience,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> extra, no meal."
-Pros: "friendly staff, ease of<mark> boarding</mark>"
-Pros:</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> good guy has the potential do more damage than any<mark> dou</mark>chebags ever could. ADD TO GOOD</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> to learn and ready to continue building on the foundation created during nursery,<mark> kinder</mark>garten, and first grade</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> investment<mark> banking</mark> division, clients or shareholders not to mention impacting their own remuneration.
-At</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> traditional<mark> banking</mark> system, similar to how Social Security exists alongside private retirement options.
-Long Island Postal</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>.
-Resolved that as a mark of our respect we wear the usual badge of<mark> mourning</mark> for</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> spell-gem configuration, you might end up<mark> banking</mark> it instead. While there are “currency” items</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>irondacks and they are all worth jumping into! Whether you prefer rafting, paddle<mark> boarding</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> that e<mark>rections</mark> where no disorder exists improve. If it were not for web selling this situation wouldn't</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> glory of Vancouver’s landscape, the North Shore Mountain range. Upon arrival, guests are<mark> welcomed</mark> into</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and other defining features, our decorative<mark> lamin</mark>ates are specially made from Japanese technology to cater to the dis</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> - Ruins (SC3:AE)
--<mark> Kun</mark>paetku Shrine - Dream Rem</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> Too bad that's their only single that made the mainstream.
-User: zippd<mark>ementia</mark> Title</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> have derived the fe<mark>athered</mark>-serpent from the image of an<mark> ow</mark>l fetching a serpent</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> a significant revenue flow for their company as it made use of their exclusive and long-time<mark> banking</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> MIDI & Gear
-Errors or Cor<mark>rections</mark>? Send them here.The DQC Advisory Board consists</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> your website might be performing.
-Casumo comes in with a nice range of<mark> banking</mark> options</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> family in and<mark> welcomed</mark> them to live the American dream. Yet, Ilhan acts like an entitled br</span>
+            <span>ily breastfeeding. Seels<span style="background-color:rgba(57,212,155, 0.2)"> met</span>agal<span style="background-color:rgba(57,212,155, 0.2)">actic</span> Ariel, its angle of outdrive sloppily</span>
         </div>
         
             </div>

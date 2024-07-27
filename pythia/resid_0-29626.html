@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,25 +78,535 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1:  meetings with<mark> his</mark> Chinese counterpart who is part of the Vice Prime Minister Hui Liangyu’s<br>Activation  his:10.0, <br>Example 2: harta entered the room, preceded by<mark> his</mark> habitual glow. They high-fived then hugged for<br>Example 3:  complete explanation of<mark> his</mark> statements that set off this whole crisis, when he reacted to the discovery of a<br>Example 4: <|endoftext|> to give three years to free agent Cody Ross with<mark> his</mark>.326 OBP (.308 vs.<br>Example 5:  hundreds of lifetimes in dozens of universes, but this rebirth is strange even by<mark> his</mark> standards<br>Example 6:  technical innovation, a quality shared by all four of<mark> his</mark> sons. But it was to Edward and Henry<br>Example 7: 's bedroom on<mark> his</mark> computer). As the episodes progressed, so did the sound quality, each episode getting<br>Example 8:  it, and was gathered by<mark> his</mark> care towards the high parts, far from water."<br>31.<br>Example 9:  made a flat farmer figure, along with<mark> his</mark> carrots, corn and cabbages, for the Par<br>Example 10:  president on how to proceed with fiscal cliff legislation.<br>Boehner reiterated<mark> his</mark> insistence that the<br><br>Top_logits: [' own', ' Own', ' wife', 'elf', 'sing', 'croft', 'ses', ' Majesty', 'sed', 'mits']
+            Example 1:  meetings with<span style="background-color:rgba(57,212,155, 1.0)"> his</span> Chinese counterpart who is part of the Vice Prime Minister Hui Liangyu’s<br>Activations: (" his" : 10)<br>Example 2: harta entered the room, preceded by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> habitual glow. They high-fived then hugged for<br>Activations: (" his" : 9)<br>Example 3:  complete explanation of<span style="background-color:rgba(57,212,155, 1.0)"> his</span> statements that set off this whole crisis, when he reacted to the discovery of a<br>Activations: (" his" : 9)<br>Example 4: <|endoftext|> to give three years to free agent Cody Ross with<span style="background-color:rgba(57,212,155, 1.0)"> his</span>.326 OBP (.308 vs.<br>Activations: (" his" : 9)<br>Example 5:  hundreds of lifetimes in dozens of universes, but this rebirth is strange even by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> standards<br>Activations: (" his" : 9)<br>Example 6:  technical innovation, a quality shared by all four of<span style="background-color:rgba(57,212,155, 1.0)"> his</span> sons. But it was to Edward and Henry<br>Activations: (" his" : 9)<br>Example 7: 's bedroom on<span style="background-color:rgba(57,212,155, 1.0)"> his</span> computer). As the episodes progressed, so did the sound quality, each episode getting<br>Activations: (" his" : 9)<br>Example 8:  it, and was gathered by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> care towards the high parts, far from water."<br>31.<br>Activations: (" his" : 9)<br>Example 9:  made a flat farmer figure, along with<span style="background-color:rgba(57,212,155, 1.0)"> his</span> carrots, corn and cabbages, for the Par<br>Activations: (" his" : 9)<br>Example 10:  president on how to proceed with fiscal cliff legislation.<br>Boehner reiterated<span style="background-color:rgba(57,212,155, 1.0)"> his</span> insistence that the<br>Activations: (" his" : 9)<br>Example 11:  later divorced from everyone, including<span style="background-color:rgba(57,212,155, 1.0)"> his</span> wife and her family, and spent the balance of<span style="background-color:rgba(57,212,155, 1.0)"> his</span> days rel<br>Activations: (" his" : 9), (" his" : 9)<br>Example 12: <|endoftext|>men, the Scots of Britain and Ireland, as much as by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> Pictish converts,<br>Activations: (" his" : 9)<br>Example 13: about<span style="background-color:rgba(57,212,155, 1.0)"> his</span> trouble to Dr. L. E.<br>Todd. "Dr. Todd replied that<br>Activations: (" his" : 9)<br>Example 14:  gave<span style="background-color:rgba(57,212,155, 1.0)"> his</span> brother 'Rant' for<span style="background-color:rgba(57,212,155, 1.0)"> his</span> birthday. Apparently that's all he plays. Get him<br>Activations: (" his" : 9), (" his" : 9)<br>Example 15: <|endoftext|>g; Beaky Buzzard (Originally called Killer Condor, by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> mother 1942);<br>Activations: (" his" : 9)<br>Example 16:  most scenic holes you will ever see! Furber himself, who is renowned for<span style="background-color:rgba(57,212,155, 1.0)"> his</span> design of golf<br>Activations: (" his" : 9)<br>Example 17:  that Dayton’s inference that higher taxes equal higher incomes and job growth is not supported by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> methodology<br>Activations: (" his" : 9)<br>Example 18: <|endoftext|>. But somewhere in the United States today, someone at the very top of<span style="background-color:rgba(57,212,155, 1.0)"> his</span> or her field<br>Activations: (" his" : 9)<br>Example 19:  who was stabbed 11 times in Rome last July.<br>Cerciello Rega and<span style="background-color:rgba(57,212,155, 1.0)"> his</span> colleague<br>Activations: (" his" : 9)<br>Example 20:  store, telephone exchange, and post office, all run by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> wife, Charlotte. The barn was<br>Activations: (" his" : 9)<br><br>Top_logits: [' own', ' Own', ' wife', 'elf', 'sing', 'croft', 'ses', ' Majesty', 'sed', 'mits']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKENS: "his".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "his".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve possessive pronouns.<br>- The activating token "his" is used to describe something belonging to a male.<br><br>Step 3.<br>- The activation values are high for all examples, suggesting the neuron activates strongly for "his" in various contexts.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I think I've covered everything.<br><br>(Part 2)<br>SIMILAR TOKENS: "own", "Majesty", "wife".<br>- The top logits list suggests a focus on words related to possession, relationships, or formal titles.<br><br>[EXPLANATION]: The possessive pronoun "his" in various contexts, including descriptions of belonging or relationships.
+            (Part 1)<br>ACTIVATING TOKENS: "his" (20 times).<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "his".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve possessive pronouns.<br>- The activating token is a possessive pronoun.<br><br>Step 3.<br>- The activation values are consistently high across all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I didn't miss any.<br><br>(Part 2)<br>SIMILAR TOKENS: "own", "wife", "Majesty".<br>- The top logits list suggests a focus on possessive pronouns and nouns related to possession or relationships.<br><br>[EXPLANATION]: The possessive pronoun "his".
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The possessive pronoun &quot;his&quot; in various contexts, including descriptions of belonging or relationships.</p>
+                <p>The possessive pronoun &quot;his&quot;.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> themes created by horror master Stephen King and takes place in<span style="background-color:rgba(57,212,155, 1.0)"> his</span> fictional town of Castle Rock, Maine.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> remembered by<span style="background-color:rgba(57,212,155, 1.0)"> his</span> nieces, nephews, other relatives, and friends.
+Resting at the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>e in<span style="background-color:rgba(57,212,155, 1.0)"> his</span> younger days crooning here! However, the newborn is shifted to a critical unit in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>, Primate Recordings and Underwater Records amongs many others, together with<span style="background-color:rgba(57,212,155, 1.0)"> his</span> studio partner John</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Recall also what was said about<span style="background-color:rgba(57,212,155, 1.0)"> his</span> allegiance to the deterministic forces of nature in the last post. If</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> said Biden when confronted with<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> his</span> vote on bankruptcy and Barack's. I had to stop a second because</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> who was playing in just<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> his</span> third game after signing as a free agent last Friday, had scored on</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> fixture, has a full plate this summer, with<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> his</span> PORTRAIT OF A LADY</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> race.
+Indeed, it is Europe that offers the Portuguese coach<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> his</span> best chance of salvation this</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> and abetted by<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> his</span> corporate partners in crime—wants your data. That’s what we</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> for<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> great virtues, and should strive to imitate them, as we cherish<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> memory.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> policy would become part of<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> or her estate and subject to probate.
+A simple solution to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>Cagas). Accused’s PDAF funds never passed through<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> hands.”The Federal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> in history and Wayne in<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> Hollywood canon, were a bit of both. Johnny Ringo,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>). Hence, man became dead in trespasses, and completely deformed in all<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> his</span> faculties of body</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>
+Within 20 minutes of<span style="background-color:rgba(57,212,155, 0.76)"> his</span> mother leaving, the 2-year-old boy came into the lobby</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> an article about VC bloggers. Ross Mayfield has the details and a nice list of them on<span style="background-color:rgba(57,212,155, 0.76)"> his</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> the player formerly known as Matt Holliday (now just a shell of<span style="background-color:rgba(57,212,155, 0.76)"> his</span> former slugging self)</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> the Stanley Brothers as they toured Ohio in 1964, bluegrass took first place among<span style="background-color:rgba(57,212,155, 0.76)"> his</span> musical interests</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> role of<span style="background-color:rgba(57,212,155, 0.76)"> his</span> victim so that the act of murder becomes an act of purification that purifies nothing for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> true, but unlike<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> first albums when<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> "sound" felt fresh and new and he was willing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> poorer performance by the fighter exhibiting the smile, and enhanced performance for<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> opponent. More specifically, fighters</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> is renowned for<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> honesty, determination, and aggressive litigation skills. In 2015, the verdict in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> for<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> casino. Ayten walks in and gives him<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> dirty laundry in a bag, saying</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> thing to work the way I wanted."
+Carrying a mere 28 units from<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> his</span> first production run</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> of Songs was interpreted as a song of the love of Christ for<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> bride,<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> people. Of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> only to be denied by Thomas, who blocked the attacker's chip with<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> chest after charging out of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|>. Lizardman jumps down from the top of a building with Soul Edge still in<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> hand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> every time you view and share a video that this guy has uploaded to<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> page without using the proper</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>ize history, Ronald Reagan takes the reader behind the scenes of<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> extraordinary career, from<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> his</span> first political</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>in books that is-and thinks sorcery is all in<span style="background-color:rgba(57,212,155, 0.52)"> his</span> dreams. He calls himself Hasan</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> threw in<span style="background-color:rgba(57,212,155, 0.52)"> his</span> second game of spring on Friday against Kansas City.
+Marshall's expected DL stint</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> the only positive thing Indy can take away here is that Andrew Luck had<span style="background-color:rgba(57,212,155, 0.52)"> his</span> first great game in a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>ovable ranks of Titus.
+Seraiah meanwhile had disappeared from<span style="background-color:rgba(57,212,155, 0.52)"> his</span> place as mysteriously</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> him to make frequent visits to the Mayo Clinic across the Atlantic. The hospitals in<span style="background-color:rgba(57,212,155, 0.52)"> his</span> country aren</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)"> his</span> biography read like an adventure story. Of course, I also relished the parts which explained<span style="background-color:rgba(57,212,155, 0.44)"> his</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> Buaben 20-yards out, and<span style="background-color:rgba(57,212,155, 0.44)"> his</span> curling left-foot effort was tipped around the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|>t hold a candle — they don’t get a bigger voice in<span style="background-color:rgba(57,212,155, 0.44)"> his</span> life than the real</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> originally published in 1993 by Owen Cramer in<span style="background-color:rgba(57,212,155, 0.44)"> his</span> work “The variation of the specific heat ratio and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> he had been kicked out of<span style="background-color:rgba(57,212,155, 0.44)"> his</span> rented accommodation by<span style="background-color:rgba(57,212,155, 0.44)"> his</span> landlord, after having an affair with<span style="background-color:rgba(57,212,155, 0.44)"> his</span> land</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> emphasis on the vertical dimension of the Gospel (‘senkrecht von oben’). In</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> to<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> cheek. He also apparently got skunked at some point too which I didn’t</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> still causing a ruckus well into<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> eighties. (more…)
+The producers of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|>: 1) he's usually right, and 2) hardly leans left in<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> prediction model</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> manager Ken Holland and coach Mike Babcock. It's<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> hometown, where<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> his</span> parents reside.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> the back of the field. Buemi missed<span style="background-color:rgba(57,212,155, 0.28)"> his</span> braking point at Snt Devote, and smashed</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span>ces and nephews.
+He was preceded in death by<span style="background-color:rgba(57,212,155, 0.28)"> his</span> parents, one sister, Sherry</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> Waters for years who has deeply influenced<span style="background-color:rgba(57,212,155, 0.28)"> his</span> view of food.
+In this episode, we will</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> once again he holds the livelihoods of the working poor hostage by making an end to<span style="background-color:rgba(57,212,155, 0.28)"> his</span> tax hike</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> who first spotted Himsel points to<span style="background-color:rgba(57,212,155, 0.28)"> his</span> escape route, but the crowd can't breach the doors</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> THE REQUIRED ADDITONAL PRACTICE HOURS FOR WHICH A LOG MUST BE</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> sang a made up song as we took off, and by the time the seat belt light was turned</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>The Revised Book of Church Order and Discipline of the United Church of Jesus Christ (Apostolic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>yard, the men spend more than two years scouting locations, talking to park rangers, speaking</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Supervisors is comprised of five elected officials, with an administrative staff consisting of a Finance/Operation Controller</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>.
+September 11, 2013
+- You can now sort the items from the inventory by category.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> about what life would be like if Posey were wearing Dodger Blue.Maybe the Giants'</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> the country"; will go to Gibraltar, and possibly Granada and Corfu.
+Lee</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> pool, or rendered entirely meaningless if the U.S. loses to the Czech Republic on Friday.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> and confusionover which shots might work and when. Pfizer is testing even smaller doses for children under</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> you. This best selling sexy toy is the the best kept secret of girls up and down the country</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> (or a la carte allowance) are included
@@ -98,15 +615,7 @@ in the price. If you have any special</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span> you. This best selling sexy toy is the the best kept secret of girls up and down the country</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> achieve the improvement of the development impact and the effectiveness of aid (as well as the realization of social</span>
@@ -114,7 +623,40 @@ in the price. If you have any special</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> and unleash new biotechnology market applications.
+“What we’ve shown is the next step</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> to “disarm” relations between science, power and the market that have become dangerous. Somehow it</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>Y. If your order is not everything you dreamed, we'll fix it. Whether it's the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> left leg). This all happened due to injury to my back about six years ago, when I tried</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span>.
@@ -125,721 +667,185 @@ M to attack.Newsp</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span>Y. If your order is not everything you dreamed, we'll fix it. Whether it's the</span>
+            <span>ie a knot at the other end of the beads.
+3. Slide both ends of the</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> In fact, Jack Chick, in another one of his tract masterpieces, Boo!, says</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> four years Mr. Gross has also taught school several years, and it will be seen by his rec</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> Isaac Asimov wrote these three books very early in his career, during the 1950s—an</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>co only having one year left on his contract; he would likely be a big tradable commodity at</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>e in his younger days crooning here! However, the newborn is shifted to a critical unit in</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> construction and environmental experience to his new role and has represented clients such as Vornado Realty Trust</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> made it sound during his presser that night, with LAPD Chief Charlie Beck by his side</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>teen-year-old Tyson sneaks off with his roughneck, but ill, grandpa to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>a Odinga.
-Through his Twitter handle on Friday, July 19, the lawyer said apart</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> Seau, who was 25 years old, in his fifth NFL season, and emerging as one of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> for his casino. Ayten walks in and gives him his dirty laundry in a bag, saying</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> Shahba (50 miles south-east of Damascus), is also known for his charitable and humanitarian initiatives</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> resolution was taken by the council on this occasion ‘not to admit of his madness for an excuse,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> at the Japan race after Lotus driver Kimi Raikonnen made contact with his Ferrari at</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>ince, in bear costume) - Arn opens a beer with his tire arn, then Torrie</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> Obama's suggestion that President Bush "was too triumphant in his rhetoric when talking about war...</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> earned a second trip around the news cycle for his accusation that the Virginia National Guard escort had abandoned</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> be taking the majority of the snaps in 2012.
-Driskel suffered a minor injury to his</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> that aired Thursday on Israeli TV.
-Just days before he is to arrive in Israel for his first</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>, Mr. Goldring has already announced his plans to retire when the next election is called. But</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>Here" He had a smoothie extended in his hand. I took without saying anything, and took</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>unez made his musical debut with “Today,” a mega hit
-song packed with Amapiano</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> the time of his arrest.
-Copyright 2020 KVLY. All rights reserved.A Mercedes-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> of the built environment—and a trained architect in his own right—Street-Porter has brilli</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> because he was there.
-Yes, many in the audience will have wanted to quiz him on his</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>ous” decision for the minority community. Jones made his comments in an interview with Fox Business Network</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> the opponents’ best players.
-On Saturday, Zetterberg did his part, getting under the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>leworks.
-The title of one of Jeff's workshops sums up his views: Raising</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> success on Broadway. Soon after his vision began to manifest. He auditioned in San Francisco for a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> known as Dewart and Demole. Seno has four US and four Philippine patents under his name</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> on perceived differences with Israel, noting for instance that Obama failed to visit Israel in his first term,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>ig1916: 44
-Tell him there’s a post come from my master, with his</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> during one of his infrequent trips home he went to a party in Oxford and met the woman of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, Larry called his CTO, Jeff, into his office to tell him he needed a progress report</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> restrained his men against U.S. troops this spring even as heavy fighting unfolded in southern Iraq and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> to rest last year by releasing his long-form birth certificate.
-That, of course, didn</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> Dan Siroker, Co-Founder of Spreadly, talked about his involvement in the 2008</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Dr. Lynch is internationally known for his leadership in the development of novel therapies for the treatment of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>s W.M.D. and in his estimate of the number of troops needed to occupy Iraq</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> to receive pay for this service. Plutarch, on account of his preoccupation with</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark>.
-G to attack.
-Arrow keys to move.
-M to attack.Newsp</mark></span>
+            <span> plumbers.
+Using the same Cold Fire formula in use by fire departments all over the world,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> (or a la carte allowance) are included
-in the price. If you have any special</mark></span>
+            <span> who had actually supported<span style="background-color:rgba(57,212,155, 0.2)"> Dr</span>. King<span style="background-color:rgba(57,212,155, 0.2)"> and</span> his work,” Curry wrote.
+And, in The Weekly</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark>Y. If your order is not everything you dreamed, we'll fix it. Whether it's the</mark></span>
+            <span> all the pieces just<span style="background-color:rgba(57,212,155, 0.2)"> fell</span> into place<span style="background-color:rgba(57,212,155, 0.2)"> for</span> his move to happen. It certainly helped Kenseth to</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> achieve the improvement of the development impact and the effectiveness of aid (as well as the realization of social</mark></span>
+            <span>.
+Realization<span style="background-color:rgba(57,212,155, 0.2)">--</span>a child<span style="background-color:rgba(57,212,155, 0.2)">'s</span> ability and desire for putting gospel applications into action in his daily</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> you. This best selling sexy toy is the the best kept secret of girls up and down the country</mark></span>
+            <span> who was loved by<span style="background-color:rgba(57,212,155, 0.2)"> all</span> the citizens<span style="background-color:rgba(57,212,155, 0.2)"> of</span> his Peoples Republic of Bombay.
+The story leaves</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> In fact, Jack Chick, in another one of<mark> his</mark> tract masterpieces, Boo!, says</span>
+            <span>. 115) and<span style="background-color:rgba(57,212,155, 0.2)"> this</span> grant was<span style="background-color:rgba(57,212,155, 0.2)"> confirmed</span> by his sons Richard and Baldwin and by the king in 13</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> made it sound during<mark> his</mark> presser that night, with LAPD Chief Charlie Beck by<mark> his</mark> side</span>
+            <span> his time of need.<span style="background-color:rgba(57,212,155, 0.2)"> When</span> baby Wy<span style="background-color:rgba(57,212,155, 0.2)">att</span> was born, his cord blood was collected and it was</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>a Odinga.
-Through<mark> his</mark> Twitter handle on Friday, July 19, the lawyer said apart</span>
+            <span> of roles for Rut<span style="background-color:rgba(57,212,155, 0.2)">gers</span> for more<span style="background-color:rgba(57,212,155, 0.2)"> than</span> 25 years, including his most recent position as Deputy Director of</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> Isaac Asimov wrote these three books very early in<mark> his</mark> career, during the 1950s—an</span>
+            <span> fire an employee on<span style="background-color:rgba(57,212,155, 0.2)"> the</span> basis of his<span style="background-color:rgba(57,212,155, 0.2)"> affiliation</span> with a political party or faction. The other concerns their</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>co only having one year left on<mark> his</mark> contract; he would likely be a big tradable commodity at</span>
+            <span><|endoftext|> the follow up<span style="background-color:rgba(57,212,155, 0.2)"> to</span> his successful “<span style="background-color:rgba(57,212,155, 0.2)">F</span>unk Wav Bounces Vol. 1“! This</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> four years Mr. Gross has also taught school several years, and it will be seen by<mark> his</mark> rec</span>
+            <span> have seemed unevenly<span style="background-color:rgba(57,212,155, 0.2)"> matched</span> in a<span style="background-color:rgba(57,212,155, 0.2)"> controversy</span> about music. Rameau, already in his 70th</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>e in<mark> his</mark> younger days crooning here! However, the newborn is shifted to a critical unit in</span>
+            <span> make up the depth<span style="background-color:rgba(57,212,155, 0.2)"> at</span> the inf<span style="background-color:rgba(57,212,155, 0.2)">ield</span> spots. Along with his closing duties, Carciopp</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>teen-year-old Tyson sneaks off with<mark> his</mark> roughneck, but ill, grandpa to</span>
+            <span> hoping to stop the<span style="background-color:rgba(57,212,155, 0.2)"> release</span> of the<span style="background-color:rgba(57,212,155, 0.2)"> compilation</span>, an album he maintains was assembled without his input. Former</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> Seau, who was 25 years old, in<mark> his</mark> fifth NFL season, and emerging as one of</span>
+            <span> the orc ch<span style="background-color:rgba(57,212,155, 0.2)">ie</span>ftain<span style="background-color:rgba(57,212,155, 0.2)"> as</span> a warning to the rest of his kind.
+16 Br</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> construction and environmental experience to<mark> his</mark> new role and has represented clients such as Vornado Realty Trust</span>
+            <span><|endoftext|> all season long<span style="background-color:rgba(57,212,155, 0.2)">.</span> This wasn<span style="background-color:rgba(57,212,155, 0.2)">’</span>t Derrick Rose coming back to that lost form of his</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> Obama's suggestion that President Bush "was too triumphant in<mark> his</mark> rhetoric when talking about war...</span>
+            <span>��n Is<span style="background-color:rgba(57,212,155, 0.2)">la</span> in his various<span style="background-color:rgba(57,212,155, 0.2)"> lectures</span> on the subject, defend a point until they can no</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> at the Japan race after Lotus driver Kimi Raikonnen made contact with<mark> his</mark> Ferrari at</span>
+            <span> media intern.
+<span style="background-color:rgba(57,212,155, 0.2)">Jeff</span> Suchland<span style="background-color:rgba(57,212,155, 0.2)"> once</span> raised cattle on his rolling land near Missouri's Cuivre</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> earned a second trip around the news cycle for<mark> his</mark> accusation that the Virginia National Guard escort had abandoned</span>
+            <span> Research Distinguished Fellow<span style="background-color:rgba(57,212,155, 0.2)"> Michael</span> Raynor<span style="background-color:rgba(57,212,155, 0.2)">,</span> who said in his book The Innovator’s Manif</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>ince, in bear costume) - Arn opens a beer with<mark> his</mark> tire arn, then Torrie</span>
+            <span>, a senior vice<span style="background-color:rgba(57,212,155, 0.2)"> president</span>, is<span style="background-color:rgba(57,212,155, 0.2)"> taking</span> time off to recharge and spend time with his family and hasn</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>, Mr. Goldring has already announced<mark> his</mark> plans to retire when the next election is called. But</span>
+            <span> and seemed, by<span style="background-color:rgba(57,212,155, 0.2)"> all</span> accounts,<span style="background-color:rgba(57,212,155, 0.2)"> to</span> be doing just fine on the day after suffering his first NFL</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> Shahba (50 miles south-east of Damascus), is also known for<mark> his</mark> charitable and humanitarian initiatives</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> for<mark> his</mark> casino. Ayten walks in and gives him<mark> his</mark> dirty laundry in a bag, saying</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> be taking the majority of the snaps in 2012.
-Driskel suffered a minor injury to<mark> his</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> that aired Thursday on Israeli TV.
-Just days before he is to arrive in Israel for<mark> his</mark> first</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> resolution was taken by the council on this occasion ‘not to admit of<mark> his</mark> madness for an excuse,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>unez made<mark> his</mark> musical debut with “Today,” a mega hit
-song packed with Amapiano</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> known as Dewart and Demole. Seno has four US and four Philippine patents under<mark> his</mark> name</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> the opponents’ best players.
-On Saturday, Zetterberg did<mark> his</mark> part, getting under the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>leworks.
-The title of one of Jeff's workshops sums up<mark> his</mark> views: Raising</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> success on Broadway. Soon after<mark> his</mark> vision began to manifest. He auditioned in San Francisco for a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>ous” decision for the minority community. Jones made<mark> his</mark> comments in an interview with Fox Business Network</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> because he was there.
-Yes, many in the audience will have wanted to quiz him on<mark> his</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> of the built environment—and a trained architect in<mark> his</mark> own right—Street-Porter has brilli</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> the time of<mark> his</mark> arrest.
-Copyright 2020 KVLY. All rights reserved.A Mercedes-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>Here" He had a smoothie extended in<mark> his</mark> hand. I took without saying anything, and took</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> during one of<mark> his</mark> infrequent trips home he went to a party in Oxford and met the woman of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> to receive pay for this service. Plutarch, on account of<mark> his</mark> preoccupation with</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> restrained<mark> his</mark> men against U.S. troops this spring even as heavy fighting unfolded in southern Iraq and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Dr. Lynch is internationally known for<mark> his</mark> leadership in the development of novel therapies for the treatment of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>s W.M.D. and in<mark> his</mark> estimate of the number of troops needed to occupy Iraq</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>, Larry called<mark> his</mark> CTO, Jeff, into<mark> his</mark> office to tell him he needed a progress report</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> Dan Siroker, Co-Founder of Spreadly, talked about<mark> his</mark> involvement in the 2008</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> on perceived differences with Israel, noting for instance that Obama failed to visit Israel in<mark> his</mark> first term,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> to rest last year by releasing<mark> his</mark> long-form birth certificate.
-That, of course, didn</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>ig1916: 44
-Tell him there’s a post come from my master, with<mark> his</mark></span>
+            <span>-phonetic invention<span style="background-color:rgba(57,212,155, 0.2)"> of</span> his own that<span style="background-color:rgba(57,212,155, 0.2)">,</span> at first, was interesting, but quickly became annoying.</span>
         </div>
         
             </div>

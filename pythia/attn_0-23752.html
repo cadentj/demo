@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,49 +78,491 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1:  ban saying it may have been a worry that they would take business away from stationary restaurants.<mark> Certainly</mark> Jeff<br>Activation  Certainly:10.0, <br>Example 2: <mark> And</mark> it’s a sort of a cousin to the errors of omission.<mark> If</mark> you can’t<br>Example 3: ically, these issues are poisonous.<mark> That</mark>’s what Rahm Emanuel is looking at.<br>Example 4: , especially in this economy.<mark> And</mark> we've got a spending problem in Washington, and we've got<br>Example 5:  I know a good department when I see one.<mark> And</mark> no, I have never gotten a ticket from<br>Example 6:  your employees and employers are a part of that culture.<mark> That</mark>’s a difficult bunch to control.<br>Example 7:  [Michele Obama] is our sister, and those children are our daughters.<mark> And</mark> I beg<br>Example 8:  a non-profit in Washington State to advocate for foster children.<mark> And</mark> yet, in my heart of<br>Example 9:  keep in mind that Buffett has different goals than gold investors.<mark> Certainly</mark>, gold has proven to be<br>Example 10:  this.<mark> That</mark> you were able to access it by ferreting around for it does not in any<br><br>Top_logits: ['��', '  \n   ', '                                                                               ', '\n\n\n     ', '\n                                           ', '                           ', ' \n       ', '\n                               ', ' \n               ', '\n  \xa0\xa0\xa0']
+            Example 1:  ban saying it may have been a worry that they would take business away from stationary restaurants.<span style="background-color:rgba(57,212,155, 1.0)"> Certainly</span> Jeff<br>Activations: (" Certainly" : 10)<br>Example 2: <span style="background-color:rgba(57,212,155, 1.0)"> And</span> it’s a sort of a cousin to the errors of omission.<span style="background-color:rgba(57,212,155, 1.0)"> If</span> you can’t<br>Activations: (" And" : 9), (" If" : 7)<br>Example 3: ically, these issues are poisonous.<span style="background-color:rgba(57,212,155, 1.0)"> That</span>’s what Rahm Emanuel is looking at.<br>Activations: (" That" : 9)<br>Example 4: , especially in this economy.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> we've got a spending problem in Washington, and we've got<br>Activations: (" And" : 9)<br>Example 5:  I know a good department when I see one.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> no, I have never gotten a ticket from<br>Activations: (" And" : 9)<br>Example 6:  your employees and employers are a part of that culture.<span style="background-color:rgba(57,212,155, 1.0)"> That</span>’s a difficult bunch to control.<br>Activations: (" That" : 9)<br>Example 7:  [Michele Obama] is our sister, and those children are our daughters.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> I beg<br>Activations: (" And" : 9)<br>Example 8:  a non-profit in Washington State to advocate for foster children.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> yet, in my heart of<br>Activations: (" And" : 9)<br>Example 9:  keep in mind that Buffett has different goals than gold investors.<span style="background-color:rgba(57,212,155, 1.0)"> Certainly</span>, gold has proven to be<br>Activations: (" Certainly" : 9)<br>Example 10:  this.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> you were able to access it by ferreting around for it does not in any<br>Activations: (" That" : 9)<br>Example 11:  by some deacons and priests), are really just confusing spiritual direction with counseling.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> such a<br>Activations: (" That" : 9)<br>Example 12:  courtesy, you still feel sorry for this man whose life is collapsing like a house of cards.<span style="background-color:rgba(57,212,155, 1.0)"> And</span><br>Activations: (" And" : 9)<br>Example 13: ts, whose Prophecies we see fulfilled.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> since it must be acknowledged that things may be<br>Activations: (" And" : 9)<br>Example 14:  of us.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> just kills me inside.<span style="background-color:rgba(57,212,155, 1.0)"> I</span> told him that when I don’t hear from<br>Activations: (" That" : 9), (" I" : 7)<br>Example 15: <span style="background-color:rgba(57,212,155, 1.0)"> That</span> doesn´t mean do whatever I want, but really accept and love myself to the heart of<br>Activations: (" That" : 9)<br>Example 16:  reverence, is the devil himself.<span style="background-color:rgba(57,212,155, 1.0)"> Certainly</span>, the Jew is the very devil incarnal; and<br>Activations: (" Certainly" : 9)<br>Example 17:  you arrive there, you wonder how they managed to fit all this comfort in a remote place.<span style="background-color:rgba(57,212,155, 1.0)"> And</span><br>Activations: (" And" : 9)<br>Example 18:  time.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> once you have had successes, while you may not know everything about the soil PH or<br>Activations: (" And" : 9)<br>Example 19:  live your lives this way for all men to see.<span style="background-color:rgba(57,212,155, 1.0)"> That</span>’s consonant with God’s<br>Activations: (" That" : 9)<br>Example 20:  design a action plan, and negotiate with credit card companies and collections companies.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> will either help lower<br>Activations: (" That" : 9)<br><br>Top_logits: ['��', '  \n   ', '                                                                               ', '\n\n\n     ', '\n                                           ', '                           ', ' \n       ', '\n                               ', ' \n               ', '\n  \xa0\xa0\xa0']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKENS: "Certainly", "And", "If", "That".<br><br>Step 1.<br>- The activating tokens are all sentence connectors or adverbs.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve transitions between clauses or sentences.<br>- The activating token is a word used to connect or introduce ideas.<br><br>Step 3.<br>- The activation values are highest for the examples where the token is a strong connector or adverb.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token is often at the beginning of a sentence or clause.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains only special characters and whitespace, which doesn't provide any meaningful information.<br><br>[EXPLANATION]: Sentence connectors and adverbs, particularly those used to introduce or connect clauses or ideas.
+            (Part 1)<br>ACTIVATING TOKENS: "Certainly", "And", "If", "That", "I".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating tokens are all sentence starters or conjunctions.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve sentence transitions or connections.<br>- The activating token is a word that links sentences or clauses.<br><br>Step 3.<br>- The activation values are consistently high across examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating tokens are often followed by a comma.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains uninformative tokens, likely due to the neuron's focus on sentence structure rather than specific words.<br><br>[EXPLANATION]: Sentence starters or conjunctions ("And", "That", "If", "Certainly", "I") that connect clauses or sentences.
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>Sentence connectors and adverbs, particularly those used to introduce or connect clauses or ideas.</p>
+                <p>Sentence starters or conjunctions (&quot;And&quot;, &quot;That&quot;, &quot;If&quot;, &quot;Certainly&quot;, &quot;I&quot;) that connect clauses or sentences.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
             </div>
-            <span> efficiencies that come with high-performance satellites, making it possible to support more sensors on unmanned aerial</span>
+            <span> and inclusion there will always be an acceptable amount of trauma.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> being said, when I finally got</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> detainees in ways that call into question this Nation's commitment to basic human rights and American values.<span style="background-color:rgba(57,212,155, 1.0)"> And</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> past month I have been contacted by a couple people that are new to this world of infertility.<span style="background-color:rgba(57,212,155, 1.0)"> And</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> success, literacy, social skills, and making good choices in life.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> is why parents of former</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> It</span>'s not a steep trail, so it isn't that bad.<span style="background-color:rgba(57,212,155, 1.0)"> That</span> said, it's been</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> That</span> would undoubtedly be his extraordinary, talented wife and fellow-journalist, Mary Hynes (</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> excellence and innovation.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> And</span> she fosters those qualities in those around her.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> She</span>’s done that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> the present age, a demonstration model of its character.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> That</span> is, we need to look at Africa</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>, how would I say, disciplines or paths.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> And</span> you’ve written about the many different paths</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> and trade industry groups set up inspection programs to assure that all local laws are being followed.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> That</span> is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> always had a white bus driver because we couldn’t stop in the restaurants.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> And</span> sometimes we’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> when the chips are down and you have a loss.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> And</span>, when you do have a loss,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> attempt to address our problems is impossible.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> And</span> their response to that will be to blame all those problems</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> tackle Vince Wilfork were among the 25 players in the honorable mention category.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> In</span> the AFC</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> absolutely valid...but that doesn't mean that it's good for us.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> And</span> many people think that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> complexity of the characters and plots.<span style="background-color:rgba(57,212,155, 0.76)"> Still</span> loving all the colors, and I’m looking forward to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> best for the patient.<span style="background-color:rgba(57,212,155, 0.76)"> And</span> you take that extra time every day to do it - that’s</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> found there could lay itself peculiarly open to the establishment of a despotism.<span style="background-color:rgba(57,212,155, 0.76)"> And</span> on</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> thus the source of the urge to defect and free-ride.<span style="background-color:rgba(57,212,155, 0.76)"> That</span> is to say, the psychological</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>) or the city bus (if you use their generous free program).<span style="background-color:rgba(57,212,155, 0.76)"> That</span>’s not a knock</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>as and cultures over the centuries merged into Spanish territory.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> In addition</span>, Madrid is a city known worldwide</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> are the best in the business.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> That</span>’s not just talk: Just read through authentic certified Reviews</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> doors.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> And</span> remember to enjoy your vacations with your best friend!<span style="background-color:rgba(57,212,155, 0.6799999999999999)">
+</span>|MONDAY, MAY</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> to fetch and so easy to lose.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> That</span> is because people forget to protect the source of the spring</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> wait.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> We</span> mixed that up.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> That</span>’s the plant poison ivy, not the super villain</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> data connection as fast as any broadband connection, available on any mobile device.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> And</span> oh by the way</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> models appear to have gone wrong from the point of view of a critical eye.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> In</span> effect one</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> offer our unbiased opinions and do not accept compensation to review products.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> All</span> items are in stock and prices</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> people not interested in Microsoft accounts and their privileges.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> It</span> lets the person use your computer with a generic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> God puts you exactly where you need to be.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> In</span> a story way too long to be written here</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> fathers, sisters, brothers, cousins, and grandparents.<span style="background-color:rgba(57,212,155, 0.52)"> And</span> we are also a home.<span style="background-color:rgba(57,212,155, 0.52)"> We</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>I files from all those bands.<span style="background-color:rgba(57,212,155, 0.52)">
+1</span>.<span style="background-color:rgba(57,212,155, 0.52)"> All</span> the bands within a genre
+Let’s</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> issues, both print and electronic.<span style="background-color:rgba(57,212,155, 0.52)"> And</span> they do fill that gap!<span style="background-color:rgba(57,212,155, 0.52)"> There</span> are four kinds of people</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> improvement of both the quality of light distribution and light intensity.<span style="background-color:rgba(57,212,155, 0.52)"> To</span> improve visibility even further while driving through</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>.<span style="background-color:rgba(57,212,155, 0.52)">
+She</span> died of cancer in later years.<span style="background-color:rgba(57,212,155, 0.52)"> That</span>, too, was not my fault.<span style="background-color:rgba(57,212,155, 0.52)">
+</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> couples, the regarding features of the trade are there when you look for them.<span style="background-color:rgba(57,212,155, 0.44)"> In</span> 2016 the National</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> than desirable choice for the page designer.<span style="background-color:rgba(57,212,155, 0.44)"> In</span> an ideal world, the designer should be able to specify</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> to better manage them when you are under pressure.<span style="background-color:rgba(57,212,155, 0.44)"> In</span> doing that, you build greater emotional security.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)"> That</span> matters to him much more than ideology.<span style="background-color:rgba(57,212,155, 0.44)"> Then</span> why is he stumping for Romney--a man</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> bubbles.<span style="background-color:rgba(57,212,155, 0.44)"> In</span> this slot, the players have an opportunity of betting a min value of £0.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> appreciation and solidifies your position as a strong candidate.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> In</span> your written communications, reinforce the value of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span>.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> A</span> death that exists record.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> That</span> is the projects in ruler.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> It</span> elaborates and is like</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> snowboarding back to its roots- something pure and special.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> In</span> his eyes snowboarding doesn't have</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span>scape each time, with the use of unusual instruments, erratic noises and rhythms.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> All</span> culminating</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
                 <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <small>9</small>
             </div>
-            <span>CSNA meeting, members (often professional actors) present a reading from one of the two Alice books</span>
+            <span> website.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> When</span> you apply for UC benefits, your claim will either be accepted or denied.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Your</span> employer</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> that Sudan will continue.<span style="background-color:rgba(57,212,155, 0.28)"> And</span> again, the key focus, I think, for the Sudanese has</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span>
+1.<span style="background-color:rgba(57,212,155, 0.28)"> Go</span> to the right side of the screen, then select Search
+2.<span style="background-color:rgba(57,212,155, 0.28)"> Now</span>,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> you must know she thinks very highly of you.<span style="background-color:rgba(57,212,155, 0.28)"> It</span>
+seemed like the perfect fit.<span style="background-color:rgba(57,212,155, 0.28)"> And</span></span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
                 <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <small>10</small>
             </div>
-            <span> the changes in the mean Si quotas normalized per unit cell surface area (Sisa). The Sic</span>
+            <span> the aroma of a once-beloved madeleine cookie<span style="background-color:rgba(57,212,155, 0.28)">. In</span> that famous surgery, Penfield treated</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> from private Palestinian owners—and that these two examples are hardly exceptions to the rule.<span style="background-color:rgba(57,212,155, 0.28)"> The</span> occupation (</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> you can get your meal plan set in few seconds by merely filling in the website’s data.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> myst3k tip worked for me. and all is ok now. Thank you Windows 8 Cisco V</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>. He is a partner at Gardner Russo and Gardner and they have handily outperformed the S</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>agni Architetti. They feature an eclectic and contemporary style with every detail produced by</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> other women as well as in deaconship, and exercising charismatic gifts in scriptural order</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>
+DENVER - It was spring break, and Levy Thamba, a 19-year-old</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> usually mild. The benefits of immunizing your child far outweigh any potential risks. Talk with your</span>
@@ -121,7 +570,16 @@
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Ltd.||Image display device for rotating an image displayed on a display screen|
+|US785</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span>SS) Fair
@@ -130,694 +588,255 @@ As Turkish Airlines, we participated in the KSS Pazaryeri event with</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> it is or how protected it may be, a Shikami will always find a way. That</span>
+            <span> the changes in the mean Si quotas normalized per unit cell surface area (Sisa). The Sic</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> it's with your team as great opportunities for learning. That would be my big takeaway and part</span>
+            <span>ytoin), levodopa, methyldopa, mycophenolate, quinol</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> about tolerance and respect and to critically analyse what they are taught and think.
-Right. And what</span>
+            <span> Anime Expo 2007 masquerade costume, and so I tried to make it very accurate.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> off from everything that did not serve my needs. Again, I know I am fortunate. And grateful</span>
+            <span>-changing invasion.
+The auction at Bonhams in Manhattan on Thursday also features rare print-</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> to ask you about children. A lot of people have pets and children. And sometimes the pets and</span>
+            <span>CSNA meeting, members (often professional actors) present a reading from one of the two Alice books</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> past month I have been contacted by a couple people that are new to this world of infertility. And</span>
+            <span> frequency of pumping depends on a few factors. First, the number of people live in the house.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> inspired by the campaign. And she was thankful, I think, that someone had taken the time to</span>
+            <span> That’s all it takes for me to get to incredible beer, local fresh food, good live</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span> that. And each meditation is preceded by a short talk. By short, I mean less than 10</span>
+            <span> exhausting. Be prepared if you are going out for the day with food, water, bottles and</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> is at your disposal to organise your very own cruise. Your online request will be dealt with</span>
+            <span> pkgproto(1), pkgtrans(1), installf(1M), pkgadm(1</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> efficiencies that come with high-performance satellites, making it possible to support more sensors on unmanned aerial</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, First Half 2011" report, released today, also shows that 198,300 asylum applications were lodged</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> And<span style="background-color:rgba(57,212,155, 0.2)"> to</span> avenge their<span style="background-color:rgba(57,212,155, 0.2)"> disappointment</span> at not<span style="background-color:rgba(57,212,155, 0.2)"> being</span> admitted to its precious precinct<span style="background-color:rgba(57,212,155, 0.2)">s</span>, they are sure</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">,</span> sleep-dep<span style="background-color:rgba(57,212,155, 0.2)">rived</span>, and<span style="background-color:rgba(57,212,155, 0.2)">,</span> all too often, hungry. As<span style="background-color:rgba(57,212,155, 0.2)"> the</span> weather had just changed</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">onic</span> Wars would form<span style="background-color:rgba(57,212,155, 0.2)"> global</span> affairs smart<span style="background-color:rgba(57,212,155, 0.2)">ly</span> into the following century. In Egypt<span style="background-color:rgba(57,212,155, 0.2)">,</span> the wars resulted in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> our</span> colleagues across the<span style="background-color:rgba(57,212,155, 0.2)"> Administration</span>. You've<span style="background-color:rgba(57,212,155, 0.2)"> warned</span> that<span style="background-color:rgba(57,212,155, 0.2)"> tension</span> is building. And you've described its consequences</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">,</span>100,000<span style="background-color:rgba(57,212,155, 0.2)"> new</span> jobs. The<span style="background-color:rgba(57,212,155, 0.2)"> unemployment</span> rate<span style="background-color:rgba(57,212,155, 0.2)"> has</span> gone down 25 percent. And now we must</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> figure</span> and the br<span style="background-color:rgba(57,212,155, 0.2)">idal</span> figure identified<span style="background-color:rgba(57,212,155, 0.2)">.</span> That is, you can have a<span style="background-color:rgba(57,212,155, 0.2)"> female</span> goddess figure who is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> And<span style="background-color:rgba(57,212,155, 0.2)"> finding</span> some spot for<span style="background-color:rgba(57,212,155, 0.2)"> a</span> quest gets<span style="background-color:rgba(57,212,155, 0.2)"> harder</span> the<span style="background-color:rgba(57,212,155, 0.2)"> bigger</span> the areas are. Games with much larger surface</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> Associates</span> Consulting,<span style="background-color:rgba(57,212,155, 0.2)"> LLC</span>., is<span style="background-color:rgba(57,212,155, 0.2)"> a</span> consulting firm that works specifically with<span style="background-color:rgba(57,212,155, 0.2)"> entrepreneurs</span> and corporations. It's</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> be</span> a hard-<span style="background-color:rgba(57,212,155, 0.2)">n</span>osed innov<span style="background-color:rgba(57,212,155, 0.2)">ator</span> who demands the best out of<span style="background-color:rgba(57,212,155, 0.2)"> his</span>
+players. Now</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> And<span style="background-color:rgba(57,212,155, 0.2)"> as</span> he soon learns<span style="background-color:rgba(57,212,155, 0.2)">,</span> he's<span style="background-color:rgba(57,212,155, 0.2)"> become</span> the central figure in a vast<span style="background-color:rgba(57,212,155, 0.2)"> web</span> of intrigue that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">d</span> never seen a<span style="background-color:rgba(57,212,155, 0.2)"> live</span> David Byr<span style="background-color:rgba(57,212,155, 0.2)">ne</span> performance, so I had very<span style="background-color:rgba(57,212,155, 0.2)"> low</span> expectations. That one’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> race</span>. The other competitors were<span style="background-color:rgba(57,212,155, 0.2)"> Freedom</span> 55 and<span style="background-color:rgba(57,212,155, 0.2)"> Save</span>-<span style="background-color:rgba(57,212,155, 0.2)">On</span> Foods, with Freedom 55 winning the event</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> That<span style="background-color:rgba(57,212,155, 0.2)"> way</span>, I dont<span style="background-color:rgba(57,212,155, 0.2)"> look</span> like an<span style="background-color:rgba(57,212,155, 0.2)"> ass</span>, like you do here..<span style="background-color:rgba(57,212,155, 0.2)">?</span>
+well, adam</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> sweet</span>. Your hubby<span style="background-color:rgba(57,212,155, 0.2)"> is</span> so tall<span style="background-color:rgba(57,212,155, 0.2)"> and</span> protective<span style="background-color:rgba(57,212,155, 0.2)">,</span> I am sure. Have a great week ahead</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> live</span> in families with<span style="background-color:rgba(57,212,155, 0.2)"> people</span> who are<span style="background-color:rgba(57,212,155, 0.2)">,</span> quite honestly, messy. And we<span style="background-color:rgba(57,212,155, 0.2)"> are</span> not going to change</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">.</span> And who can blame<span style="background-color:rgba(57,212,155, 0.2)"> them</span>? Like our<span style="background-color:rgba(57,212,155, 0.2)"> grade</span> school<span style="background-color:rgba(57,212,155, 0.2)"> teachers</span> told us, the only dumb question is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">.</span> And the Cowboys<span style="background-color:rgba(57,212,155, 0.2)"> never protested</span>. Shockingly stupid.
+This<span style="background-color:rgba(57,212,155, 0.2)"> actually</span> happens quite frequently, but the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> of</span> the critical dialogue<span style="background-color:rgba(57,212,155, 0.2)"> that</span> has engaged<span style="background-color:rgba(57,212,155, 0.2)"> with</span> the blind-spots and insights<span style="background-color:rgba(57,212,155, 0.2)"> of</span> earlier conversations. And further</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
             <span>
-The plane will be filled with astronomers, airline employees, special guests and media representatives. And</span>
+All<span style="background-color:rgba(57,212,155, 0.2)"> in</span> all, many<span style="background-color:rgba(57,212,155, 0.2)"> aspects</span> of our<span style="background-color:rgba(57,212,155, 0.2)"> existence</span> attract<span style="background-color:rgba(57,212,155, 0.2)"> mosquitoes</span>. Now that you know most of these</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> to the 1930’s in European features. And script supervisor Mimi Leder would go from keeping</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> with plenty of fiber and fluids. That's something Raap already makes a point of doing, but</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> to fetch and so easy to lose. That is because people forget to protect the source of the spring</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> that live there -- out on the edge of the possible. And it's also the perfect business plan</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> presence would dissipate – because it was never intended for your benefit. That's the difference between investing</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> been folded up. And because of this, we assume that already got one for your self. The</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> be paid over 15 years and requires the team to stay in Charlotte for that period of time. That</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>We will begin to connect more deeply to our heart center. That in which our great Spirit resides and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>. We look forward to working with you and will get back to you as soon as possible. All</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> to uphold the test result. That left the decisive vote to Das, a longtime independent arbitrator for MLB</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> the flat is cooking. That makes the flat a great option for a hands-free smoking experience.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> prestigious business awards in the world for in-house training and development. It is a pleasure for us</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> becoming one of the most precious resources on the planet. And as time goes on, accessing water will</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>'s soldiers and destroy them. And Chad, after Father Jack asks him to help get a message on</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> riders are judged on a combination of height, power, technical difficulty, execution, and innovation. All</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> administer our website and to identify unique users. Your IP address is also used to gather broad demographic information</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> with her. And if it was the latter on offer then I would have to make my excuses and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> variant readings and expresses textual preferences. That is a reasonable procedure, but Badius apparently made one textual</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>'t try to be as abnormal as the others. And what makes it so inviting is that it is</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> objective higher brain. And the emotions they love to use are fear or urgency, anger or outrage,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> whom the AAC/Network shared office space, board members and wealthy contributors for many years. To</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> workplace inclusion. In this capacity, Tanya is responsible for leading the growth of Catalyst’s</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>elligent citizens. Indeed, he agrees with Plato that most people are stupid. Thus, the general will</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> The top options trade is a lot of 135 Dec 5 calls at the 15-cent ask price.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and judge Story's rule rejected, by the English courts. In the case of Green v. K</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> basic things that should be looked at before thinking the worst. And, remember, if needed, you</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and a resume or CV attached as a PDF or Word file. The nominating committee will review your</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>. That's when they swept Houston in the regular season, only to have the Comets sweep them</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> that. And shortly after that, my rear derailleur started skipping whenever I would put a lot</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> can also supply transport solutions for holiday and theme parks, industrial and retail parks. All of these</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark>SS) Fair
-As Turkish Airlines, we participated in the KSS Pazaryeri event with</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> efficiencies that come with high-performance satellites, making it possible to support more sensors on unmanned aerial</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> usually mild. The benefits of immunizing your child far outweigh any potential risks. Talk with your</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
-                <small>-1</small>
-            </div>
-            <span><mark>CSNA meeting, members (often professional actors) present a reading from one of the two Alice books</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> the changes in the mean Si quotas normalized per unit cell surface area (Sisa). The Sic</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> is at your disposal to organise your very own cruise.<mark> Your</mark> online request will be dealt with</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> off from everything that did not serve my needs.<mark> Again</mark>, I know I am fortunate.<mark> And</mark> grateful</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> it's with your team as great opportunities for learning.<mark> That</mark> would be my big takeaway and part</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> that.<mark> And</mark> each meditation is preceded by a short talk.<mark> By</mark> short, I mean less than 10</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> past month I have been contacted by a couple people that are new to this world of infertility.<mark> And</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> it is or how protected it may be, a Shikami will always find a way.<mark> That</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><mark>
-The</mark> plane will be filled with astronomers, airline employees, special guests and media representatives.<mark> And</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> to ask you about children.<mark> A</mark> lot of people have pets and children.<mark> And</mark> sometimes the pets and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> inspired by the campaign.<mark> And</mark> she was thankful, I think, that someone had taken the time to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> about tolerance and respect and to critically analyse what they are taught and think.<mark>
-Right</mark>.<mark> And</mark> what</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span><mark>We</mark> will begin to connect more deeply to our heart center.<mark> That</mark> in which our great Spirit resides and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span>.<mark> We</mark> look forward to working with you and will get back to you as soon as possible.<mark> All</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> with plenty of fiber and fluids.<mark> That</mark>'s something Raap already makes a point of doing, but</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> been folded up.<mark> And</mark> because of this, we assume that already got one for your self.<mark> The</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> be paid over 15 years and requires the team to stay in Charlotte for that period of time.<mark> That</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> that live there -- out on the edge of the possible.<mark> And</mark> it's also the perfect business plan</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> presence would dissipate – because it was never intended for your benefit.<mark> That</mark>'s the difference between investing</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> to uphold the test result.<mark> That</mark> left the decisive vote to Das, a longtime independent arbitrator for MLB</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> to the 1930’s in European features.<mark> And</mark> script supervisor Mimi Leder would go from keeping</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> to fetch and so easy to lose.<mark> That</mark> is because people forget to protect the source of the spring</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> objective higher brain.<mark> And</mark> the emotions they love to use are fear or urgency, anger or outrage,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> becoming one of the most precious resources on the planet.<mark> And</mark> as time goes on, accessing water will</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> prestigious business awards in the world for in-house training and development.<mark> It</mark> is a pleasure for us</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> the flat is cooking.<mark> That</mark> makes the flat a great option for a hands-free smoking experience.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> variant readings and expresses textual preferences.<mark> That</mark> is a reasonable procedure, but Badius apparently made one textual</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> administer our website and to identify unique users.<mark> Your</mark> IP address is also used to gather broad demographic information</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> with her.<mark> And</mark> if it was the latter on offer then I would have to make my excuses and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>'t try to be as abnormal as the others.<mark> And</mark> what makes it so inviting is that it is</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>'s soldiers and destroy them.<mark> And</mark> Chad, after Father Jack asks him to help get a message on</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> riders are judged on a combination of height, power, technical difficulty, execution, and innovation.<mark> All</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> and a resume or CV attached as a PDF or Word file.<mark> The</mark> nominating committee will review your</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> that.<mark> And</mark> shortly after that, my rear derailleur started skipping whenever I would put a lot</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> basic things that should be looked at before thinking the worst.<mark> And</mark>, remember, if needed, you</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> workplace inclusion.<mark> In</mark> this capacity, Tanya is responsible for leading the growth of Catalyst’s</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> can also supply transport solutions for holiday and theme parks, industrial and retail parks.<mark> All</mark> of these</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>elligent citizens.<mark> Indeed</mark>, he agrees with Plato that most people are stupid.<mark> Thus</mark>, the general will</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><mark> The</mark> top options trade is a lot of 135 Dec 5 calls at the 15-cent ask price.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> whom the AAC/Network shared office space, board members and wealthy contributors for many years.<mark> To</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>.<mark> That</mark>'s when they swept Houston in the regular season, only to have the Comets sweep them</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> and judge Story's rule rejected, by the English courts.<mark> In</mark> the case of Green v. K</span>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> professional</span> overburd<span style="background-color:rgba(57,212,155, 0.2)">ening</span>. In later<span style="background-color:rgba(57,212,155, 0.2)"> times</span>, however, exceptions have been<span style="background-color:rgba(57,212,155, 0.2)"> carved</span> out of bankruptcy protection</span>
         </div>
         
             </div>

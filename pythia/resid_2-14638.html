@@ -1,0 +1,882 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: resid_2-14638</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #FBFBFB;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                margin-top: 0px;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                border: solid #E4E4E7;
+                border-width: .25px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 3px 15px 3px 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+                border: 0.5px solid #84848C;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: resid_2-14638</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            Example 1: mill.com or call<span style="background-color:rgba(57,212,155, 1.0)"> 800-708-4215</span>.<br>Reach Gasuras on Twitter:<br>Activations: (" 800" : 7), ("708" : 8), ("-" : 8), ("42" : 10), ("15" : 8)<br>Example 2: <span style="background-color:rgba(57,212,155, 1.0)"> 713-468-8972</span>.Introducing Hamish Macbeth the Scot. Kathie writes<br>Activations: (" 713" : 8), ("-" : 8), ("468" : 9), ("-" : 8), ("89" : 9), ("72" : 7)<br>Example 3: . Admission is free of charge. For additional information, please call<span style="background-color:rgba(57,212,155, 1.0)"> 402-223-3514</span><br>Activations: (" 402" : 7), ("-" : 7), ("223" : 9), ("-" : 8), ("35" : 9), ("14" : 8)<br>Example 4:  or inquiries, please<span style="background-color:rgba(57,212,155, 1.0)"> call 310-524-2705 or email email</span>@example.com.<br><br>Activations: (" 310" : 8), ("-" : 8), ("524" : 9), ("-" : 9), ("27" : 9), ("05" : 9), (" or" : 9), (" email" : 7), (" email" : 7)<br>Example 5:  information, please visit www.ligonier.org or<span style="background-color:rgba(57,212,155, 1.0)"> call</span> them<span style="background-color:rgba(57,212,155, 1.0)"> at 800-435-4</span><br>Activations: (" at" : 7), (" 800" : 8), ("435" : 9), ("-" : 8), ("4" : 9)<br>Example 6:  next to the Medical Building.<br>Registration is required. Please register online below or<span style="background-color:rgba(57,212,155, 1.0)"> call 202-660</span><br>Activations: (" 202" : 8), ("-" : 7), ("660" : 9)<br>Example 7:  need, please call<span style="background-color:rgba(57,212,155, 1.0)"> us at 800-417-7623</span>.<br>In addition to all other legal<br>Activations: (" us" : 6), (" at" : 8), (" 800" : 8), ("-" : 7), ("417" : 9), ("-" : 8), ("76" : 9), ("23" : 8)<br>Example 8:  us a call<span style="background-color:rgba(57,212,155, 1.0)"> at 800-886-4044 or find</span> a ComForCare location near you.<br>Activations: (" at" : 7), (" 800" : 8), ("-" : 7), ("886" : 9), ("-" : 8), ("40" : 9), ("44" : 8), (" or" : 7)<br>Example 9: door Colorado's Project Calendar at www.voc.org, or<span style="background-color:rgba(57,212,155, 1.0)"> call 303-715-101</span><br>Activations: (" 303" : 7), ("-" : 7), ("715" : 9), ("-" : 9), ("101" : 9)<br>Example 10:  or<span style="background-color:rgba(57,212,155, 1.0)"> call 480-898-9700 today</span>.RAWALPINDI: The Environmental Protection Agency<br>Activations: (" call" : 7), (" 480" : 8), ("-" : 7), ("898" : 8), ("-" : 7), ("97" : 9), ("00" : 8), (" today" : 7)<br>Example 11:  are due by Feb. 9, 2007. For more information call IUSI<span style="background-color:rgba(57,212,155, 1.0)"> at 800-345</span><br>Activations: (" 800" : 7), ("-" : 7), ("345" : 9)<br>Example 12: <|endoftext|> regarding the Ketchum Urban Renewal Agency, please<span style="background-color:rgba(57,212,155, 1.0)"> call 208-727-9084</span>.<br>Activations: (" 208" : 6), ("-" : 8), ("727" : 9), ("-" : 9), ("90" : 9), ("84" : 8)<br>Example 13: <span style="background-color:rgba(57,212,155, 1.0)">227-9700</span>.<br>You May Also Be Interested In These Stories<br>- Police: Bur<br>Activations: ("227" : 8), ("-" : 8), ("97" : 9), ("00" : 7)<br>Example 14: ijay Road, Chatsworth, GA 30705, or<span style="background-color:rgba(57,212,155, 1.0)"> call (706) 695-67</span><br>Activations: (" call" : 7), (" (" : 7), ("706" : 7), (")" : 9), (" 6" : 6), ("95" : 7), ("-" : 7), ("67" : 8)<br>Example 15:  visit http://www.BoatUS.com or<span style="background-color:rgba(57,212,155, 1.0)"> call 800-395-2628</span>....<br>Activations: (" 800" : 7), ("395" : 8), ("-" : 8), ("26" : 9), ("28" : 7)<br>Example 16: <|endoftext|> a week. Please call 1<span style="background-color:rgba(57,212,155, 1.0)">-800-321-1484 to</span> speak with a product specialist<br>Activations: ("800" : 9), ("-" : 7), ("321" : 9), ("-" : 7), ("14" : 9), ("84" : 9), (" to" : 8)<br>Example 17:  more information, call<span style="background-color:rgba(57,212,155, 1.0)"> 888-604-5888 or</span> visitwww.cancer.org/cps<br>Activations: (" 888" : 6), ("-" : 7), ("604" : 9), ("-" : 7), ("5" : 7), ("888" : 8), (" or" : 8)<br>Example 18:  July 12th at 9am. If you’re interested in attending, please call<span style="background-color:rgba(57,212,155, 1.0)"> 1-800</span><br>Activations: (" 1" : 7), ("800" : 9)<br>Example 19:  One Children's Plaza, Dayton, OH 45404-1815<span style="background-color:rgba(57,212,155, 1.0)"> or by calling (937) 6</span><br>Activations: (" calling" : 7), (" (" : 7), ("937" : 6), (")" : 9), (" 6" : 7)<br>Example 20: tobacco.com or call<span style="background-color:rgba(57,212,155, 1.0)"> 1</span>-<span style="background-color:rgba(57,212,155, 1.0)">877-220-3466</span>.<br>Local Veterans Employment<br>Activations: (" 1" : 6), ("877" : 9), ("-" : 7), ("220" : 8), ("-" : 7), ("34" : 8), ("66" : 7)<br><br>Top_logits: [' discretion', ' telephone', 'email', ' notified', ' email', ' consult', ' newsletters', ' www', ' Customer', ' hourly']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: Phone numbers and related tokens ("call", "at", "or").<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating tokens are all related to phone numbers or contacting someone.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve phone numbers, often with "call" or "at" preceding them.<br>- The activating token is part of a phone number or a related action.<br><br>Step 3.<br>- The activation values are highest for the examples where the token is a distinctive part of a phone number.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token is often followed by a phone number or a related action.<br><br>(Part 2)<br>SIMILAR TOKENS: "telephone", "email", "call", "consult".<br>- The top logits list suggests a focus on communication methods.<br><br>[EXPLANATION]: Phone numbers and related tokens, often preceded by "call" or "at", indicating a means of contacting someone.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>Phone numbers and related tokens, often preceded by &quot;call&quot; or &quot;at&quot;, indicating a means of contacting someone.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> process. It could also prevent a delay in getting needed health care services. Please<span style="background-color:rgba(57,212,155, 1.0)"> call us at (</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)">-1379</span>.Learn how to design databases, secure databases, and keep them in tip-top</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)">) 245-0150
+|</span>en Español||Print Version||Tweet|
+T</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> 363-7500 Toll Free: (877) 363-5972 Fax: (866</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)">6205.</span>
+– Robard’s is closed through 2020.
+– In-room dining</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> J.J. a home<span style="background-color:rgba(57,212,155, 0.9200000000000002)">, please contact</span> Helen Anne Gately<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> at h</span>ag<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> 68 @</span> yahoo</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> to see if you</span> qualify<span style="background-color:rgba(57,212,155, 0.9200000000000002)">.</span>
+Utah Valley Cancer Center
+Utah Valley Cancer Center, located</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> 4 Working Days
+If You do have Time Constraints then please<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> call us on 0121 783</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> protection for both parents and children with our Premium UltraTrust Irrevocable Trust.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Call today at</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Email<span style="background-color:rgba(57,212,155, 0.9200000000000002)">: email@</span>example.com Phone<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> : (503) 707-3920
+Web</span> site</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>, and many others. There are so many plans out there, so please<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> call us to find out</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">-5137</span> ext. 155<span style="background-color:rgba(57,212,155, 0.8400000000000001)">, or email@</span>example.<span style="background-color:rgba(57,212,155, 0.8400000000000001)">com</span>Once Ántonia leaves the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> available please use our Request Quote<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> form</span> or<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> call us direct</span>.
+Do<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> you provide</span> a 130g</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">. or click here. Right</span> On!Jan-Peter van Tijk
+Living in Mumbai | from</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)"> email or number of the person</span> doing the<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> hiring</span>. We will keep the referral strictly confidential.
+or</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> 020 - 601 2550</span>. A technical service is<span style="background-color:rgba(57,212,155, 0.76)"> available 24/7 to</span> secure or resolve the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> me</span> with<span style="background-color:rgba(57,212,155, 0.76)"> the</span> proper<span style="background-color:rgba(57,212,155, 0.76)"> phone number I
+</span>should<span style="background-color:rgba(57,212,155, 0.76)"> call to obtain these addresses</span>?<span style="background-color:rgba(57,212,155, 0.76)"> Thank</span> you for your time</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> also have a child care office that helps people at the county level. Ask your state<span style="background-color:rgba(57,212,155, 0.76)"> contact person how</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> Get in<span style="background-color:rgba(57,212,155, 0.76)"> touch</span> with<span style="background-color:rgba(57,212,155, 0.76)"> us at 1-877-272-6337 today</span>!
+Personalize these</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> business could benefit from the help of 80 smart minds to help solve your problems, then email<span style="background-color:rgba(57,212,155, 0.76)"> us now</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span>.
+<span style="background-color:rgba(57,212,155, 0.6799999999999999)">Contact Us Now
+Our</span> health insurance advisors will ensure that you get exactly the cover you need</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> will receive an email<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> from us with the payment link</span> to<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> our</span> secured payment gateway<span style="background-color:rgba(57,212,155, 0.6799999999999999)">. After</span> clicking on payment</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> call you local installer today for more information.</span>
+Ecobuilt Windows | Building Contractors
+B</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|>. Questions about which forms you need? Please<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> call our office and our cour</span>te<span style="background-color:rgba(57,212,155, 0.6799999999999999)">ous staff will</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>-profit work<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> email me at firstname</span>.lastname@example.org The Web visit you shared</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> will<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> contact you – you</span> do not need to<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> call your GP practice or any other team to make an</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>Floor plans and pricing are subject to change, please<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> contact an agent for</span> current pricing<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> and</span> layout.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|>851945
+<span style="background-color:rgba(57,212,155, 0.6000000000000001)">Tel</span> international<span style="background-color:rgba(57,212,155, 0.6000000000000001)">: 0035318728722
+We</span> are open to the public 6</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> first 100 registrants. For more information<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> call</span> the Eastern Plumas Chamber of Commerce<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> at 836</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|>overs or telephone<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> calls</span>.Why Shop Firestone Tires in 95354?
+Leave 95354</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|>Have a Question, Issue or Comment?
+Main Customer Service
+714<span style="background-color:rgba(57,212,155, 0.52)">-288-2475</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>10 and more). Please inform<span style="background-color:rgba(57,212,155, 0.52)"> the</span> titles of them<span style="background-color:rgba(57,212,155, 0.52)"> by e</span>-<span style="background-color:rgba(57,212,155, 0.52)">mail.</span>
+Criteria for Material Don</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.52)"> email address you provide</span> to<span style="background-color:rgba(57,212,155, 0.52)"> us with transaction</span>al<span style="background-color:rgba(57,212,155, 0.52)"> or relationship messages</span> such as account status messages, security updates</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> an LED bulb, so make sure to purchase that separately.
+Please<span style="background-color:rgba(57,212,155, 0.52)"> Contact Adams Electrical Services to</span> install</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> hope things are groovy in your world.You can reach Rich Tandler<span style="background-color:rgba(57,212,155, 0.52)"> by email at</span> War</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|>Please Note: Your booking will be guaranteed only after we have confirmed it with you<span style="background-color:rgba(57,212,155, 0.44)"> by phone or</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)"> advice you need which is</span> particularly<span style="background-color:rgba(57,212,155, 0.44)"> helpful</span> for<span style="background-color:rgba(57,212,155, 0.44)"> more complicated</span> tax returns<span style="background-color:rgba(57,212,155, 0.44)">.</span>
+You<span style="background-color:rgba(57,212,155, 0.44)"> can</span> see them<span style="background-color:rgba(57,212,155, 0.44)"> here</span>:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> (321) 636-3343, Ext. 207, or<span style="background-color:rgba(57,212,155, 0.44)"> email email@</span>example.<span style="background-color:rgba(57,212,155, 0.44)">com</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> the comfort of couch or bed.
+- Online<span style="background-color:rgba(57,212,155, 0.44)"> fax. The</span> contemporary hotel room has become a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> you can conduct independent interviews of clients, in<span style="background-color:rgba(57,212,155, 0.44)"> person</span> and<span style="background-color:rgba(57,212,155, 0.44)"> by phone,</span> as well as conduct site</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> to<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> respond</span> to<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> call</span>outs<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> within 4 hours in 99</span>.6% of cases, delivering a permanent solution</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|>-app purchase hack and use them to their fullest for free. We can also<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> call</span> it</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> if your going to be late or need to cancel a shoot, please<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> give me at least 24 hours</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> FIRST Senior Mentor listed for your region on our<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> contact page to learn</span> about mentoring an existing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> Beshar Dentistry.
+Give me a<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> call today, I am looking</span> forward to hearing from</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> confirm your purchase. Any files you wish to send<span style="background-color:rgba(57,212,155, 0.28)"> us and your</span> design<span style="background-color:rgba(57,212,155, 0.28)"> instructions</span> can<span style="background-color:rgba(57,212,155, 0.28)"> be sent using</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> resume to email@</span>example.com
+Digital Forensics Tech, posted 15.11.17</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|><span style="background-color:rgba(57,212,155, 0.28)"> Call</span>endar<span style="background-color:rgba(57,212,155, 0.28)"> House, Call</span>endar Park<span style="background-color:rgba(57,212,155, 0.28)">,</span> Falkirk from Saturday<span style="background-color:rgba(57,212,155, 0.28)"> 3 - Tuesday 20 March</span>. The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span>.com
+Any<span style="background-color:rgba(57,212,155, 0.28)"> queries</span> should<span style="background-color:rgba(57,212,155, 0.28)"> be emailed to firstname</span>.lastname@example.org
+FOR</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> letter along with your resume when applying</span> to the position of interest<span style="background-color:rgba(57,212,155, 0.28)"> located</span> at Turn<span style="background-color:rgba(57,212,155, 0.28)">.</span>com<span style="background-color:rgba(57,212,155, 0.28)">. We</span> are</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> on Keith Richards of the Rolling Stones.
+“I’ve been a villain now for centuries</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>year view on their investments.
+The demand for oil will grow as Asia and other emerging markets continue</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> by no means comforting.
+Financials account for almost 14.3 percent of the SPDR</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> that the poor are viewed as generally undeserving of anything, of being the cause of their own poverty</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> manner in which to add more ambient light to any room of the house. By definition, a wall</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> lots of ways it is possible to improve your level of fitness. The most important thing is to actually</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> such as water, electricity and sanitation. Having no secure right to the land, the settlers construct homes</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>" exactly, but they might be fictional versions of ourselves—the people we'd like to be,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> many responsibilities, Virginia was ever a source of his strength.
+While the Apostle Paul urged that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Pitt and Angelina Jolie. At the Cannes Film Festival, Vasily Klyukin</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>tsler has been secured by the order to-polish the fine points of'the play,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ach, as that will harm and dull most fine materials. Remove jewelry before showering to avoid soap</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>: Alimardani M, Nishio S, Ishiguro H
+Operators of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> and H2.
+In Fig. 2 the lens element I0 is held by a zonal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> comparisons over time of funds under management by the different investment manager groupings may be affected by structural changes</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> 25% OFF!
+Most of the time media, government agencies, and non-government organizations fail</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>insular Florida. It is distributed in scattered sand pine and rosemary srcub areas from Marion and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>:
+Dilbert: I simplified the user interface as you suggested. You wanted one button to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>le. If you were lucky enough to afford one, you could get one made from elastic that stayed</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>32
+Thread: Arsenal Thread
+- Join Date
+- Nov 2006
+- New Zealand
+-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span>,<span style="background-color:rgba(57,212,155, 0.2)"> Center for Biological Diversity, (802)</span> 434-2388 (office); (802)</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> from secure server </span> File</span> size<span style="background-color:rgba(57,212,155, 0.2)">:</span> 2<span style="background-color:rgba(57,212,155, 0.2)">.9</span> MBFor media enqu<span style="background-color:rgba(57,212,155, 0.2)">iries</span>, please contact first</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> with dates, locations,</span> and contact information to schedule your appointment<span style="background-color:rgba(57,212,155, 0.2)">.</span>
+<span style="background-color:rgba(57,212,155, 0.2)">H</span>iring<span style="background-color:rgba(57,212,155, 0.2)"> Man</span>agers<span style="background-color:rgba(57,212,155, 0.2)"> Take</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> fee</span>,<span style="background-color:rgba(57,212,155, 0.2)"> hazard insurance</span> premium<span style="background-color:rgba(57,212,155, 0.2)"> and even your escrow account</span>.<span style="background-color:rgba(57,212,155, 0.2)">
+</span>Call us 888.958.5</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> membership clubs in</span> the<span style="background-color:rgba(57,212,155, 0.2)"> country!</span>
+<span style="background-color:rgba(57,212,155, 0.2)">My</span>oka<span style="background-color:rgba(57,212,155, 0.2)"> 5 Senses</span> Spa Health and Beauty<span style="background-color:rgba(57,212,155, 0.2)">
+</span>Tel: +</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">, Tel</span>.: 613-957-6500, Email: firstname<span style="background-color:rgba(57,212,155, 0.2)">.lastname@example.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> simple as a call to</span> our office to have a cabling professional on<span style="background-color:rgba(57,212,155, 0.2)">site</span> for<span style="background-color:rgba(57,212,155, 0.2)"> you to take</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> IDEA how to do it</span>.<span style="background-color:rgba(57,212,155, 0.2)">Please fee free to</span> contact us by phone or email with questions,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">. This will</span> allow<span style="background-color:rgba(57,212,155, 0.2)"> city crews</span> to<span style="background-color:rgba(57,212,155, 0.2)"> clear</span> as<span style="background-color:rgba(57,212,155, 0.2)"> much snow and</span> ice off of the<span style="background-color:rgba(57,212,155, 0.2)"> road</span>. Call 802</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> is provided by DC Science Comedy</span> and<span style="background-color:rgba(57,212,155, 0.2)"> the</span> D<span style="background-color:rgba(57,212,155, 0.2)">.C</span>. Science Writers Association<span style="background-color:rgba(57,212,155, 0.2)">.</span> Contact email@example</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">, as they are not required</span> to<span style="background-color:rgba(57,212,155, 0.2)"> pay</span> Tax<span style="background-color:rgba(57,212,155, 0.2)">.
+</span>Design 55 must be<span style="background-color:rgba(57,212,155, 0.2)"> informed</span> by email within 7</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> Aurora</span>, CO 80019-3705 – Adams<span style="background-color:rgba(57,212,155, 0.2)"> County</span>
+<span style="background-color:rgba(57,212,155, 0.2)">Item type: Large, non-sort</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> and one of our staff</span> will<span style="background-color:rgba(57,212,155, 0.2)"> get</span> in<span style="background-color:rgba(57,212,155, 0.2)"> touch with</span> you as soon as<span style="background-color:rgba(57,212,155, 0.2)"> possible</span>. Contact us at</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> can be reached</span> at 303-678-8086 or by email at www<span style="background-color:rgba(57,212,155, 0.2)">.donaldepstein</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>....or</span> you<span style="background-color:rgba(57,212,155, 0.2)"> could</span> call me<span style="background-color:rgba(57,212,155, 0.2)">?"</span> she<span style="background-color:rgba(57,212,155, 0.2)"> asks</span> hopefully<span style="background-color:rgba(57,212,155, 0.2)">.
+"</span>I love you Mom<span style="background-color:rgba(57,212,155, 0.2)">,</span> I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> I can get account</span>.<span style="background-color:rgba(57,212,155, 0.2)"> Thanks!
+You can</span> send an email to API-Support@ca<span style="background-color:rgba(57,212,155, 0.2)">.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>). If you have any</span> questions feel free<span style="background-color:rgba(57,212,155, 0.2)"> to</span> ask me.<span style="background-color:rgba(57,212,155, 0.2)">De</span> tre<span style="background-color:rgba(57,212,155, 0.2)"> vej</span>visere</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> means<span style="background-color:rgba(57,212,155, 0.2)">! Research, seek</span> out<span style="background-color:rgba(57,212,155, 0.2)">, and</span> contact people and businesses<span style="background-color:rgba(57,212,155, 0.2)">.</span> Spons<span style="background-color:rgba(57,212,155, 0.2)">orship</span>s are a<span style="background-color:rgba(57,212,155, 0.2)"> great way</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> website</span> at<span style="background-color:rgba(57,212,155, 0.2)"> lawand</span>culture<span style="background-color:rgba(57,212,155, 0.2)">.org
+</span>or contact Tam<span style="background-color:rgba(57,212,155, 0.2)">my Galvan</span>-Barn<span style="background-color:rgba(57,212,155, 0.2)">ett</span> at 815</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> personal use</span> only<span style="background-color:rgba(57,212,155, 0.2)">. If</span> any<span style="background-color:rgba(57,212,155, 0.2)"> ap</span>k files<span style="background-color:rgba(57,212,155, 0.2)"> download infring</span>es<span style="background-color:rgba(57,212,155, 0.2)"> your copyright</span>, please contact us.</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

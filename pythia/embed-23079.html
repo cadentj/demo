@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,34 +78,535 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1:  However if handled correctly, support for Turkey's Kurdish opening would serve all regional<mark> interests</mark> of the US,<br>Activation  interests:10.0, <br>Example 2: <|endoftext|><mark> interests</mark>. And they do not have our<mark> interests</mark> at mind at heart. They are not for us<br>Activation  interests:10.0, <br>Activation  interests:10.0, <br>Example 3:  service when trying to find trustworthy places where they can interact with others with shared<mark> interests</mark>.<br>Benef<br>Activation  interests:10.0, <br>Example 4: <|endoftext|> a substantial portion of his or her professional work to advocating the<mark> interests</mark> of privately-represented individuals,<br>Activation  interests:10.0, <br>Example 5: <br>- The person appointed as Power of Attorney isn’t following directions or acting with the best<mark> interests</mark><br>Activation  interests:10.0, <br>Example 6: ; nor is it necessary from the point of view of American<mark> interests</mark><br>"While the United States should<br>Activation  interests:10.0, <br>Example 7:  only defending their own<mark> interests</mark>, they are standing up for the principles vital to functioning credit markets.”<br><br>Activation  interests:10.0, <br>Example 8: <|endoftext|> specific<mark> interests</mark> in language learning are and we will try to include them in our learning section. Of<br>Activation  interests:10.0, <br>Example 9:  coveted prize that major external powers (external to the region) with their substantial global and regional<mark> interests</mark><br>Activation  interests:10.0, <br>Example 10:  from 2006 to 2009 and moved to Princeton University in 2009 as a Research Associate. His research<mark> interests</mark> include<br>Activation  interests:10.0, <br><br>Top_logits: ['ning', 'ooting', 'uated', 'anza', 'illy', 'haven', 'ligt', 'tc', 'ily', 'leftarrow']
+            Example 1:  However if handled correctly, support for Turkey's Kurdish opening would serve all regional<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of the US,<br>Activations: (" interests" : 10)<br>Example 2: <|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> interests</span>. And they do not have our<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> at mind at heart. They are not for us<br>Activations: (" interests" : 10), (" interests" : 10)<br>Example 3:  service when trying to find trustworthy places where they can interact with others with shared<span style="background-color:rgba(57,212,155, 1.0)"> interests</span>.<br>Benef<br>Activations: (" interests" : 10)<br>Example 4: <|endoftext|> a substantial portion of his or her professional work to advocating the<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of privately-represented individuals,<br>Activations: (" interests" : 10)<br>Example 5: <br>- The person appointed as Power of Attorney isn’t following directions or acting with the best<span style="background-color:rgba(57,212,155, 1.0)"> interests</span><br>Activations: (" interests" : 10)<br>Example 6: ; nor is it necessary from the point of view of American<span style="background-color:rgba(57,212,155, 1.0)"> interests</span><br>"While the United States should<br>Activations: (" interests" : 10)<br>Example 7:  only defending their own<span style="background-color:rgba(57,212,155, 1.0)"> interests</span>, they are standing up for the principles vital to functioning credit markets.”<br><br>Activations: (" interests" : 10)<br>Example 8: <|endoftext|> specific<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> in language learning are and we will try to include them in our learning section. Of<br>Activations: (" interests" : 10)<br>Example 9:  coveted prize that major external powers (external to the region) with their substantial global and regional<span style="background-color:rgba(57,212,155, 1.0)"> interests</span><br>Activations: (" interests" : 10)<br>Example 10:  from 2006 to 2009 and moved to Princeton University in 2009 as a Research Associate. His research<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> include<br>Activations: (" interests" : 10)<br>Example 11: <|endoftext|> from “erroneous effects on their<span style="background-color:rgba(57,212,155, 1.0)"> interests</span>.” In the Hamblet<br>case, state<br>Activations: (" interests" : 10)<br>Example 12: <|endoftext|>ster Commission Forster Report Fyzabad Governor grievances Hickling Ibid important<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> issues January July<br>Activations: (" interests" : 10)<br>Example 13: <|endoftext|> let<br>him be thoroughly acquainted with the<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of the people.<br>By all means avoid violence<br>Activations: (" interests" : 10)<br>Example 14:  when you have to protect or assert your<span style="background-color:rgba(57,212,155, 1.0)"> interests</span>, a well-trained and capable lawyer is a necessary<br>Activations: (" interests" : 10)<br>Example 15:  promoting your work and also sharing content that<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> you. And don’t just show and tell –<br>Activations: (" interests" : 10)<br>Example 16: so<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> along the NE Mexico and south Texas coast shoudl monitor this system carefully. Even if<br>Activations: (" interests" : 10)<br>Example 17: <|endoftext|> previously been one of the<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of the Research School, but Routley quickly became the nucleus of<br>Activations: (" interests" : 10)<br>Example 18: . He said he cared truly about Ukraine, and saw Russian business<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> overtaking the economy as the<br>Activations: (" interests" : 10)<br>Example 19:  be glad to have the privilege of enduring something for His Captain and in the<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of the Kingdom to<br>Activations: (" interests" : 10)<br>Example 20:  worked in construction.<br>His hobbies included keeping up on a wide-range of<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> and<br>Activations: (" interests" : 10)<br><br>Top_logits: ['ning', 'ooting', 'uated', 'anza', 'illy', 'haven', 'ligt', 'tc', 'ily', 'leftarrow']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKENS: All examples have the token "interests".<br><br>Step 1.<br>- The activating token is always "interests".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples all involve the concept of interests, often in a formal or professional context.<br>- The activating token is always a noun, referring to the interests of a person, group, or organization.<br><br>Step 3.<br>- The activation values are uniformly high across all examples, suggesting that the neuron is highly attuned to this specific token.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I don't see any additional patterns.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list does not contain any tokens that are clearly related to the concept of "interests".<br><br>[EXPLANATION]: The token "interests", often in a formal or professional context.
+            (Part 1)<br>ACTIVATING TOKENS: "interests".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "interests".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve the concept of "interests" in various contexts.<br>- The activating token is a noun representing a concept or idea.<br><br>Step 3.<br>- The activation values are consistently high across all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token is often used in a formal or professional context.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated tokens and abbreviations.<br><br>[EXPLANATION]: The noun "interests" in formal or professional contexts, representing a concept or idea.
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The token &quot;interests&quot;, often in a formal or professional context.</p>
+                <p>The noun &quot;interests&quot; in formal or professional contexts, representing a concept or idea.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
             </div>
-            <span>, and rightness for private life. The government should not be allowed to watch you.
-B</span>
+            <span> the political<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> of the conservative ‘ulama. The ‘ulama’s discourse is exclusivist</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> two<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> that this year I must blog about. Both are of a historical and architectural bent and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>
+Being insatiably curious, Sophie attempts to integrate her<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> in art, social justice,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
                 <span class="circle false"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> interests</span> include Skiing, Unicycling the local single-tracks and bike-paths, hiking,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> was so vital to these elite<span style="background-color:rgba(57,212,155, 1.0)"> interests</span> for the principle reason of the movement taking its natural course, out</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> a topic are congruent with one’s own may involve the discovery of other<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> interests</span> in conflict</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> of the overlapping<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> interests</span> of the fields of architecture, city planning and landscape design.” Rockefeller</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> post that<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> interests</span> you. I love hearing the comments and ideas of other bloggers and readers.
+Finally</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> same thing that attracted both you and your partner in the first place. Try to take on different<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> interests</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>Where we are relying on legitimate<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> interests</span> as a legal basis to process your data, you have a right</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>, especially when powerful<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> interests</span> are blocking progress.While many facts about the city by the bay may be</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> isolated<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> interests</span> of his individual client. But for everyone else? This is the consistency we asked for.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>ians, the tea partiers, are bankrolled by those<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> interests</span>: The Koch brothers, the Citizens</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> different standards? What type of system and rules might work better for our<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> interests</span>?
+Sadly,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> big multinationals to change their Memorandum and Articles of Association. Big business working in the<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> interests</span> of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> on parties or<span style="background-color:rgba(57,212,155, 0.76)"> interests</span> not party to the dispute.
+(e) ADHERENCE TO OBL</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> which toured the Dominion of friends and relatives at dinner Wed Canada in the<span style="background-color:rgba(57,212,155, 0.76)"> interests</span> of a campaign</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> happy to serve our readers’<span style="background-color:rgba(57,212,155, 0.76)"> interests</span>!
+Asia — the Continent
+Before we dig deep into</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> activities based on the<span style="background-color:rgba(57,212,155, 0.76)"> interests</span> of the group members. Potlucks, bowling, movies, museums,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> platforms and such<span style="background-color:rgba(57,212,155, 0.76)"> interests</span> of pipeline and content internet; river ID' time and offerings around the Services;</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> triumph of reason and enlightened self-<span style="background-color:rgba(57,212,155, 0.6799999999999999)">interest</span>, the insurers donated their firefighting equipment to the city in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> cool and shaded.
+The collection consists of a range of shapes and sizes to suit all<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> tastes</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> beautiful before we emerged on this earth. I will say that my<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> tastes</span> are begin influenced by generations past</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> to government corruption that values self-<span style="background-color:rgba(57,212,155, 0.6799999999999999)">interest</span> over the environment? Consider, too, the long-term</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> back to 1863, each bottle<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> tastes</span> like tradition. Their Honey Charred in a Jar is an uncommon</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|>irsute for my<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> tastes</span>. But in person? When he speaks? Adrian Grenier is The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> was to treat this not as a titanic<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> ideological</span> struggle, but rather as a law enforcement issue</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> man has very, very specific<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> tastes</span> in grills—a fact that was brought to light today,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> guess -
+Typically an aged man, wealthy and of high stature who holds strong religious and<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> ideological</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> in beer: a pumpkin ale that actually<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> tastes</span> great. Here are five that are leading the way.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> front sidewalk to the church are the<span style="background-color:rgba(57,212,155, 0.52)"> priorities</span> for concrete work for the $5000 approved by the V</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> most American communities of the 20th century, the organized business community sets the community's<span style="background-color:rgba(57,212,155, 0.52)"> priorities</span> and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>ore, her<span style="background-color:rgba(57,212,155, 0.52)"> priorities</span> are suddenly and forcefully rearranged. Her only guide to the demonic chaos</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> that I felt like I learned was that the most reliable way to learn what people’s<span style="background-color:rgba(57,212,155, 0.52)"> priorities</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> provide an opportunity for public comment on such<span style="background-color:rgba(57,212,155, 0.52)"> priorities</span>.
+Why this Matters
+RHYA</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> a victim.
+- Trust your<span style="background-color:rgba(57,212,155, 0.44)"> instincts</span>, if you do not feel comfortable in a place or</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> www.hubbellpowers<span style="background-color:rgba(57,212,155, 0.44)">ystems</span>.com
+Hydro One | www.hydroone.comThis is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span>
+So, my best parenting advice: Trust your<span style="background-color:rgba(57,212,155, 0.44)"> instincts</span>. Start reading before the baby comes. And</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> ent<span style="background-color:rgba(57,212,155, 0.44)">itle</span>ments include accommodations, which are designed to give students an equal opportunity in the college setting (</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span>. As indicated by the continuously downlinked telemetry data, the power switches of the subs<span style="background-color:rgba(57,212,155, 0.44)">ystems</span> operate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>-V<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> budgets</span>." A consumables status is provided on a regular basis so the project can maintain cogn</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>an transition, Ukraine’s political<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> elites</span> have pledged to combat corruption, a long-lasting mala</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> the Western world. If our beloved conservative<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> elites</span> thought they could get away with imposing their will by</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> a breathing-space after the crushing<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> defeats</span> inflicted on it by the Ottomans at Kosovo in 138</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> party of assault weapons and high-capacity magazine clips? Is this the party of balanced<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> budgets</span> or is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> are identified with Vineland.
+Lawyer Reed, who came to Buena twenty years ago from</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span>loser pays" regime normally applies to<span style="background-color:rgba(57,212,155, 0.28)"> motions</span>, trials and appeals and, as such, represents a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> it turns the problem over to state governments — which are notoriously driven by parochial stakeholder</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> of “cash” influence groups recruit former members of congress to lobby congress; they play upon friendships already</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> may serve to responsible and available contexts and their services who apply referred an CTH Introduction in operating survey</span></span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> of letting them know why they should hire you.
+You need to get rid of tension in your</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, choking or dental injury, but none of these reports have been confirmed at this time."
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> call."
+which God prepared in advance for us to do.
+[Ephesians 2:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> no problem to post.
+To dad! Don’t take my picture, I haven’t</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> in India. Proceedings of the Royal Society of London, B 277: 1971-1979 277:: 1971</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> suppressed.
+Distributed by Internet Broadcasting and The Sports Xchange. This material may not be published</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> started doing a lot more work on the far side of town and ended up staying out there more and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> offers flexible meeting space, hotel rooms, and weddings and receptions. Visit our website to Book your</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> in it. There are also federally owned lands and county and municipal park lands, he noted.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> here…™ online slot.
+Casino online is also home to all variants of online roulette</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> used.
@@ -107,7 +615,7 @@ You’ll receive 8 high quality and well organized PSD files. The images are not
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> country, have become like the proverbial frog being slowly boiled to it's death. We do</span>
@@ -115,15 +623,33 @@ You’ll receive 8 high quality and well organized PSD files. The images are not
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span> I sat down, and boom, the questions started flying. How big should the tent be, how</span>
+            <span>, and rightness for private life. The government should not be allowed to watch you.
+B</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, diagnose the specific anxiety disorder, and create a plan to help the person get relief.
+A</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> been easy for me to pull off. If enough differing magnitudes aren't used, it can look artificial</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> add password. However, this is not a foolproof data protection method and is prone to hacking.</span>
@@ -131,711 +657,203 @@ You’ll receive 8 high quality and well organized PSD files. The images are not
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> first was to align managers\’ interests not with their own organisations but with financial outsiders –</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> Pain prevents me lifting heavy weights off the floor, but I can my more energetic interests, e.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> an independent position, based on our national interests,” Foreign Minister Hoshiyar Zebari told</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> well-known concerns about the claims process, the need for transparency about potential conflicts of interests by Mr</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> interests were the occult and the avant-garde. They changed their name to Genesis P-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> AML that particularly interests you?
-In medical school I worked on acute lymphoblastic leukaemia (</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> personal interests, many of which were considered unconventional during the period but today reveal her prescience as</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> of the interests and decision-making frameworks of variously situated actors (e.g. real</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>, interests, relationships, and reputations as publishers—the values the internet enables—can be lost</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> solidarity and identification which make common struggle and resistance possible but without suppressing the real heterogeneity of interests and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> was a producer with eclectic tastes and somebody who could add something different to our mixtape</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> who are sure of their interests, can begin to specialize by choosing a site that deals specifically with</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> fell swoop?
-Pinterest Tip: Move, Copy and Delete Pins: Here’s</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>1038/nature08489
-One of my personal interests is the relationship between sedentary time (e</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> Caldwell on the railroad leasing question, charging Democratic lawyers with receiving bribes from railroad interests.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> the Stanley Brothers as they toured Ohio in 1964, bluegrass took first place among his musical interests</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> sour cream of my people. But I have no idea. It tastes pretty much like I'd expect</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>. Fort Flowers Professor. His research interests include the design and control of advanced upper and lower extremity prost</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>t think Iran’s interest will trump Maliki’s domestic interests.”
-Maliki is keen</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> But don’t fail to inject some of your own interests and perspectives into the process. That’</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> account the historical and ideological specificities of individual productions in Austin, TX and Baton Rouge,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> with the realm of human aspirations and ideals that cannot be easily measured or quantified.
-No Found</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> college.
-As my musical tastes shift, they become a part of me I had to hide</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> week of work experience which ideally should be linked to their career aspirations. In order to increase the quality</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> students decide on priorities individually as part of your response to their work. Asking students to write a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to social and ideological polarization, and ultimately, to a “decline in the authority, status</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> pleased to hear President Barack Obama give their priorities a boost and quickly dispatched press releases cheering him, others</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> college professor with long-dead literary aspirations. His college buddy Bill, writing under the pen name William</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> individuals, mostly Uptown residents and employees, responded to an online survey. Top priorities included:</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to be state champions. She is not the only one with high aspirations both Sophomore Natalie McCarthy</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> required to be registered with any federal or state agency with the authority to regulate the offering of securities for</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>acey’s duties in the IRH include managing all budgets, scheduling and promoting events, assisting</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> some degree different than their wild cousins.
-They lose some of those instincts by... not having predators</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and budgets. You’ve even tried bringing cupcakes to the office, but your team’</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> of being personally corrupted individuals, and covering up for corrupt political elites. To understand this response from civil</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, map, test and transfer data in staggered phases. You can stick to budgets, timelines,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>
-High-quality and affordable used material handling and construction equipment for varying applications and budgets.
-Have</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> move in long flowing motions that, for example, may start at the top of your shoulder and go</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and also universalist)
-Secondly, you claim that the idea of an infinite regress defeats</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, that's what's driving the elites crazy. They had 24-7 coverage of this war,</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark> used.
-You’ll receive 8 high quality and well organized PSD files. The images are not</mark></span>
+            <span> aerial pictures and views of the property itself.
+But drones aren’t just great for enhancing real</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark>, and rightness for private life. The government should not be allowed to watch you.
-B</mark></span>
+            <span> I sat down, and boom, the questions started flying. How big should the tent be, how</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark> add password. However, this is not a foolproof data protection method and is prone to hacking.</mark></span>
+            <span> matter of establishing goals that are realistic understanding where loan providers are arriving from, and what they’re</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark> country, have become like the proverbial frog being slowly boiled to it's death. We do</mark></span>
+            <span> store I have ever seen in my life followed by two days of crafting and sewing. Thank you so</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> I sat down, and boom, the questions started flying. How big should the tent be, how</mark></span>
+            <span><|endoftext|> another second learning<span style="background-color:rgba(57,212,155, 0.2)"> a</span> new “advanced step” before you have these motions down pat. Salsa</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> Pain prevents me lifting heavy weights off the floor, but I can my more energetic<mark> interests</mark>, e.</span>
+            <span><|endoftext|> of the American<span style="background-color:rgba(57,212,155, 0.2)"> Association</span> of Pharmaceutical Scientists.
+Dr. Smith’s current research interests are</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> of the<mark> interests</mark> and decision-making frameworks of variously situated actors (e.g. real</span>
+            <span> Rate was much more<span style="background-color:rgba(57,212,155, 0.2)"> professional</span> than my previous lender. They truly had my best interests in mind and ensured</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> first was to align managers\’<mark> interests</mark> not with their own organisations but with financial outsiders –</span>
+            <span> be active in his<span style="background-color:rgba(57,212,155, 0.2)"> local</span> real estate interests through his assigned power of attorney.
+Arriving shortly behind</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> well-known concerns about the claims process, the need for transparency about potential conflicts of<mark> interests</mark> by Mr</span>
+            <span><|endoftext|> special interests or even<span style="background-color:rgba(57,212,155, 0.2)"> way</span>ward Republicans – are now attacking him in the press for following through on</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|><mark> interests</mark> were the occult and the avant-garde. They changed their name to Genesis P-</span>
+            <span> for interviews
+The<span style="background-color:rgba(57,212,155, 0.2)"> University</span> bases such training closely on the recommendations and priorities of the Quality Assurance Agency</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> AML that particularly<mark> interests</mark> you?
-In medical school I worked on acute lymphoblastic leukaemia (</span>
+            <span>ota. Journalism<span style="background-color:rgba(57,212,155, 0.2)"> used</span> to be about reporting the facts, not propagandizing for corporate interests.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> an independent position, based on our national<mark> interests</mark>,” Foreign Minister Hoshiyar Zebari told</span>
+            <span> years later at the<span style="background-color:rgba(57,212,155, 0.2)"> problems</span> posed to elite interests by the “excess of democracy.” It referred to</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> solidarity and identification which make common struggle and resistance possible but without suppressing the real heterogeneity of<mark> interests</mark> and</span>
+            <span><|endoftext|> town known to<span style="background-color:rgba(57,212,155, 0.2)"> house</span> lots of first-worlders.]
+interestingly enough, i also liked</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>,<mark> interests</mark>, relationships, and reputations as publishers—the values the internet enables—can be lost</span>
+            <span> conservatism during a<span style="background-color:rgba(57,212,155, 0.2)"> generation</span> of service on the Supreme Court, Roberts has served the interests, and reflected</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> personal<mark> interests</mark>, many of which were considered unconventional during the period but today reveal her prescience as</span>
+            <span><|endoftext|>. Just raise<span style="background-color:rgba(57,212,155, 0.2)"> taxes</span>, they seem to say, and entitlements can keep rising as scheduled</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> the Stanley Brothers as they toured Ohio in 1964, bluegrass took first place among his musical<mark> interests</mark></span>
+            <span> six incredible budgets and we<span style="background-color:rgba(57,212,155, 0.2)"> need</span> to be different in the way we play,” admitted Martinez, who reacted</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> But don’t fail to inject some of your own<mark> interests</mark> and perspectives into the process. That’</span>
+            <span> Massachusetts and gets the<span style="background-color:rgba(57,212,155, 0.2)"> not</span>-quite-best of other states in return.
+Educated elites everywhere</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> Caldwell on the railroad leasing question, charging Democratic lawyers with receiving bribes from railroad<mark> interests</mark>.</span>
+            <span>! We carry a<span style="background-color:rgba(57,212,155, 0.2)"> stellar</span> selection of comic books, games, and toys for all ages and interests,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> fell swoop?
-P<mark>interest</mark> Tip: Move, Copy and Delete Pins: Here’s</span>
+            <span> Darling
+#<span style="background-color:rgba(57,212,155, 0.2)">5</span>: Sara from Aryanhwy
+Current home tastes (at least in</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> was a producer with eclectic<mark> tastes</mark> and somebody who could add something different to our mixtape</span>
+            <span> influence of conservative elites (<span style="background-color:rgba(57,212,155, 0.2)">in</span> those days the monarchs, aristocrats, and the church etc.).</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> who are sure of their<mark> interests</mark>, can begin to specialize by choosing a site that deals specifically with</span>
+            <span> Rondo to get<span style="background-color:rgba(57,212,155, 0.2)"> to</span> the rim, and, you know, use his instincts. He’ll</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>. Fort Flowers Professor. His research<mark> interests</mark> include the design and control of advanced upper and lower extremity prost</span>
+            <span> through the ceiling,<span style="background-color:rgba(57,212,155, 0.2)"> thank</span>fully the food in Mil Sabores looks and tastes as divine as it sounds</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|>1038/nature08489
-One of my personal<mark> interests</mark> is the relationship between sedentary time (e</span>
+            <span> spending.
+Maybe<span style="background-color:rgba(57,212,155, 0.2)"> a</span> "clean technology" would be one that sucked the fat out of his aspirations</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>t think Iran’s interest will trump Maliki’s domestic<mark> interests</mark>.”
-Maliki is keen</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> sour cream of my people. But I have no idea. It<mark> tastes</mark> pretty much like I'd expect</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> college professor with long-dead literary<mark> aspirations</mark>. His college buddy Bill, writing under the pen name William</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> with the realm of human<mark> aspirations</mark> and ideals that cannot be easily measured or quantified.
-No Found</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> pleased to hear President Barack Obama give their<mark> priorities</mark> a boost and quickly dispatched press releases cheering him, others</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> individuals, mostly Uptown residents and employees, responded to an online survey. Top<mark> priorities</mark> included:</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> college.
-As my musical<mark> tastes</mark> shift, they become a part of me I had to hide</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> students decide on<mark> priorities</mark> individually as part of your response to their work. Asking students to write a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to be state champions. She is not the only one with high<mark> aspirations</mark> both Sophomore Natalie McCarthy</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> account the historical and<mark> ideological</mark> specificities of individual productions in Austin, TX and Baton Rouge,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to social and<mark> ideological</mark> polarization, and ultimately, to a “decline in the authority, status</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> week of work experience which ideally should be linked to their career<mark> aspirations</mark>. In order to increase the quality</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> and also universalist)
-Secondly, you claim that the idea of an infinite regress<mark> defeats</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and<mark> budgets</mark>. You’ve even tried bringing cupcakes to the office, but your team’</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> some degree different than their wild cousins.
-They lose some of those<mark> instincts</mark> by... not having predators</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, that's what's driving the<mark> elites</mark> crazy. They had 24-7 coverage of this war,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, map, test and transfer data in staggered phases. You can stick to<mark> budgets</mark>, timelines,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> move in long flowing<mark> motions</mark> that, for example, may start at the top of your shoulder and go</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>
-High-quality and affordable used material handling and construction equipment for varying applications and<mark> budgets</mark>.
-Have</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> of being personally corrupted individuals, and covering up for corrupt political<mark> elites</mark>. To understand this response from civil</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><mark> required to be registered with any federal or state agency with the authority to regulate the offering of securities for</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>acey’s duties in the IRH include managing all<mark> budgets</mark>, scheduling and promoting events, assisting</span>
+            <span><|endoftext|> in pursuit of<span style="background-color:rgba(57,212,155, 0.2)"> particular</span> interests, and that benefits accruing to some may be at the expense of</span>
         </div>
         
             </div>

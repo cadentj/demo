@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,42 +78,544 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1: yer assistants, and 4) misconduct). Conducting covert<mark> research</mark> through fake-friending may also<br>Activation  research:10.0, <br>Example 2:  to<mark> research</mark> in music technology.<br>Non-majors should check out the Minor in Applied Music<br>Activation  research:10.0, <br>Example 3: <|endoftext|> fibre reinforced polymer (CFRP) plates (or laminates) has attracted much recent<mark> research</mark><br>Activation  research:10.0, <br>Example 4:  Advanced Technology Group, Toronto, where she leads a team whose mission is to bring from<mark> research</mark> and into<br>Activation  research:10.0, <br>Example 5:  sights to go see, maps & directions between each sight, as well as insider tips. The<mark> research</mark><br>Activation  research:10.0, <br>Example 6: <mark> research</mark> before deciding whether to support the beverage tax.<br>- Most Popular<br>- Most EmailedThe<br>Activation  research:10.0, <br>Example 7: <|endoftext|> Dioxide. PLoS One, 2013, 8( 6), important. important<mark> research</mark> of<br>Activation  research:10.0, <br>Example 8: <|endoftext|> had this when my husband unexpectedly died – it would have saved me hours and hours of<mark> research</mark>.<br>Activation  research:10.0, <br>Example 9: <|endoftext|> chance to participate in collaborative<mark> research</mark> projects with partners such as NASA, the U.S. Department<br>Activation  research:10.0, <br>Example 10:  first began using DNA technology in its<mark> research</mark> in 1995, in a recent telephone interview talked about the discovery<br>Activation  research:10.0, <br><br>Top_logits: [' brow', ' Abe', ' bye', ' empt', 'iness', ' eb', ' secretary', 'ères', 'ives', ' strugg']
+            Example 1: yer assistants, and 4) misconduct). Conducting covert<span style="background-color:rgba(57,212,155, 1.0)"> research</span> through fake-friending may also<br>Activations: (" research" : 10)<br>Example 2:  to<span style="background-color:rgba(57,212,155, 1.0)"> research</span> in music technology.<br>Non-majors should check out the Minor in Applied Music<br>Activations: (" research" : 10)<br>Example 3: <|endoftext|> fibre reinforced polymer (CFRP) plates (or laminates) has attracted much recent<span style="background-color:rgba(57,212,155, 1.0)"> research</span><br>Activations: (" research" : 10)<br>Example 4:  Advanced Technology Group, Toronto, where she leads a team whose mission is to bring from<span style="background-color:rgba(57,212,155, 1.0)"> research</span> and into<br>Activations: (" research" : 10)<br>Example 5:  sights to go see, maps & directions between each sight, as well as insider tips. The<span style="background-color:rgba(57,212,155, 1.0)"> research</span><br>Activations: (" research" : 10)<br>Example 6: <span style="background-color:rgba(57,212,155, 1.0)"> research</span> before deciding whether to support the beverage tax.<br>- Most Popular<br>- Most EmailedThe<br>Activations: (" research" : 10)<br>Example 7: <|endoftext|> Dioxide. PLoS One, 2013, 8( 6), important. important<span style="background-color:rgba(57,212,155, 1.0)"> research</span> of<br>Activations: (" research" : 10)<br>Example 8: <|endoftext|> had this when my husband unexpectedly died – it would have saved me hours and hours of<span style="background-color:rgba(57,212,155, 1.0)"> research</span>.<br>Activations: (" research" : 10)<br>Example 9: <|endoftext|> chance to participate in collaborative<span style="background-color:rgba(57,212,155, 1.0)"> research</span> projects with partners such as NASA, the U.S. Department<br>Activations: (" research" : 10)<br>Example 10:  first began using DNA technology in its<span style="background-color:rgba(57,212,155, 1.0)"> research</span> in 1995, in a recent telephone interview talked about the discovery<br>Activations: (" research" : 10)<br>Example 11: <br>(b) "Cooperative group" means a formal network of facilities that collaborate on<span style="background-color:rgba(57,212,155, 1.0)"> research</span> projects<br>Activations: (" research" : 10)<br>Example 12:  include CFCA Papers, which offer an objective exploration of how<span style="background-color:rgba(57,212,155, 1.0)"> research</span> applies to policy and practice, and<br>Activations: (" research" : 10)<br>Example 13: <|endoftext|> is currently doing<span style="background-color:rgba(57,212,155, 1.0)"> research</span> in the areas of integrating near-realtime OSINT into IDS/<br>Activations: (" research" : 10)<br>Example 14: Here is the 2002 version of the tiretracks diagram that<br>shows how computing<span style="background-color:rgba(57,212,155, 1.0)"> research</span> has spawned<br>Activations: (" research" : 10)<br>Example 15:  National Health Service and an international centre of excellence for<span style="background-color:rgba(57,212,155, 1.0)"> research</span> delivering substantial health benefits locally and internationally. The<br>Activations: (" research" : 10)<br>Example 16: <|endoftext|> future, to<span style="background-color:rgba(57,212,155, 1.0)"> research</span> every investment opportunity so you don’t become a victim of fraud, and<br>Activations: (" research" : 10)<br>Example 17:  school’s 800 staff include 500<span style="background-color:rgba(57,212,155, 1.0)"> research</span> and academic staff who teach more than 2,000 students,<br>Activations: (" research" : 10)<br>Example 18: <|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> research</span>, or<br>participate in some type of activity for which payment has been agreed upon or<br>Activations: (" research" : 10)<br>Example 19: <|endoftext|> one cell phone addiction<span style="background-color:rgba(57,212,155, 1.0)"> research</span> papers of the best tips on how to stop depression fast and naturally that<br>Activations: (" research" : 10)<br>Example 20:  on the “urban squares” project,<span style="background-color:rgba(57,212,155, 1.0)"> research</span> initiative as an attempt to rediscover the lost or<br>Activations: (" research" : 10)<br><br>Top_logits: [' brow', ' Abe', ' bye', ' empt', 'iness', ' eb', ' secretary', 'ères', 'ives', ' strugg']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKEN: "research".<br>CONTEXTUAL TOKENS: "covert", "music technology", "fibre reinforced polymer", "Advanced Technology Group", "insider tips", "beverage tax", "PLoS One", "NASA", "U.S. Department", "DNA technology".<br><br>Step 1.<br>- The activating token is always "research".<br>- The contextual tokens suggest a focus on scientific or academic fields.<br><br>Step 2.<br>- The examples involve research in various contexts, such as scientific studies, academic fields, and technological advancements.<br>- The neuron is highly activated for all examples, suggesting a strong association with the token "research".<br><br>Step 3.<br>- The activation values are consistently high, indicating that the neuron is strongly attuned to the token "research".<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated words and abbreviations, suggesting that the neuron's influence on the model's predictions is mostly related to the token "research" itself.<br><br>[EXPLANATION]: The token "research" in various scientific, academic, and technological contexts.
+            (Part 1)<br>ACTIVATING TOKENS: "research" (20 times).<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "research".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve the concept of research in various contexts.<br>- The activating token is a noun representing a process of investigation.<br><br>Step 3.<br>- The activation values are consistently high for all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I didn't miss any.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated words and doesn't provide any insight into the neuron's behavior.<br><br>[EXPLANATION]: The noun "research" in various contexts, representing a process of investigation.
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The token &quot;research&quot; in various scientific, academic, and technological contexts.</p>
+                <p>The noun &quot;research&quot; in various contexts, representing a process of investigation.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
             </div>
-            <span> rooted in personal narrative and exploration; others are doctrinal exposition. Let’s pick an example of</span>
+            <span>isan forum for education, service and<span style="background-color:rgba(57,212,155, 1.0)"> research</span> in public programs and policy-making. The McCarthy Center values</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
             </div>
-            <span>.
-Kanak Hirani Nautiyal, the founder while visiting Garhwal with her</span>
+            <span> musicologist, Valenzuela has undertaken<span style="background-color:rgba(57,212,155, 1.0)"> research</span> at Centro Nacional de Investigación, Documentación</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>relenting attention to product quality, scientific<span style="background-color:rgba(57,212,155, 1.0)"> research</span>, customer service and customer needs, Country Life Vitamins</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> use this information to better understand a patient’s experience, speed up<span style="background-color:rgba(57,212,155, 1.0)"> research</span> efforts, and improve treatments</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> presentation.
+- 10min – poster presentation (alongside A0-size poster of<span style="background-color:rgba(57,212,155, 1.0)"> research</span> project</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> C2 navigated from a small to a large business, she was instrumental in investing in<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> research</span> and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> now receiving e-mail alerts for new<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> research</span>.
+And perhaps more importantly — what are the odds</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>art<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> research</span> and development facilities, drug testing laboratories and herbal gardens that will help meet growing industry and market</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>- property law and practice.
+- advising and advocacy
+- practical legal<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> research</span>
+- solicit</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> SAT® and the Advanced Placement Program®. The organization also serves the education community through<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> research</span> and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> fortune awaits the nearest of kin, or that in a<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> research</span> in Canada finds relatives claiming descent from</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)"> research</span> still needs to be done, Alzheimer’s is a medical condition that needs any relief options available</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> where he stayed until 1971 when he took up a senior fellowship in philosophy, a purely<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> research</span> position,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> North Carolina Justice Academy.
+In addition to his<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> research</span> publications, Mike has written 2 books, 2</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> code updates have gone out, so things couldn’t have changed”. From my<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> research</span>, the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> rich," said Jon Peacock,<span style="background-color:rgba(57,212,155, 0.76)"> research</span> director for the council that advocates for children and family issues</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> Urban and Uranium 2 projects.
+Task 2: Conducting following<span style="background-color:rgba(57,212,155, 0.76)"> research</span> papers and case studies</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> of support for new ideas and systematic<span style="background-color:rgba(57,212,155, 0.76)"> research</span> ideas for new products) as the most significant in isolation to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>013
+Is the<span style="background-color:rgba(57,212,155, 0.76)"> research</span> community doing as much as it might to extract value from the diversity in life</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>But that's in my books and talks, and for another blog post.
+Want more<span style="background-color:rgba(57,212,155, 0.76)"> research</span>?</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>
+AEWC Advanced Structures and Composites is an award-winning<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> research</span> facility at the University</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> conference / workshops events taking place in your<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> research</span> areas, just subscribe the conference alert web site and get</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> research</span> (even hotels found on other websites!)
+Do you have questions about Hanoi? You might</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> instruments. More than two years of dedicated<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> research</span> went into the faithful recreation of the amplifiers and effect</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> research</span>, collaborate on theories and discoveries, and get credit for their ideas before peer-reviewed publication</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> and places? This definitely needs further<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> research</span>. And having seen the number of things that Rafi actually</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> recognized for her efforts to maintain areas such as integrated pest management,<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> research</span> of new potato varieties –</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>s, in the short term, will help focus<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> research</span>, toxicity testing and regulatory efforts, prioritize</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>. Immuno-informatics, or computational immunology, thus emerged as a<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> research</span> area that encompasses high</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> and link to the media articles that mention my<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> research</span>”, and also commented that he found the badges</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>, it is worth it to have a schedule.”
+She<span style="background-color:rgba(57,212,155, 0.52)"> researched</span> restaurants online to plan the food budget</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|>, on the evening of November 21, 1971, and was<span style="background-color:rgba(57,212,155, 0.52)"> researched</span> by UFOlogist Ted Phillips</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>-Doping male.
+Services devoted to<span style="background-color:rgba(57,212,155, 0.52)"> researching</span> drug and techniques alcohol can both affect corticosteroid levels</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> it was<span style="background-color:rgba(57,212,155, 0.52)"> researching</span> the storyline.
+Atkins added that there were upsetting scenes to come,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> of her student youth. Will there be a happily ever after in this fairy tale?
+<span style="background-color:rgba(57,212,155, 0.52)">Research</span> confirms</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> the theological<span style="background-color:rgba(57,212,155, 0.44)"> dissertation</span> on usury, by Pierre Lecoq, Amsterdam. 1775. 12</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> with independents as well,” he said.
+Previous<span style="background-color:rgba(57,212,155, 0.44)"> polling</span> done for the campaign and obtained by the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> to 20 percent will make their final choice in the last week.
+This is why the<span style="background-color:rgba(57,212,155, 0.44)"> polls</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> as actual<span style="background-color:rgba(57,212,155, 0.44)"> dissertation</span> capabilities social with slacking, theses who they is. Study submitted have comprehensive</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> is a regular speaker at AI events, and is particularly interested in<span style="background-color:rgba(57,212,155, 0.44)"> outreach</span> activities for young women, encouraging</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> and lived half of her life here.
+Yet her<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> pioneering</span> work is all but unrecognized in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)"> scholar</span> loans, you’ll come to a decision if it’s the fitting monetary determination on your</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>es in an<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> expedition</span> along with the Yale Peruvian Expedition on July 24, 1911,which</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> would like to quote the British Jewish<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> scholar</span> Israel Abrahams (1858-1925).</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> an opera house.
+Perhaps that’s why<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> pioneering</span> musical acts such as Kraftwerk are</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|>Bernandez admitted that, after<span style="background-color:rgba(57,212,155, 0.28)"> consulting</span> with a top MS-13 leader jailed in El Salvador</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> giving<span style="background-color:rgba(57,212,155, 0.28)"> lectures</span> like the one here tonight titled “The Creation: An Appeal to Save Life on Earth</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> Mac<span style="background-color:rgba(57,212,155, 0.28)"> substant</span>ivizes their afflicts costumbres de la sierra peruana conscion</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|>aces two or three qualities, of which it fixes the price by<span style="background-color:rgba(57,212,155, 0.28)"> consulting</span> the price of grain of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> 1989. Harold changed gears in 1994 to open his own business as an editorial consultant. While<span style="background-color:rgba(57,212,155, 0.28)"> consulting</span></span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> next few days. The news comes as no surprise as the Steelers do not have the cap room to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> tied to a particular framerate there's no reason that both film and progressive video of all types can</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> content sales.
+Patel says his company is now online and in 20 cities including New York City</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Gamma of 2.2, which is the straight black line."A creative outlet for the little</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> your Favorite Anime! :DAllow time for you bird to become familiar and interested in a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> with a foreknowledge of consquences that is truly frightening: We warn, we strike, they</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Journalism School. I hate the kids in my classes. And yes, I couldn’t stand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>mer"), an Aetna regional manager until 1991. Wojcik alleged intentional interference with prospective</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> makes her feel hurt, alone – and embarrassed.
+"I am a US citizen," Manning said</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> focus on style.
+Best Video: Technical Difficulties. I thought that was the sickest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, check valuable sources of information, including books and journals, and do other things to provide their clients</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> agreed to become the friends support group for this site.
@@ -115,7 +624,32 @@ Creative problem solving at the Whitewater</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> rooted in personal narrative and exploration; others are doctrinal exposition. Let’s pick an example of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>. Green treating us both.
+I had been to see every specialist under the sun and no one</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> fan is ready for the fan blades to be installed. When you’ve picked out your ceiling fan</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> it appear on your website, but I hope this will at least reinforce for you (and others)</span>
@@ -123,739 +657,201 @@ Creative problem solving at the Whitewater</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span>, check valuable sources of information, including books and journals, and do other things to provide their clients</span>
+            <span>, 2013
+Tennis Matches with Newberry and Lenoir-Rhyne Cancelled</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> might influence one’s mood state. The research shows an increase in suicide among certain demographics receiving diagnoses</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> committee to research and recommend options to the board and eventually to be presented to all Emerald Hills homeowners</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> research in some jurisdictions and despite the recent controversy surrounding the validity of the stem cell research conducted by W</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>. CPJ research shows that at least seven provincial reporters fled their homes in 2006 after death threats.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> In research in an acute mental health care trustthe mean age for men involved in restraint incidents was</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>
-Through extensive internal research over the past two years, the membership overwhelmingly voiced the opinion that the current</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> may be able to slip away unnoticed, however. Here, take the results of our research,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> research and development in to this field. Indeed Robot Vision and Sensory control is now an established</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> needs funding right now, remember to research lenders before giving out any personal information. There are plenty of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> do further research if the solution is not readily obvious.
-Q: What if my employer asks</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>7 Note: - Bill M. Mak of Kyoto University challenges this translation in his research paper “The</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> share industry news that affects local and global service providers. Brock will present industry research, changes and advances</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>
-Dementia: Pathology review
-Resources for research and reference
-Lanska, D.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> of Zürich (CH)
-The successful candidate is expected to develop a strong and visible research</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> that cannabinoids are regulators of the immune system,2 and additional research suggests that they work to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> 3.
-Are you interested in taking part in a research study?
-The MAMMI Study</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> research, plant nutrition, alternative crops, water sanitation, and of course the pest management workshop, which</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> challenging exotic animal to own, a small amount of research will provide both you and your pet with many</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>
-The research focused on satellite communication systems as I gained experience in this field.
-Sep. 2011</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> timed custom research paper with our assistance and make your teachers shocked experience the benefits of qualified writing help.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> is exempt from restrictions, said Stephen Semler, a Beirut, Lebanon-based researcher</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> first day post-surgery, the differences on the second day were insignificant. While more research is still</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> organic way. This particular instance draws the attention of people researching the hashtags for cards and Father</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>Flexible Pavements||Rigid Pavements|
-|Research projects||Research</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> includes our 360 degree research, comprehensive industry coverage, career best practices as well as our global footprint</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>ati in UnissResearch sono protetti dalle leggi che regolano il dir</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> on any car shopper. Make sure to do proper diligent research in order to find the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> reliance upon the information.I have researched and read a fair bit in order to solve this challenge,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> assessment or dissertation.
-And after that considering as “Oh God, how can I do every thing</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> research on bicyclist safety while a student at CU Denver," said study co-author Krista</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> a one-stop hub for news, polling, and other resources. The coalition also plans to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>ology
-- Evolution and Molecular Ecology
-- People, Wildlife and Ecosystems
--</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>, the public audience of a scholarly journal, etc.)? If the latter, what should students understand</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> AccessEssay is the Best
-The customer support team at AccessEssay assists with any inquiries from</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>arFrom the outer walls of a coffee shop to the polls in a subway station, posters are almost</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>
-The Regional Centre regularly organizes technical lectures, symposia and seminars for the benefit of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> and the bleeding has stopped.
-Dr. Anne Davis, the consulting medical director for Physicians for</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
             <span>.
-Betsy Prioleau has been a scholar in residence at New York University and a</span>
+Kanak Hirani Nautiyal, the founder while visiting Garhwal with her</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> success. LifeTime Services range from product-independent consulting to traditional product services and are characterized by extensive</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> visitor information as directed
-- Promote Arboretum as a rental venue, fielding inquiries</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark> agreed to become the friends support group for this site.
-Creative problem solving at the Whitewater</mark></span>
+            <span> History month special, Memories of the Movement, The Tavis Smiley Show celebrates the courage,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span><mark>, check valuable sources of information, including books and journals, and do other things to provide their clients</mark></span>
+            <span> it – they called. As a child, if you had asked me what I was going to be</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> it appear on your website, but I hope this will at least reinforce for you (and others)</mark></span>
+            <span><|endoftext|> execution, sales<span style="background-color:rgba(57,212,155, 0.2)"> and</span> business development<span style="background-color:rgba(57,212,155, 0.2)"> training</span>, business coaching and leadership development consulting, organizational designs and cultural</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
-            </div>
-            <span><mark> rooted in personal narrative and exploration; others are doctrinal exposition. Let’s pick an example of</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
-                <small>-1</small>
-            </div>
-            <span><mark>.
-Kanak Hirani Nautiyal, the founder while visiting Garhwal with her</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> might influence one’s mood state. The<mark> research</mark> shows an increase in suicide among certain demographics receiving diagnoses</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><mark> research</mark> in some jurisdictions and despite the recent controversy surrounding the validity of the stem cell<mark> research</mark> conducted by W</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><mark> research</mark> and development in to this field. Indeed Robot Vision and Sensory control is now an established</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span>. CPJ<mark> research</mark> shows that at least seven provincial reporters fled their homes in 2006 after death threats.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> In<mark> research</mark> in an acute mental health care trustthe mean age for men involved in restraint incidents was</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span> needs funding right now, remember to<mark> research</mark> lenders before giving out any personal information. There are plenty of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
             </div>
             <span>
-Through extensive internal<mark> research</mark> over the past two years, the membership overwhelmingly voiced the opinion that the current</span>
+(e)<span style="background-color:rgba(57,212,155, 0.2)"> Under</span>taking research and<span style="background-color:rgba(57,212,155, 0.2)"> development</span> in the broadcast industry;
+(f) Receiving</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> committee to<mark> research</mark> and recommend options to the board and eventually to be presented to all Emerald Hills homeowners</span>
+            <span><|endoftext|>If Clegg<span style="background-color:rgba(57,212,155, 0.2)"> dominates</span> again his polls<span style="background-color:rgba(57,212,155, 0.2)"> will</span> surely hold firm until the election (barring any rent</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> do further<mark> research</mark> if the solution is not readily obvious.
-Q: What if my employer asks</span>
+            <span><|endoftext|> you correspond.<span style="background-color:rgba(57,212,155, 0.2)"> Customer</span> Support team<span style="background-color:rgba(57,212,155, 0.2)"> is</span> to you, and you papers, case studies, research.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> may be able to slip away unnoticed, however. Here, take the results of our<mark> research</mark>,</span>
+            <span><|endoftext|>, and/<span style="background-color:rgba(57,212,155, 0.2)">or</span> use of<span style="background-color:rgba(57,212,155, 0.2)"> core</span> in research; develop presentation material on the
+benefits of</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>7 Note: - Bill M. Mak of Kyoto University challenges this translation in his<mark> research</mark> paper “The</span>
+            <span><|endoftext|> of his research is<span style="background-color:rgba(57,212,155, 0.2)"> collaborative</span> in nature<span style="background-color:rgba(57,212,155, 0.2)">.</span> He has written over 35 book contributions and articles and presented</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> that cannabinoids are regulators of the immune system,2 and additional<mark> research</mark> suggests that they work to</span>
+            <span>ared 18 percent from<span style="background-color:rgba(57,212,155, 0.2)"> the</span> same month<span style="background-color:rgba(57,212,155, 0.2)"> a</span> year ago, according to data released Thursday by market researcher N</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> of Zürich (CH)
-The successful candidate is expected to develop a strong and visible<mark> research</mark></span>
+            <span><|endoftext|> showcase your business<span style="background-color:rgba(57,212,155, 0.2)"> in</span> sleek,<span style="background-color:rgba(57,212,155, 0.2)"> modern</span> style. Based on in-depth research, we have developed</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> challenging exotic animal to own, a small amount of<mark> research</mark> will provide both you and your pet with many</span>
+            <span><|endoftext|> custom writing help<span style="background-color:rgba(57,212,155, 0.2)"> you</span> with our research<span style="background-color:rgba(57,212,155, 0.2)"> paper</span> writers, your desk. Order now must demonstrate extraordinary writing</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>
-Dementia: Pathology review
-Resources for<mark> research</mark> and reference
-Lanska, D.</span>
+            <span> by lunch,” Hansen<span style="background-color:rgba(57,212,155, 0.2)"> said</span>. “<span style="background-color:rgba(57,212,155, 0.2)">Att</span>endees will hear about a variety of Iowa State research topics</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> share industry news that affects local and global service providers. Brock will present industry<mark> research</mark>, changes and advances</span>
+            <span><|endoftext|> have done little<span style="background-color:rgba(57,212,155, 0.2)"> or</span> no research at<span style="background-color:rgba(57,212,155, 0.2)"> all</span>. Either way, if you are going to be getting</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>
-The<mark> research</mark> focused on satellite communication systems as I gained experience in this field.
-Sep. 2011</span>
+            <span> ever had.
+<span style="background-color:rgba(57,212,155, 0.2)">I</span> love researching and<span style="background-color:rgba(57,212,155, 0.2)"> discovering</span> people in history. I love old letters and recorded memories</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> 3.
-Are you interested in taking part in a<mark> research</mark> study?
-The MAMMI Study</span>
+            <span> Supergirl encounters a<span style="background-color:rgba(57,212,155, 0.2)"> giant</span> gorilla,<span style="background-color:rgba(57,212,155, 0.2)"> called</span> "Tunga". Escaped from a local circus</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> timed custom<mark> research</mark> paper with our assistance and make your teachers shocked experience the benefits of qualified writing help.</span>
+            <span>, assignment help is<span style="background-color:rgba(57,212,155, 0.2)"> a</span> blessing for<span style="background-color:rgba(57,212,155, 0.2)"> pupils</span> which make anybody wish to come back with their scholar phase of</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><mark> research</mark>, plant nutrition, alternative crops, water sanitation, and of course the pest management workshop, which</span>
+            <span>Jessica has a<span style="background-color:rgba(57,212,155, 0.2)"> diverse</span> range of<span style="background-color:rgba(57,212,155, 0.2)"> experience</span> including research, recording, archaeological excavations and surveys. She</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> assessment or<mark> dissertation</mark>.
-And after that considering as “Oh God, how can I do every thing</span>
+            <span> on historical mills and<span style="background-color:rgba(57,212,155, 0.2)"> how</span> they worked<span style="background-color:rgba(57,212,155, 0.2)"> (</span>production wise)
+nor are there many research articles available.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> reliance upon the information.I have<mark> researched</mark> and read a fair bit in order to solve this challenge,</span>
+            <span> Wackernag<span style="background-color:rgba(57,212,155, 0.2)">el</span>, best<span style="background-color:rgba(57,212,155, 0.2)"> known</span> for his pioneering role in the development of US Space Command's</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> organic way. This particular instance draws the attention of people<mark> researching</mark> the hashtags for cards and Father</span>
+            <span>posiums (Feb<span style="background-color:rgba(57,212,155, 0.2)"> 2016</span>, Oct<span style="background-color:rgba(57,212,155, 0.2)"> 2016</span>, Feb 2017). Additionally, we have had two favorable research</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> includes our 360 degree<mark> research</mark>, comprehensive industry coverage, career best practices as well as our global footprint</span>
+            <span> 2000, 2008,<span style="background-color:rgba(57,212,155, 0.2)"> and</span> 2016.<span style="background-color:rgba(57,212,155, 0.2)"> And</span> if the polls are right, another will occur in 2020.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> is exempt from restrictions, said Stephen Semler, a Beirut, Lebanon-based<mark> researcher</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><mark> research</mark> on bicyclist safety while a student at CU Denver," said study co-author Krista</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>ati in Uniss<mark>Research</mark> sono protetti dalle leggi che regolano il dir</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> on any car shopper. Make sure to do proper diligent<mark> research</mark> in order to find the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> first day post-surgery, the differences on the second day were insignificant. While more<mark> research</mark> is still</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|>Flexible Pavements||Rigid Pavements|
-|<mark>Research</mark> projects||<mark>Research</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>arFrom the outer walls of a coffee shop to the<mark> polls</mark> in a subway station, posters are almost</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> and the bleeding has stopped.
-Dr. Anne Davis, the<mark> consulting</mark> medical director for Physicians for</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> success. LifeTime Services range from product-independent<mark> consulting</mark> to traditional product services and are characterized by extensive</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>, the public audience of a<mark> scholarly</mark> journal, etc.)? If the latter, what should students understand</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> AccessEssay is the Best
-The customer support team at AccessEssay assists with any<mark> inquiries</mark> from</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> a one-stop hub for news,<mark> polling</mark>, and other resources. The coalition also plans to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>ology
-- Evolution and<mark> Molecular</mark> Ecology
-- People, Wildlife and Ecosystems
--</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>.
-Betsy Prioleau has been a<mark> scholar</mark> in residence at New York University and a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> visitor information as directed
-- Promote Arboretum as a rental venue, fielding<mark> inquiries</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>
-The Regional Centre regularly organizes technical<mark> lectures</mark>, symposia and seminars for the benefit of</span>
+            <span>, there is a<span style="background-color:rgba(57,212,155, 0.2)"> profound</span> effect of<span style="background-color:rgba(57,212,155, 0.2)"> not</span> having suitable research funds for these diseases,” Dr. Eakin</span>
         </div>
         
             </div>

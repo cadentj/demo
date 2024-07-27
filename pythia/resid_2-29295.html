@@ -1,0 +1,872 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: resid_2-29295</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #FBFBFB;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                margin-top: 0px;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                border: solid #E4E4E7;
+                border-width: .25px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 3px 15px 3px 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+                border: 0.5px solid #84848C;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: resid_2-29295</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            Example 1: <|endoftext|> Barton (thanks to<span style="background-color:rgba(57,212,155, 1.0)"> Jill</span>), The Scarlet Pimpernel (fast and entertaining read,<br>Activations: (" Jill" : 10)<br>Example 2: light Time,<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> Thrapp (Deaf) writes:<br>There is no sign<br>Activations: ("andra" : 9)<br>Example 3:  Democratic Convention when<span style="background-color:rgba(57,212,155, 1.0)"> Caroline</span> and her uncle, Sen. Ted Kennedy, addressed the convention to reassure all<br>Activations: (" Caroline" : 9)<br>Example 4: <|endoftext|> Stone, and Cyn<span style="background-color:rgba(57,212,155, 1.0)">thia</span> Erivo, came on the red carpet wearing a piece from the<br>Activations: ("thia" : 9)<br>Example 5:  get the best results.”<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> Mendez Esthetician & Cosmetic Tattoo Artist<br>Activations: ("andra" : 9)<br>Example 6:  more usual watch idea and congratulations – for it seems to work!Dor<span style="background-color:rgba(57,212,155, 1.0)">inda</span> Medley is showing<br>Activations: ("inda" : 9)<br>Example 7: <br>Cookbook author<span style="background-color:rgba(57,212,155, 1.0)"> Sandra</span> Lee shares her secrets for stress-free cooking.<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> Lee (<br>Activations: (" Sandra" : 8), ("andra" : 9)<br>Example 8:  groups often, usually once a month.<br>Welcome to all our subscribers!<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> K.<br>Activations: ("andra" : 9)<br>Example 9:  in Toronto.<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> also works as Defoe's closest advisor and The Star reports that Le<br>Activations: ("andra" : 9)<br>Example 10:  got mine too Cyn<span style="background-color:rgba(57,212,155, 1.0)">thia</span>!<br>@Tim, Surface to Air isn't part of the "If<br>Activations: ("thia" : 9)<br>Example 11:  front! The days are flying by but this adventure is not over yet!Mel<span style="background-color:rgba(57,212,155, 1.0)">issa</span> Graves and Lane<br>Activations: ("issa" : 9)<br>Example 12: <span style="background-color:rgba(57,212,155, 1.0)">thia</span> Henley on behalf of her daughter argues that Sylvester failed to prepare for the possibility of a<br>Activations: ("thia" : 9)<br>Example 13: ds With Us by Col<span style="background-color:rgba(57,212,155, 1.0)">leen</span> Hoover (Fiction - Romance). Sometimes, the one you love<br>Activations: ("leen" : 9)<br>Example 14:  Catholic Publishing and Communications, Commentaries and Homilies.<br>Marg<span style="background-color:rgba(57,212,155, 1.0)">aret</span> has been featured and written for<br>Activations: ("aret" : 9)<br>Example 15: ie on Etsy. Cyn<span style="background-color:rgba(57,212,155, 1.0)">thia</span>’s lovely store filled with antique books was my March featured<br>Activations: ("thia" : 9)<br>Example 16: <span style="background-color:rgba(57,212,155, 1.0)">thia</span> Nixon, best known for her “Sex in the City” role, as well as her partner<br>Activations: ("thia" : 9)<br>Example 17:  magnificent harbour views and lavish, fully staged opera featuring nightly fireworks.<br>S<span style="background-color:rgba(57,212,155, 1.0)">andra</span> Tilt<br>Activations: ("andra" : 9)<br>Example 18: <|endoftext|> hosts<span style="background-color:rgba(57,212,155, 1.0)"> Barbara</span> Walters, Whoopi Goldberg, Sher<span style="background-color:rgba(57,212,155, 1.0)">ri</span> Shepherd and<span style="background-color:rgba(57,212,155, 1.0)"> Jenny</span> McCarthy as part of<br>Activations: (" Barbara" : 7), ("ri" : 6), (" Jenny" : 9)<br>Example 19: <|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> Susan</span> Mollway not ruled on Monday that the damage could not be shown to exceed $1<br>Activations: (" Susan" : 9)<br>Example 20: <|endoftext|> and Rep. Cyn<span style="background-color:rgba(57,212,155, 1.0)">thia</span> Lummis (R-Wyo.).JOHN YOSH<br>Activations: ("thia" : 9)<br><br>Top_logits: [' herself', ' Mae', 'udeau', 'issance', ' Louise', ' she', 'beth', ' Rice', ' gigg', ' Jane']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: Names, mostly female.<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating tokens are all names, mostly female.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve names, often in a context where they are being mentioned or introduced.<br>- The activating token is a person's name.<br><br>Step 3.<br>- The activation values are consistently high across examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token is often preceded by a title or a possessive pronoun.<br><br>(Part 2)<br>SIMILAR TOKENS: Female names, 'herself', 'she'.<br>- The top logits list suggests a focus on female names and pronouns.<br><br>[EXPLANATION]: Female names, often preceded by a title or possessive pronoun, in a context where they are being mentioned or introduced.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>Female names, often preceded by a title or possessive pronoun, in a context where they are being mentioned or introduced.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Car<span style="background-color:rgba(57,212,155, 1.0)">leen</span> Lyden-Kluss. “NAMEPA is proud to welcome Detyens Shipyards</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)">oline</span> Kennedy, the daughter of former President John F. Kennedy and Jacqu<span style="background-color:rgba(57,212,155, 1.0)">eline</span> Kennedy, posted the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>. Words of remembrance were offered by her daughters,<span style="background-color:rgba(57,212,155, 1.0)"> Sharon</span> Burke and<span style="background-color:rgba(57,212,155, 1.0)"> Rebecca</span> Lam<span style="background-color:rgba(57,212,155, 1.0)">ay</span>, and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> called<span style="background-color:rgba(57,212,155, 1.0)"> Caroline</span>’s Cart, created by another special-needs mother, Drew<span style="background-color:rgba(57,212,155, 1.0)"> Ann</span> Long, who helped</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>forming Arts Studio West is a unique training and career management center.
+By<span style="background-color:rgba(57,212,155, 1.0)"> Susan</span> Brink, Los</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>itage Road, Richmond) including<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Susan</span> Dull,<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Anne</span> Walker,<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Laura</span> Loe, Jan<span style="background-color:rgba(57,212,155, 0.9200000000000002)">ie</span> Pin</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>ethyst — all kinds of stones — he was polishing them, knocking some of them off,”<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Christina</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> :
+- Translation of movie : EN,DA,
+- Actors of movie :Michel<span style="background-color:rgba(57,212,155, 0.9200000000000002)">le</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> (makes
+flour... Enjoy Al<span style="background-color:rgba(57,212,155, 0.9200000000000002)">issa</span> Lemon Meringue Pie Pie Crust: •</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> receive it? (1 John 3:22).
+Val<span style="background-color:rgba(57,212,155, 0.9200000000000002)">erie</span> is now out of intensive care</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> first the help of<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Anne Marie</span> and then Emmy (Cond<span style="background-color:rgba(57,212,155, 0.8400000000000001)">ola</span> Rashad), the daughter she</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>By<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Marie</span> Benson
+The importance attached to the development of strong character is evident in schools, out-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>.
+Meanwell was arrested four days later.
+The mother,<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Caroline</span>, refused to comment yesterday</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> week ago.
+The Sparks are led by<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Lisa Leslie</span>, most valuable player of the All</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>directed episode begins when<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Jess</span> and Cece’s friends,<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Melissa</span> and Sad<span style="background-color:rgba(57,212,155, 0.8400000000000001)">ie</span> (Kay Cannon</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> one in front of<span style="background-color:rgba(57,212,155, 0.76)"> Sally</span> and one behind. The rest of the men gathered round drinking beer.
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>, L<span style="background-color:rgba(57,212,155, 0.76)">ori</span> Wizdo, and<span style="background-color:rgba(57,212,155, 0.76)"> Kim</span> Celestre.
+This is in addition to the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> Shields, Kerry Washington and, yes,<span style="background-color:rgba(57,212,155, 0.76)"> Jane</span> F<span style="background-color:rgba(57,212,155, 0.76)">onda</span> all took part in the performance of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>) in a<span style="background-color:rgba(57,212,155, 0.76)"> Joy</span> Street, Boston residence in 1928. Encouraged by activist<span style="background-color:rgba(57,212,155, 0.76)"> Margaret</span> Sanger,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> met by the family servant,<span style="background-color:rgba(57,212,155, 0.76)"> Anne Marie</span> (Jay<span style="background-color:rgba(57,212,155, 0.76)">ne</span> Houdyshell), the only one who</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|>I hope this is helpful,<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> Sara</span>, and that your family has a perfectly pixie-d</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>Run Rudolph Run,” Bren<span style="background-color:rgba(57,212,155, 0.6799999999999999)">da</span> Lee’s “Rockin’ Around The Christmas Tree,” and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> pills in his pack of cigarettes. She soon discovers Bill has been slipping<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> Melissa</span> roofies and ra</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> candidate, these tactics are crass and unnecessary.
+Nevertheless, I was taken with<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> Sarah</span> Palin:</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)">elia</span> walk down to the river, thinking that Able was in love. “She is real nice</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> do better in the War for Talent. (12 mins)
+T<span style="background-color:rgba(57,212,155, 0.6000000000000001)">anya</span> van Bies</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> Day: Cass<span style="background-color:rgba(57,212,155, 0.6000000000000001)">andra</span> lost 91 pounds. This mental health counselor realized that she was lacking sleep, constantly</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>igmund Weis School of Business forward,” said<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> Linda</span> McMillin, provost and dean</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>
+The book I picked up was called The Book of<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> Ruth</span>, by<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> Jane</span> Hamilton. It changed my</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)">essa</span> Van Petten
+in their own talents instead of their sibling’s talents? Even though one</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span>ibrarian<span style="background-color:rgba(57,212,155, 0.52)"> Susan Tom</span>kiel, as she prepares to retire; and
+WHEREAS for more than</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> Ben’s simpering mantra “I love you,<span style="background-color:rgba(57,212,155, 0.52)"> Amy</span>,” has finally run its course</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> an almost unrecognizable<span style="background-color:rgba(57,212,155, 0.52)"> Jude</span> Law, a stunningly regal Ke<span style="background-color:rgba(57,212,155, 0.52)">ira</span> Knightley, and a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|>?
+Em<span style="background-color:rgba(57,212,155, 0.52)">ma</span> Swan and Killian Jones in the Neverland jungle
+Eddy K</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> executive search sector at the most senior levels of corporate Canada, T<span style="background-color:rgba(57,212,155, 0.52)">anya</span> brings more than two decades of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span>U co-authors, if there are any, appear on document)
+-<span style="background-color:rgba(57,212,155, 0.44)"> Anna</span> DeLane</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> with<span style="background-color:rgba(57,212,155, 0.44)"> Lisa</span> my priority was to lose weight; in MY mind that was the most important thing surely,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span>. Wife<span style="background-color:rgba(57,212,155, 0.44)"> Nancy</span> Palmer told the Associated Press that he died from pulmonary fibrosis at George Washington University Hospital.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|>JS: Ver<span style="background-color:rgba(57,212,155, 0.44)">onica</span>'s mother is quite an extraordinary woman in her own right. She's very</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> Pardon to the<span style="background-color:rgba(57,212,155, 0.44)"> Lady Anne</span> Farmer, and to Sir William Farmer her Son, for their respective Del</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> no doubt find it to be a handy reference.'' -<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Margot</span> Kinberg, National University
+''</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> came from that is so beautiful," said<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Hannah</span> Shaw, executive director of Rocking to the Rescue</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span>, she is another political opportunist who has lately taken to agreeing with Tea Party protests and even<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Sarah</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> of all, their basic needs aren't being met.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Barbara</span> Ehrenreich [author of Nick</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span>-<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Irene</span> H Doeing 1915 - 2004
+- Elmer Doeing 1902 - 1977
+- Gerald</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span>, air transportation and moreDecember 7, 2009 | by<span style="background-color:rgba(57,212,155, 0.28)"> Megan</span> Fellman
+Roger Guimera</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> Charles Oxman enters the west end of the KVK; that’s<span style="background-color:rgba(57,212,155, 0.28)"> Elizabeth</span>port, NJ</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> to be state champions. She is not the only one with high aspirations both Sophomore<span style="background-color:rgba(57,212,155, 0.28)"> Natalie</span> McCarthy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> is no conflict between the Santa Claus story and the Nativity story.
+Car<span style="background-color:rgba(57,212,155, 0.28)">la</span> Bronner S</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> is Val, her friend<span style="background-color:rgba(57,212,155, 0.28)"> Amanda</span> just arrived at her apartment and she tells Castle that her ex-</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> familiar with. Similarly, I get exposed to more new music than ever, while simultaneously spending less time</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> conflict at times with personal interest.
+Rousseau sounds very much like Hobbes when he says that</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> for the third shot, a darkening evening sky balanced the light somewhat. A 23mm focal length</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> to numerous showers and thunderstorms are developing…and some have become severe. These storms will continue</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, commenting in an editorial, "Copying and clever upgrading are no longer viable. Samsung must rein</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> for people to sort of pull chunks out and throw them in somewhere else, so I think everybody --</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> from walking while I write. As for the TrekDesk itself, I find it very comfortable (</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> applied problems in statistics, computer science, and business disciplines, the faculty in the Data Science Institute works</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>?” And his sons showed him the way that the man of God who came from Judah had gone.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> which owns 70-80% of the inflight Wi-Fi market, launched its own satellites and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ty Ltd
+- Content Note250 full colour photographs
+- Weight900 g
+- Width280 mm</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> respond rather than react. By this I mean choose how you want to behave instead of falling into automatic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> landscape lighting. Additional bathroom in the basement.
+This elegant 5 bedrooms, 3.5 baths,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> and having some of his best games against them. So you have to wonder if he has gotten into</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ECU of Baltimore won't open a checking account for consumers who have negative files on ChexSystem</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> it was…for a short while anyway.
+While the glitz and glamour of the fame</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> solutions. The colour will be matched to the ‘root’ environment which means unless you dye your hair</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> head out; short walk
+Look OK for now
+If owner won’t eat
+Will be</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> wrong on the red carpet, but this pouffy ponytail has us a bit perplexed</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> on the banks of the Swan River and boasts an excellent infrastructure complete with several charming residential districts that come</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> SH</span>ATTERING<span style="background-color:rgba(57,212,155, 0.2)"> NEWS</span>..<span style="background-color:rgba(57,212,155, 0.2)">.</span> Jennifer Lopez and rapper/mogul Diddy are DATING</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> you</span> a quick summary<span style="background-color:rgba(57,212,155, 0.2)">,</span> Shonda takes<span style="background-color:rgba(57,212,155, 0.2)"> us</span> on a journey of her work life as a producer and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> a</span> local resident and<span style="background-color:rgba(57,212,155, 0.2)"> mother</span> of 2<span style="background-color:rgba(57,212,155, 0.2)"> boys</span>, Anita enjoys the benefits of what Berwick has to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> N</span> Word documentary
+<span style="background-color:rgba(57,212,155, 0.2)">-</span> “Samantha<span style="background-color:rgba(57,212,155, 0.2)"> Bee</span> and the War of Words” by Rebecca Traister in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> seen</span> a rebuttal<span style="background-color:rgba(57,212,155, 0.2)"> to</span> Suzanne Somers already<span style="background-color:rgba(57,212,155, 0.2)">,</span> but we tip our hats to this one by Holly</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> girls had enough<span style="background-color:rgba(57,212,155, 0.2)"> energy</span>, after<span style="background-color:rgba(57,212,155, 0.2)"> cutting</span> poles, to call out to Amelia.
+Barney</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> Max</span> and Rebecca's turn<span style="background-color:rgba(57,212,155, 0.2)">.</span> Once a<span style="background-color:rgba(57,212,155, 0.2)"> year</span> there is special event called Gesher when the parents are</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> they</span> should stay in<span style="background-color:rgba(57,212,155, 0.2)"> the</span> closet,<span style="background-color:rgba(57,212,155, 0.2)"> according</span> to comedian Joan Rivers. "It’s part of the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>>His aunt, Margaret<span style="background-color:rgba(57,212,155, 0.2)"> Jones</span>, now<span style="background-color:rgba(57,212,155, 0.2)"> in</span> her 90s, had been headmistress at D</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> investigations into the<span style="background-color:rgba(57,212,155, 0.2)"> now</span>-well<span style="background-color:rgba(57,212,155, 0.2)">-</span>covered-up Valerie Plame story. Note to Mike</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">)</span>
+Anna Karenina Syn<span style="background-color:rgba(57,212,155, 0.2)">opsis</span>The third<span style="background-color:rgba(57,212,155, 0.2)"> collaboration</span> of Academy Award nominee Keira Knightley with director</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> wonderful volunteers for<span style="background-color:rgba(57,212,155, 0.2)"> our</span> own events<span style="background-color:rgba(57,212,155, 0.2)">.</span> Special thanks to Linda Dobell, Pim Conradi
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> CEO</span> of National Foundation<span style="background-color:rgba(57,212,155, 0.2)"> for</span> the Deaf Louise<span style="background-color:rgba(57,212,155, 0.2)"> Carroll</span>, Jane Wrightson of NZ On Air and Marcus Rud</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">fold</span>ers/etc<span style="background-color:rgba(57,212,155, 0.2)"> I</span> had in<span style="background-color:rgba(57,212,155, 0.2)"> my</span> Lisa Frank collection:
+Here are a few with lettering</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">
+</span>Donna Morrison,<span style="background-color:rgba(57,212,155, 0.2)"> B</span>ettina F<span style="background-color:rgba(57,212,155, 0.2)">ries</span>
+The Department of Medicine bids farewell, with deepest</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> the anxiety and<span style="background-color:rgba(57,212,155, 0.2)"> care</span>? Why<span style="background-color:rgba(57,212,155, 0.2)"> did</span> she not remember?
+Anne threw off her night things with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> a snark<span style="background-color:rgba(57,212,155, 0.2)">y</span> message because<span style="background-color:rgba(57,212,155, 0.2)"> their</span> mom, Sarah Ferguson, was purposefully excluded from the royal</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">),</span> Kelly, and Carrie (<span style="background-color:rgba(57,212,155, 0.2)">Dar</span>ren),<span style="background-color:rgba(57,212,155, 0.2)"> and</span> son Cory. She was predeceased by her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>>.
+Linda<span style="background-color:rgba(57,212,155, 0.2)"> S</span>arsour<span style="background-color:rgba(57,212,155, 0.2)">,</span> the executive director, said her group helps new immigrants adjust</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|</span>> very natural.<span style="background-color:rgba(57,212,155, 0.2)"> I</span> had the<span style="background-color:rgba(57,212,155, 0.2)"> pleasure</span> of seeing one of Kate’s pieces on an art fair</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

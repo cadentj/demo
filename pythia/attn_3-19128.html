@@ -1,0 +1,857 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: attn_3-19128</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #FBFBFB;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                margin-top: 0px;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                border: solid #E4E4E7;
+                border-width: .25px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 3px 15px 3px 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+                border: 0.5px solid #84848C;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: attn_3-19128</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            Example 1:  previously a two page website for a small non-profit. I would absolutely turn to him<span style="background-color:rgba(57,212,155, 1.0)"> if</span> I<br>Activations: (" if" : 10)<br>Example 2: <span style="background-color:rgba(57,212,155, 1.0)"> And</span> you need to come back now?"<br>"I will. I told you I don't think<br>Activations: (" And" : 9)<br>Example 3:  about him but<span style="background-color:rgba(57,212,155, 1.0)"> about</span> them —<span style="background-color:rgba(57,212,155, 1.0)"> about</span> a couple that has changed the world, only to be misper<br>Activations: (" about" : 9)<br>Example 4: <span style="background-color:rgba(57,212,155, 1.0)"> love</span> our offense! It is firing on all cylinders. Durant seems so comfortable and in tune with<br>Activations: (" love" : 9)<br>Example 5: <|endoftext|> and do little tiny chirps. If he is distressed<span style="background-color:rgba(57,212,155, 1.0)"> about something</span> -<span style="background-color:rgba(57,212,155, 1.0)"> if</span> I were for example<br>Activations: (" about" : 7), (" if" : 9)<br>Example 6:  sharing life together. Hopefully, having him back in the home will<span style="background-color:rgba(57,212,155, 1.0)"> confirm</span> the new patterns of godliness<br>Activations: (" confirm" : 9)<br>Example 7: .<br>"But he still<span style="background-color:rgba(57,212,155, 1.0)"> wanted</span> his daily newspaper,<span style="background-color:rgba(57,212,155, 1.0)"> and loved</span> doing the word games up 'til<br>Activations: (" and" : 9)<br>Example 8: <|endoftext|> major when an individual lives alone. Financial constraints might compel him to work, even<span style="background-color:rgba(57,212,155, 1.0)"> if</span> he suffers<br>Activations: (" if" : 9)<br>Example 9:  nice Hilton down the road, I'll stay there'), he can do it<span style="background-color:rgba(57,212,155, 1.0)"> if</span> necessary.<br>But<br>Activations: (" if" : 9)<br>Example 10:  bound to take him and<span style="background-color:rgba(57,212,155, 1.0)"> hope</span> to<span style="background-color:rgba(57,212,155, 1.0)"> bring</span> him in to the system and<span style="background-color:rgba(57,212,155, 1.0)"> let</span> him rehab with a<br>Activations: (" hope" : 7), (" bring" : 6), (" let" : 9)<br>Example 11: <|endoftext|> way people should treat others. I found it very interesting that the few times in his<span style="background-color:rgba(57,212,155, 1.0)"> life that</span><br>Activations: (" life" : 7), (" that" : 9)<br>Example 12: <span style="background-color:rgba(57,212,155, 1.0)"> explore</span> and<span style="background-color:rgba(57,212,155, 1.0)"> capture</span> the innocence, simplicity, and<span style="background-color:rgba(57,212,155, 1.0)"> beauty of</span> the<span style="background-color:rgba(57,212,155, 1.0)"> world around</span> him. It is Marc’<br>Activations: (" capture" : 6), (" beauty" : 6), (" of" : 7), (" around" : 9)<br>Example 13:  a computer. We love Tystarr’s way of thinking, when we ask him<span style="background-color:rgba(57,212,155, 1.0)"> why</span> he<br>Activations: (" why" : 8)<br>Example 14: <|endoftext|> fan's question about potential additions to the royal family.<br>"Someone asked him<span style="background-color:rgba(57,212,155, 1.0)"> how many</span> children<br>Activations: (" how" : 8)<br>Example 15:  Everything about him,<span style="background-color:rgba(57,212,155, 1.0)"> about</span> his presidency,<span style="background-color:rgba(57,212,155, 1.0)"> about</span> his war, he's a risk taker, he<br>Activations: (" about" : 7), (" about" : 8)<br>Example 16:  anything that will give him enough money<span style="background-color:rgba(57,212,155, 1.0)"> to</span> be able to eat and<span style="background-color:rgba(57,212,155, 1.0)"> pay for</span> a<span style="background-color:rgba(57,212,155, 1.0)"> place to</span> sleep.<br>Activations: (" pay" : 8), (" for" : 8)<br>Example 17: <span style="background-color:rgba(57,212,155, 1.0)">elled when she</span> landed<span style="background-color:rgba(57,212,155, 1.0)"> on</span> her feet, albeit awkwardly, and bowed dramatically. Her jubilant<br>Activations: (" when" : 8), (" she" : 7), (" on" : 7)<br>Example 18:  a Grammy for a wicked soundtrack.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> he dated Mandy Moore.<span style="background-color:rgba(57,212,155, 1.0)"> And</span> everyone knows that in<br>Activations: (" And" : 8), (" And" : 7)<br>Example 19:  the chaos<span style="background-color:rgba(57,212,155, 1.0)"> on</span> the pages<span style="background-color:rgba(57,212,155, 1.0)"> in</span> front<span style="background-color:rgba(57,212,155, 1.0)"> of</span> him. An educated guess would be made and something the composer<br>Activations: (" on" : 7), (" in" : 8), (" of" : 7)<br>Example 20: ’t know what more I can say.”<br>That was his only reply<span style="background-color:rgba(57,212,155, 1.0)"> to</span> the substance<span style="background-color:rgba(57,212,155, 1.0)"> of</span> the<br>Activations: (" to" : 5), (" of" : 8)<br><br>Top_logits: [' his', ' himself', ' he', ' him', ' His', 'his', 'His', 'himself', ' He', '\\]\\].']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: "if", "And", "about", "love", "confirm", "wanted", "and", "hope", "bring", "let", "life", "that", "explore", "capture", "beauty", "of", "around", "why", "how", "to", "pay", "for", "place", "when", "on", "she", "And", "on", "in", "of", "to".<br><br>Step 1.<br>- The activating tokens are mostly function words (prepositions, conjunctions, auxiliary verbs).<br>- The previous tokens have no interesting patterns.<br><br>Step 2.<br>- The examples involve various sentence structures and word orders.<br>- The activating token is often a function word that connects clauses or phrases.<br><br>Step 3.<br>- The activation values are highest for the examples where the token is a conjunction or preposition.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token often appears in a sentence that is part of a dialogue.<br><br>(Part 2)<br>SIMILAR TOKENS: "his", "himself", "he", "him", "His", "his", "His", "himself", "He".<br>- The top logits list suggests a focus on pronouns related to a male person.<br><br>[EXPLANATION]: Function words (prepositions, conjunctions, auxiliary verbs) in sentences, often in dialogue, that involve a male person.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>Function words (prepositions, conjunctions, auxiliary verbs) in sentences, often in dialogue, that involve a male person.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> meetings that he</span> att<span style="background-color:rgba(57,212,155, 1.0)">ends around</span> the<span style="background-color:rgba(57,212,155, 1.0)"> state to let</span> the<span style="background-color:rgba(57,212,155, 1.0)"> farmers</span> and workers<span style="background-color:rgba(57,212,155, 1.0)"> see</span> the<span style="background-color:rgba(57,212,155, 1.0)"> numbers</span>. "I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> capable of that kind of impact on a</span> regular<span style="background-color:rgba(57,212,155, 1.0)"> basis, but I was still damn impressed, especially now</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> first time he<span style="background-color:rgba(57,212,155, 1.0)"> got</span> a taste<span style="background-color:rgba(57,212,155, 1.0)"> of</span> just<span style="background-color:rgba(57,212,155, 1.0)"> how politically sensitive</span> this<span style="background-color:rgba(57,212,155, 1.0)"> was</span>.<span style="background-color:rgba(57,212,155, 1.0)"> And in fact</span> Ted Kennedy himself</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> but to ignore</span> Narush<span style="background-color:rgba(57,212,155, 1.0)">ige's constant warnings. He gently shifted</span> the<span style="background-color:rgba(57,212,155, 1.0)"> boy into</span> his lap<span style="background-color:rgba(57,212,155, 1.0)"> so that</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> felt</span> more alone<span style="background-color:rgba(57,212,155, 1.0)">.</span>
+<span style="background-color:rgba(57,212,155, 1.0)">Many of</span> his<span style="background-color:rgba(57,212,155, 1.0)"> friends had been killed and no one</span> had been<span style="background-color:rgba(57,212,155, 1.0)"> left untouched.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>. When people talk about him<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> struggling in</span> Europe<span style="background-color:rgba(57,212,155, 0.9200000000000002)">, I think a</span> significant<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> part of</span> that is down</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> and favors, so</span> he alone<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> can shut it down – while oddly admitting that</span> he<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> may</span> have<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> abused the</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>. Would he<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> still be considered that if</span> he<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> moved on to</span> a different<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> offense</span>?
+Mecole</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span>ily confessing to an unknown betrayal. “He<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> said he needed actresses at this house party we were</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> chain stores.
+His extensive retail<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> knowledge enables</span> him to<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> understand</span> and<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> work with customers on</span> an advanced</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|>.
+“Did<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> he say why</span>?” I asked suspiciously.
+“Didn’t say</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)"> wanted very much to see his father and mother and friends before he</span> died<span style="background-color:rgba(57,212,155, 0.8400000000000001)">.</span>
+"Only give me</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> his on<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> screen persona being so well</span>-<span style="background-color:rgba(57,212,155, 0.8400000000000001)">known also enables</span> him to<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> perform on wrestling shows outwith</span> IC</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> with similar details, and, advising the wise party to ignore that in his<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> words which risks</span> dirty</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> the past 30 years, and he<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> brings</span> his book<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> of</span> clipp<span style="background-color:rgba(57,212,155, 0.8400000000000001)">ings to all of the safety</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>house<span style="background-color:rgba(57,212,155, 0.76)"> knowing there's something huge happening? Why would</span> he go<span style="background-color:rgba(57,212,155, 0.76)"> through getting</span> parent’s numbers<span style="background-color:rgba(57,212,155, 0.76)"> from the</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> to them that if</span> there<span style="background-color:rgba(57,212,155, 0.76)"> had been</span> somebody standing in windows<span style="background-color:rgba(57,212,155, 0.76)">,</span> he<span style="background-color:rgba(57,212,155, 0.76)"> would</span> have been able to<span style="background-color:rgba(57,212,155, 0.76)"> see them</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> reflected on</span> the pronounce<span style="background-color:rgba(57,212,155, 0.76)">ment, made during</span> the prison<span style="background-color:rgba(57,212,155, 0.76)"> years by the</span> man Zawahiri<span style="background-color:rgba(57,212,155, 0.76)"> betrayed</span>,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>cum-place<span style="background-color:rgba(57,212,155, 0.76)"> for</span> visitors.<span style="background-color:rgba(57,212,155, 0.76)"> He would</span> never<span style="background-color:rgba(57,212,155, 0.76)"> interpret</span> horosc<span style="background-color:rgba(57,212,155, 0.76)">opes past sunset</span>.<span style="background-color:rgba(57,212,155, 0.76)"> Most of the nights</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> He<span style="background-color:rgba(57,212,155, 0.76)"> was</span> immovably<span style="background-color:rgba(57,212,155, 0.76)"> convinced that</span> his<span style="background-color:rgba(57,212,155, 0.76)"> was</span> the<span style="background-color:rgba(57,212,155, 0.76)"> true philosophy, could scarcely understand any view that dev</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> were his persuasive assets<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> He when one</span> ple<span style="background-color:rgba(57,212,155, 0.6799999999999999)">ases be greatly missed on his</span> sc<span style="background-color:rgba(57,212,155, 0.6799999999999999)">ads friends and colleagues all</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> and for this they’re use all</span> pleas<span style="background-color:rgba(57,212,155, 0.6799999999999999)">urable sexual tactics they</span>’re know<span style="background-color:rgba(57,212,155, 0.6799999999999999)">! And</span> it’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> was</span> 21<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> years</span>-<span style="background-color:rgba(57,212,155, 0.6799999999999999)">old and could lay claim to it without any legal challenges from his family.
+</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> the</span> same<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> time she leaned forward to capture</span> his mouth<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.</span>
+Elijah made a soft<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> sound at</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> think of him everyday<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> but from time</span> to<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> time remember</span> him<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> as</span> a good person<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> and</span> a father<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> and</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> audiences from</span> coast to<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> coast at</span> the<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> nation</span>'s major<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> tournaments, and</span> the<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> show</span>man seldom fails to gain</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> fixed on himself, not Jesus.</span>
+*You will end up getting ahead of God’s will</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> gave up on it I would like</span> to<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> see</span> different<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> people's ideas</span>, amd<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> then put up</span> the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>. As he<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> measured appliances, he found that energy usage</span> was more closely related<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> to</span> the<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> length of time</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> his cage, he’<span style="background-color:rgba(57,212,155, 0.6000000000000001)">d stick</span> his<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> paw out and kind of swat at you a little</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> practiced is definitely part of it.)<span style="background-color:rgba(57,212,155, 0.52)"> His writing bearing the</span> same<span style="background-color:rgba(57,212,155, 0.52)"> title thus gives</span> just a proper list<span style="background-color:rgba(57,212,155, 0.52)"> of</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.52)"> bit</span>.<span style="background-color:rgba(57,212,155, 0.52)"> But I</span> don’t<span style="background-color:rgba(57,212,155, 0.52)"> remember him being</span> really r<span style="background-color:rgba(57,212,155, 0.52)">iled up about anything. He</span> wasn<span style="background-color:rgba(57,212,155, 0.52)">’</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> wants to work with. An ideal culmination of his<span style="background-color:rgba(57,212,155, 0.52)"> dreams</span> happens<span style="background-color:rgba(57,212,155, 0.52)"> with landing</span> a job<span style="background-color:rgba(57,212,155, 0.52)"> with</span> these<span style="background-color:rgba(57,212,155, 0.52)"> companies</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> Jordan<span style="background-color:rgba(57,212,155, 0.52)">.</span> He<span style="background-color:rgba(57,212,155, 0.52)"> performed</span> feats<span style="background-color:rgba(57,212,155, 0.52)"> that not only no one of</span> his<span style="background-color:rgba(57,212,155, 0.52)"> era could begin to match, but</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|>be incorporates a holistic approach to his teachings<span style="background-color:rgba(57,212,155, 0.52)"> that makes</span> his<span style="background-color:rgba(57,212,155, 0.52)"> lessons</span> an<span style="background-color:rgba(57,212,155, 0.52)"> experience</span>.<span style="background-color:rgba(57,212,155, 0.52)"> His lectures are</span> hall</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> media exposure<span style="background-color:rgba(57,212,155, 0.44)"> that would make</span> drivers<span style="background-color:rgba(57,212,155, 0.44)"> of</span> any discipline jealous. He’<span style="background-color:rgba(57,212,155, 0.44)">s probably also helped by</span> his am</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> he snuck in a few bites<span style="background-color:rgba(57,212,155, 0.44)"> when</span> I'm not<span style="background-color:rgba(57,212,155, 0.44)"> present.
+</span>Monday, November 15, 2010</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span>.
+He then<span style="background-color:rgba(57,212,155, 0.44)"> recognized</span> the<span style="background-color:rgba(57,212,155, 0.44)"> television as</span> his own<span style="background-color:rgba(57,212,155, 0.44)">, looked up and saw the door to</span> his home</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)"> interested</span> in<span style="background-color:rgba(57,212,155, 0.44)"> getting</span> to<span style="background-color:rgba(57,212,155, 0.44)"> know more about</span> him,<span style="background-color:rgba(57,212,155, 0.44)"> although
+</span>he’<span style="background-color:rgba(57,212,155, 0.44)">d hardly told her anything worthwhile.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)"> and that</span> the same<span style="background-color:rgba(57,212,155, 0.44)"> might have</span> occurred<span style="background-color:rgba(57,212,155, 0.44)"> had</span> the panelist been a male instead of me.”
+Hub</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)">.</span>
+<span style="background-color:rgba(57,212,155, 0.36000000000000004)">He knew he was no longer in</span> the<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> motel room with</span> Buff<span style="background-color:rgba(57,212,155, 0.36000000000000004)">y and he didn't know</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)"> could not be simpler; it was only for books that he spent</span> relatively<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> large sums. The virtues which</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> a variety of cancers found in women, he would<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> need</span> to<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> account for these</span> other<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> variables, and</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> here,<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> and</span> he came in<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> and said</span> he<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> had an old Honda and he wanted to sell it.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> complete explanation of his<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> statements that set off</span> this whole crisis,<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> when</span> he reacted<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> to</span> the<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> discovery of</span> a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> adventure of studying in</span> the conflict ridden city<span style="background-color:rgba(57,212,155, 0.28)"> in</span> Bosnia<span style="background-color:rgba(57,212,155, 0.28)">.</span> Fisher<span style="background-color:rgba(57,212,155, 0.28)"> served on</span> the juries<span style="background-color:rgba(57,212,155, 0.28)"> of</span> festivals</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> those yet to notify</span> family<span style="background-color:rgba(57,212,155, 0.28)"> or authorities should contact</span> the National Registration and Inquiry Service or the Red Cross</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)">, through the course of their</span> pilgrimage<span style="background-color:rgba(57,212,155, 0.28)"> in this world</span>,<span style="background-color:rgba(57,212,155, 0.28)"> to</span> the heavenly Canaan.
+4</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span>esy<span style="background-color:rgba(57,212,155, 0.28)"> storylines ever</span>.<span style="background-color:rgba(57,212,155, 0.28)"> The guy has</span> also been<span style="background-color:rgba(57,212,155, 0.28)"> around for a decade now, and made a</span> wide</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> caused</span> his legs<span style="background-color:rgba(57,212,155, 0.28)"> to swell to</span> a dangerous size<span style="background-color:rgba(57,212,155, 0.28)">.</span>
+Ashley Harden, a bartender at</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, the LEDs 12 are preferably arranged in a two-dimensional array having rows and columns, such as</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> amended to make provision for indigenous people to be heard in indigenous affairs.
+After all, if une</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> mechanical or receptor-mediated interactions (the MIE in this AOP) which may involve membrane lipids</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> differences between intensive outpatient programs and inpatient programs. The study did find that some individuals experienced better results from</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> cosmic dust, to an increase through reactions that take place in the spinning debris disk around a young star</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> seven hours during the night. If you have the chance, you can also take so-called power</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>Moorhead police make arrest following drive-by shooting
+Moorhead, M.N.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> website as a digital brochure.
+- They also post their best stuff on Facebook where it doesn</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, please tell our readers about you – what is the company all about?
+Kali is an</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>manuel Church, 2300 Dilleys Road, Gurnee. You and your guests are invited to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> where (or what) in your life is working just fine – there’s nothing particularly wrong.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> “!
+A Washington State, EPA funded,’expert’ study CONCLUDED “…</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> on Education and New Learning Technologies Edulearn 2014, 7th-9th July 2014, Barcelona</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ending.Satnam Singh Bhamara - Indian NBA Player
+Satnam Singh Bhamara is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>shot wound to the neck.
+An investigative group is on the spot. Several theories are being investigated</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> please create a new thread in the appropriate forum.1. A cut of beef that comes from the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> or full assistance with bathing, dressing, personal hygiene, grooming, incontinence care, toileting</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> at the rooftop bar, the ladies and I were headed home when I saw the Turkey’s</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>.. you may think I have gone a bit BATTY.. Batty about Paper Puppets</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ather Executive Money Clip with Credit Card Slots
+Durable and strong with a soft feel and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> is obsessed with finding a way to end world hunger. In his</span> quest to turn M<span style="background-color:rgba(57,212,155, 0.2)">althus</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>, we expected him<span style="background-color:rgba(57,212,155, 0.2)"> this</span> year. I think we will make<span style="background-color:rgba(57,212,155, 0.2)"> a shrine</span> for<span style="background-color:rgba(57,212,155, 0.2)"> him</span>.  <span style="background-color:rgba(57,212,155, 0.2)">Ben Chapman</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> he tasted the blood of new prey, his body and soul were transformed.<span style="background-color:rgba(57,212,155, 0.2)">
+Grad</span>ually he regained</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> of where the garden is located, so how could he</span> create something that worked with the<span style="background-color:rgba(57,212,155, 0.2)"> looming impediments</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> not to</span> forget<span style="background-color:rgba(57,212,155, 0.2)"> him!!
+By participating in this</span> ride<span style="background-color:rgba(57,212,155, 0.2)"> I am hoping to raise $25</span>,<span style="background-color:rgba(57,212,155, 0.2)">000</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> who had searched for him until he had found him. The Christian laid his hand on the man's</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> I met him last year</span> when<span style="background-color:rgba(57,212,155, 0.2)"> he intern</span>ed with sports<span style="background-color:rgba(57,212,155, 0.2)"> director Rich Coppola</span> at<span style="background-color:rgba(57,212,155, 0.2)"> FOX CT</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span>.<span style="background-color:rgba(57,212,155, 0.2)"> He wants</span> there to be more understanding towards<span style="background-color:rgba(57,212,155, 0.2)"> aut</span>istics, and for them to be<span style="background-color:rgba(57,212,155, 0.2)"> more</span> included in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">2 - 2 hours! I feel so bad that he has been so uncomfortable</span> for so long and it</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> was<span style="background-color:rgba(57,212,155, 0.2)"> a relief</span> to get<span style="background-color:rgba(57,212,155, 0.2)"> out from the heat and dump his hard-earned grocer</span>ies onto the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> calendar, he</span> encourages<span style="background-color:rgba(57,212,155, 0.2)"> his employee</span> to<span style="background-color:rgba(57,212,155, 0.2)"> go</span> walking by holding<span style="background-color:rgba(57,212,155, 0.2)"> Walks</span> with the<span style="background-color:rgba(57,212,155, 0.2)"> CEO</span> events. Employees can</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> and spraying the<span style="background-color:rgba(57,212,155, 0.2)"> coug</span>ar<span style="background-color:rgba(57,212,155, 0.2)"> and</span> chasing him from one cage to the other. Because of it,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> of<span style="background-color:rgba(57,212,155, 0.2)"> Vietnam</span> and<span style="background-color:rgba(57,212,155, 0.2)"> Watergate, set the stage</span> for<span style="background-color:rgba(57,212,155, 0.2)"> the anti-government rhetoric</span> of<span style="background-color:rgba(57,212,155, 0.2)"> Ronald Reagan and</span> all</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> saying years ago how much his first few runs in a 410<span style="background-color:rgba(57,212,155, 0.2)">-cubic-inch-engine</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> desire to</span> do the<span style="background-color:rgba(57,212,155, 0.2)"> gr</span>unt work, but he wants the end result to reflect<span style="background-color:rgba(57,212,155, 0.2)"> his</span> values. So</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> be<span style="background-color:rgba(57,212,155, 0.2)"> easily assim</span>ilated, and react<span style="background-color:rgba(57,212,155, 0.2)">iv</span>ates his emotion chip. Meanwhile,<span style="background-color:rgba(57,212,155, 0.2)"> Picard</span> leads<span style="background-color:rgba(57,212,155, 0.2)"> Lily back</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>, but he always</span> thought he'd be great at it<span style="background-color:rgba(57,212,155, 0.2)">.</span> Until, as<span style="background-color:rgba(57,212,155, 0.2)"> Master of Death</span>,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>."
+He</span> said while communities need to<span style="background-color:rgba(57,212,155, 0.2)"> have strong mental health programs</span> and<span style="background-color:rgba(57,212,155, 0.2)"> effective policing</span>,<span style="background-color:rgba(57,212,155, 0.2)"> "there</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">… or adding chocolate to every single dish he</span> makes for her from<span style="background-color:rgba(57,212,155, 0.2)"> now</span> on… and forgetting that<span style="background-color:rgba(57,212,155, 0.2)"> 97</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>yes. He always has his camera</span> with him during these<span style="background-color:rgba(57,212,155, 0.2)"> h</span>ikes so he can capture the elusive</span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

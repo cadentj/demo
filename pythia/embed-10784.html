@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,25 +78,560 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1:  instructors<br>What’s Important About Practical<mark> Nursing</mark> Licensure?<br>The National Council of State Bo<br>Activation  Nursing:10.0, <br>Example 2: , and Provider Feedback<br>Critical Care<mark> Nursing</mark> Quarterly, July/September 2012<br>An understanding of<br>Activation  Nursing:10.0, <br>Example 3: <mark> Nursing</mark> aims to be a leading force in community-engaged, collaborative efforts to achieve health equity and<br>Activation  Nursing:10.0, <br>Example 4: <|endoftext|><mark> Nursing</mark> Assessment of a patient with Asthma in regards to the Integumentary System?<br><br>Activation  Nursing:10.0, <br>Example 5:  for nurses working in the field of<mark> Nursing</mark> Management and Human Resources Management.<br>NURS 752<br>Activation  Nursing:10.0, <br>Example 6: <|endoftext|> months, leading to either a certificate or a diploma. Under the 1987<mark> Nursing</mark> Home Reform Act<br>Activation  Nursing:10.0, <br>Example 7:  Grace, now reside at Golden Living Center-Valley<mark> Nursing</mark> Home in St. Marys.<br><br>Activation  Nursing:10.0, <br>Example 8:  out of 752) Most Popular for<mark> Nursing</mark> (ranked 45 out of 1974) Best Value for<br>Activation  Nursing:10.0, <br>Example 9:  of<mark> Nursing</mark>’s (2010) guidelines state that restrictive physical intervention(direct physical contact between persons where<br>Activation  Nursing:10.0, <br>Example 10: , and government. Best Value for<mark> Nursing</mark> (ranked 11 out of 651) Best Value for<br>Activation  Nursing:10.0, <br><br>Top_logits: ['usalem', 'aries', 'ounger', 'ario', 'pshire', ' matter', 'velt', 'witz', ' pockets', 'old']
+            Example 1:  instructors<br>What’s Important About Practical<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Licensure?<br>The National Council of State Bo<br>Activations: (" Nursing" : 10)<br>Example 2: , and Provider Feedback<br>Critical Care<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Quarterly, July/September 2012<br>An understanding of<br>Activations: (" Nursing" : 10)<br>Example 3: <span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> aims to be a leading force in community-engaged, collaborative efforts to achieve health equity and<br>Activations: (" Nursing" : 10)<br>Example 4: <|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Assessment of a patient with Asthma in regards to the Integumentary System?<br><br>Activations: (" Nursing" : 10)<br>Example 5:  for nurses working in the field of<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Management and Human Resources Management.<br>NURS 752<br>Activations: (" Nursing" : 10)<br>Example 6: <|endoftext|> months, leading to either a certificate or a diploma. Under the 1987<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Home Reform Act<br>Activations: (" Nursing" : 10)<br>Example 7:  Grace, now reside at Golden Living Center-Valley<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Home in St. Marys.<br><br>Activations: (" Nursing" : 10)<br>Example 8:  out of 752) Most Popular for<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> (ranked 45 out of 1974) Best Value for<br>Activations: (" Nursing" : 10)<br>Example 9:  of<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span>’s (2010) guidelines state that restrictive physical intervention(direct physical contact between persons where<br>Activations: (" Nursing" : 10)<br>Example 10: , and government. Best Value for<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> (ranked 11 out of 651) Best Value for<br>Activations: (" Nursing" : 10)<br>Example 11: ards of<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> says that obtaining one’s nursing license is a necessity for a LPN. The<br>Activations: (" Nursing" : 10)<br>Example 12: <|endoftext|> a VA<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Academy, an initiative from the U.S. Department of Veterans Affairs, to<br>Activations: (" Nursing" : 10)<br>Example 13:  as the Commission on Collegiate<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Education (CCNE). And so if your job and family obligations<br>Activations: (" Nursing" : 10)<br>Example 14: General Nurse and Midwifery GNM OR Degree in B.SC<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span>.|<br>UP NH<br>Activations: (" Nursing" : 10)<br>Example 15:  staff and patient injuries?’’, Journalof Psychiatric and Mental Health<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span>, Vol. 15, pp<br>Activations: (" Nursing" : 10)<br>Example 16:  at during a<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Assessment of a patient with Asthma in regards to General data?<br>Restlessness<br>Activations: (" Nursing" : 10)<br>Example 17:  daily without aid, such as eating, dressing, or using the bathroom.<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> assistants usually develop more<br>Activations: (" Nursing" : 10)<br>Example 18:  available in the Vilonia AR area.<br>- Associates. The Associate Degree in<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> (AD<br>Activations: (" Nursing" : 10)<br>Example 19: - Evaluate the effectiveness of advanced trauma nursing on patient outcomes<br>ENPC (Emergency<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Pediatric<br>Activations: (" Nursing" : 10)<br>Example 20: <|endoftext|>an- tation of the electrode cuff <>]<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Management<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> management is directed toward reposition<br>Activations: (" Nursing" : 10), (" Nursing" : 10)<br><br>Top_logits: ['usalem', 'aries', 'ounger', 'ario', 'pshire', ' matter', 'velt', 'witz', ' pockets', 'old']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKENS: "Nursing" (in all examples).<br>PREVIOUS TOKENS: Various, but often related to healthcare or education.<br><br>Step 1.<br>- The activating token is always "Nursing".<br>- The previous tokens have varying connections to healthcare, education, or management.<br><br>Step 2.<br>- The examples often involve titles, headings, or descriptions related to nursing, healthcare, or education.<br>- The activating token is a key term in these contexts.<br><br>Step 3.<br>- The activation values are consistently high across all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No additional patterns were found.<br><br>(Part 2)<br>SIMILAR TOKENS: None (the top logits list appears unrelated to the activating token "Nursing").<br>- The top logits list does not provide additional insight into the neuron's behavior.<br><br>[EXPLANATION]: The token "Nursing" in titles, headings, or descriptions related to healthcare, education, or management.
+            (Part 1)<br>ACTIVATING TOKENS: "Nursing".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "Nursing".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples are all related to the field of nursing, education, or healthcare.<br>- The activating token is a noun representing a field of study or profession.<br><br>Step 3.<br>- The activation values are consistently high across all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token often appears in titles, headings, or names of organizations.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated nouns and words.<br><br>[EXPLANATION]: The noun "Nursing" in the context of healthcare, education, or profession, often in titles or headings.
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The token &quot;Nursing&quot; in titles, headings, or descriptions related to healthcare, education, or management.</p>
+                <p>The noun &quot;Nursing&quot; in the context of healthcare, education, or profession, often in titles or headings.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>, Utah. Attended UVU where he received an<span style="background-color:rgba(57,212,155, 1.0)"> RN</span> degree in 2003. He worked at Utah</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> Charity School of<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span>.
+Civil Court Chief Judge Michael Bagneris opposed the mayor’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> Navy<span style="background-color:rgba(57,212,155, 1.0)"> Nurse</span> Corps.
+Laurie Markowicz said Saturday that when she told her 91-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> continue their campaign on patient ratios and more pay.
+The Australian<span style="background-color:rgba(57,212,155, 1.0)"> Nursing</span> Federation (ANF) is</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> Practical<span style="background-color:rgba(57,212,155, 1.0)"> Nurs</span>es in Iowa are in luck as the updated projections from O*Net Online indicate</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> counseling.
+Nurses<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Nurs</span>es have a wide range of skills and are usually in charge of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>ontological Dental Hy<span style="background-color:rgba(57,212,155, 0.9200000000000002)">giene</span>||1|
+|393||General and Oral Pathology||3</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|>
+|220||Survey of Dental Hy<span style="background-color:rgba(57,212,155, 0.9200000000000002)">giene</span>||1|
+|252||Behavioral</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> shifts, we specialise in meeting the needs of GPs,<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Nurs</span>es, Pharmacists, Mental Health</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span> Adler for all her hard work and dedication to this group, the Friends of the<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> Somers</span> Library for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span>
+|Senior Seminar||Critical reading and writing as well as development of research skills with</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span>
+|Square One is innovative. We adapt to reflect an ever-changing community<span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span>
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> run when one of Roger's personalities threatens to kill them<span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span>
+|85||7||"My</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span>veys English Literature from the Medieval Era to the present, emphasizing major writers in each period<span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span> other important community needs.
+|Greyhound advocates rally for the dogs<span style="background-color:rgba(57,212,155, 0.8400000000000001)">.|</span>
+|Vol</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> Skyhawk<span style="background-color:rgba(57,212,155, 0.76)">.|</span>
+|Doyn Aircraft: Doyn-Piper (PA-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span> Aerotec 122<span style="background-color:rgba(57,212,155, 0.76)">.|</span>
+|O-320-B3A||Piper Aircraft: Apache (</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>B<span style="background-color:rgba(57,212,155, 0.76)">.|</span>
+|O-540-A4D5, B2B5, B2</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> TB-10<span style="background-color:rgba(57,212,155, 0.76)">.|</span>
+|O-360-A1D||Piper Aircraft: Com</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span>cam shot of Roger housing Stan's stripper dry-cleaning workers in Steve's room<span style="background-color:rgba(57,212,155, 0.76)">.|</span>
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> Sheppard (1917) 89: A well-directed hit on the nob<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.|</span>
+|</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> MT-7-235, M7-235<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.|</span>
+|IO-540-W1A</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|>|Deletions are marked like this.||Additions are marked like this<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.|</span>
+|</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|>Available since PHP 4.3.0<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.|</span>
+|docref_ext||""||PHP</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span> awards are generally administered by the President<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.|</span>
+|With the increased popularity of the Internet, the Website</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> risk<span style="background-color:rgba(57,212,155, 0.6000000000000001)">.|</span>
+Click arrows to page adverts
+Fourier series and fourier transforms are used</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> Drop checker barely starts changing color from blue<span style="background-color:rgba(57,212,155, 0.6000000000000001)">.|</span>
+|01-08-2013 02:19</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> a<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> Peace</span>ful Drive: Lucy went in the backpack, where she took her late-day nap,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span>Mumma, R - PENN STATE UNIV<span style="background-color:rgba(57,212,155, 0.6000000000000001)">.|</span>
+|Hartwig, N - P</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)">.|</span>
+|A broader view of the town|
+|The tower was rebuilt by volunteers<span style="background-color:rgba(57,212,155, 0.6000000000000001)">.|</span>
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>/8c.Table Of Contents
+Built in 1905 by the Justice of the<span style="background-color:rgba(57,212,155, 0.52)"> Peace</span> and a founding</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> should never, ever speak unless I'm reading from a script that someone else wrote.Development and<span style="background-color:rgba(57,212,155, 0.52)"> Peace</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|>. Lehart, a member of Queen of<span style="background-color:rgba(57,212,155, 0.52)"> Peace</span> Parish in North Portland, died June 18 of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> Seeds of<span style="background-color:rgba(57,212,155, 0.52)"> Peace</span>. What happened? I almost didn’t ask, it felt like a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span> Enjoying<span style="background-color:rgba(57,212,155, 0.52)"> Peace</span> in His Presence”, by Sarah Young).Feb. 24, 2013
+Casell</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> sampling frame, including special education schools,<span style="background-color:rgba(57,212,155, 0.44)"> vocational</span> schools, alternative schools (e.g., adult continuing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> a comprehensive relationship between Vocational High School and Higher Education. Hopefully, in the future,<span style="background-color:rgba(57,212,155, 0.44)"> vocational</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> Orchestra,<span style="background-color:rgba(57,212,155, 0.44)"> Jazz</span> Combo and Opera Workshop.
+On Friday, Feb. 28, at 8 p</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|>ers play the<span style="background-color:rgba(57,212,155, 0.44)"> Jazz</span> in their regular season finale next Wednesday.It was amazing. The need for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|>irected by RIC Adjunct Professor Greg Abate, student musicians in the RIC<span style="background-color:rgba(57,212,155, 0.44)"> Jazz</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> from loading more than 7 rounds into any magazine.
+Grips, Mag<span style="background-color:rgba(57,212,155, 0.36000000000000004)">azines</span>, sl</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>, p.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Innovation</span> priority No. 1: path to transformation in organizations. Rio de Janeiro: Editor</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|>
+Lefties Who Play Righty Club #288B<span style="background-color:rgba(57,212,155, 0.36000000000000004)">orden</span> lemon meringue pie
+Rec</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>, National Health Information Sharing and Analysis Center, and MDISS, Medical Device<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Innovation</span>, Safety and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> to build the Inco<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Innovation</span> Centre.
+“A portion of that original project had a ge</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|>-free space. Meals are gold for families.<span style="background-color:rgba(57,212,155, 0.28)"> Breakfast</span>, lunch or dinner…whenever</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span>ats Strategy for<span style="background-color:rgba(57,212,155, 0.28)"> Breakfast</span>The paradox I want to touch is that most companies don’t actually get in</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> Boyed told TVNZ's<span style="background-color:rgba(57,212,155, 0.28)"> Breakfast</span>.
+"But the thing is, while they're</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> 90024
+Date: Saturday, May 25th, 2019
+Registration and<span style="background-color:rgba(57,212,155, 0.28)"> Breakfast</span>: 8-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> sized bed for two (although some of the rooms had Queen size beds).<span style="background-color:rgba(57,212,155, 0.28)"> Breakfast</span> and dinner are</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> software utilities such as Getac Driving Safety Utility, Getac Device Monitoring System, Getac Virtual</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> covering]
+|21)||Work Life Balance|
+|A Day Of:|
+Life</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> if the long gun registry is killed.
+It’s the Sacred Cow of Canadian Gun Politics,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Alton Sterling, paid the men like Eric Garner selling loosies on street corners. I have</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>sound movies showing around the program. the book is packaged with a patch revealing undocumented functios important</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> and the baroque pop elements of “There’s Always Tomorrow.”
+“We’re always</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> 2013 Chevrolet Cruze trim levelAfter Robert Pattinson was caught in a compromising position with stunt-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> somewhere along the line about having a growth mindset. And I don't know where she picked it up</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>: I didn’t feel like going to work today, so I decided to stay home and do</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Who Wins at Advertising?
+The Atlantic (May 15, 2012) - People Click on About</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> many samples in the lab and working with the fingerstyle groups, they determined that a fingerstyle string</span>
@@ -97,7 +639,7 @@
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span>. My donation of time was nothing compared to the amount of time they spend making this event happen and</span>
@@ -105,7 +647,7 @@
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> it's allowed to be fictitious.
@@ -115,7 +657,23 @@ banned because</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>.Ringworm refers to a fungal infection that grows into worms as the name suggests. This is most</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> It boasts a contrasting silk blend fabric whilst a curved hemline completes the design. K.D.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span>
@@ -125,7 +683,15 @@ I</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> will appear mixed with the receive signal, but at a level 20 dB lower than it was sent into</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> that I make. This will allow me to focus on my goals with ViperChill and my</span>
@@ -133,755 +699,190 @@ I</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|>The Somers Library would like to thank the teens who participated in the Teen Creative Writers Workshop, Christine</span>
+            <span>s Heavy Days in it’s entirety while dancing in/around The Parthenon, praising</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|>.|
-|Journal||Neural Comput & Applic|
-Aiming at the problems of</span>
+            <span> to not only be special for them, but for their guests as well. Tim says “Obviously seeing</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> Education in Nursing (ACEN) or the Commission of Collegiate Nursing Education (CCNE)..</span>
+            <span>ubs
+- Breakfast buff<span style="background-color:rgba(57,212,155, 0.2)">et</span> is good
+- Courteous/helpful staff. Fast check</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>||Journal Article|
-|Additional Information:||Copyright of this article belongs to Elsevier Science.|</span>
+            <span> of General Practition<span style="background-color:rgba(57,212,155, 0.2)">ers</span> and Royal College of Nursing to ensure we’re always at the forefront of</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>s Required to be Qualified for LPN Programs?
-Classes to become a Licensed Practical Nurse</span>
+            <span> transfer to something really<span style="background-color:rgba(57,212,155, 0.2)"> kind</span> of terrifying in the real world.|The hand represents the 13 colonies.|</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>. We are currently looking for an ambitious Registered Nurse to help us reach our goals. Unlock</span>
+            <span><|endoftext|> Hygiene
+First<span style="background-color:rgba(57,212,155, 0.2)">ly</span>, avoid soaking yourself in a hot bathtub. It might</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> (GED) examination.|
-|Core Subjects||A minimum of a 2.0 GPA</span>
+            <span>ogatory epithets<span style="background-color:rgba(57,212,155, 0.2)"> ab</span>ound, for example [...] jerk face, nob, punk, quimp.|</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> has some background science knowledge.|
-|Can be accessed by||Participation in ceremonies; oral transmission</span>
+            <span> guests. Rebecca Vil<span style="background-color:rgba(57,212,155, 0.2)">kom</span>erson is executive director of Jewish Voice for Peace here in New York. Also</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> Park University dedicated the Janice I. Becker Nursing Simulation Suite in its state-of-</span>
+            <span><|endoftext|> wiki is by<span style="background-color:rgba(57,212,155, 0.2)"> no</span> means comprehensive.|Flash SALE — FREE US Shipping & 50%-70%</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>, Utah. Attended UVU where he received an RN degree in 2003. He worked at Utah</span>
+            <span> (3-5<span style="background-color:rgba(57,212,155, 0.2)">)|</span>|You have a trusted and loyal friend.|
+|True Love (4</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> (2)||You have a natural resistant to the cold or damage caused by cold.|
-|</span>
+            <span> I used icons from<span style="background-color:rgba(57,212,155, 0.2)"> the</span> Cisco site under Powerpoint icons.|
+Click for a larger image
+June</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> a rather poor nights sleep....all accusing the others of deafening snores.|
-|The K</span>
+            <span>BALTHAZAR<span style="background-color:rgba(57,212,155, 0.2)">,</span> }||Servants to Portia.|
+|PORTIA,||a</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>.|
-|Obvious Vice (1)||A strong need for specific type of sin.. Can</span>
+            <span> have already signed the<span style="background-color:rgba(57,212,155, 0.2)"> Call</span> for Peace. Have you? Read our blogs and view photos from this inspiring</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> needs.|
-† Daily Value not established.
-Other Ingredients: Soybean Oil and Soft</span>
+            <span> enough stuff? How<span style="background-color:rgba(57,212,155, 0.2)"> about</span> the Kentucky Breakfast Stout, which adds CAVE-AGED (no</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|>2.6 × H0.87 in.|YEALINK DECT HEADSET
-RED</span>
+            <span>. 1st Times<span style="background-color:rgba(57,212,155, 0.2)"> Higher</span> Education (THE) Innovation Summit, Hong Kong Poly. University, 31 May</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>'t transform into a yandere but stays civil and just wants Yuuki to be happy.|
+            <span> Employment Qualifications
+<span style="background-color:rgba(57,212,155, 0.2)">Grad</span>uate from an accredited School of Nursing, BSN preferred.
+Current lic</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>, H1A.|<span style="background-color:rgba(57,212,155, 0.2)">
+</span>|AEL65102-NST38||IO-360-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> Sullivan’s Global<span style="background-color:rgba(57,212,155, 0.2)"> Community</span> of Growth, Innovation and Leadership, visit www.frost.com/</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><|endoftext|> of Schitt<span style="background-color:rgba(57,212,155, 0.2)">’</span>s Creek known as the Jazzagals with this cute graphic tee. As</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>’ll crack your<span style="background-color:rgba(57,212,155, 0.2)"> crown</span>.|
+|‘A Bloody Battle between a Taylor and a Louse</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>appa catalog – some<span style="background-color:rgba(57,212,155, 0.2)"> 60</span>-plus albums – were reissued in recent months. Jazz Noise was</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>.|Enter your username or<span style="background-color:rgba(57,212,155, 0.2)"> email</span> address and we'll email you instructions on how to reset your password
 </span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>||Water thoroughly before planting and then keep soil moist through misting.|
-|Lucky B</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> Google Analytics site does not report that.|
-November 07, 2005
-Another episode from Hak.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>-360-E1A||T.R. Smith Aircraft: Aerostar.|
-|</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>, }||Suitors to Portia.|
-|PRINCE OF ARRAG</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> the area, while providing homeowners with the following benefits:
-- Greater energy efficiency
-- Peace of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> has FAILED to answer the complexity of the issue of Papua. Peaceful dialogue with the following</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>pm
-NamPyeongHwa Sanga (translates into South Peace Market, which</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Brunswick Jazz Project, local businesses, and City government, to Belfast. The ambitious agenda of the three</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>ally timely.
-+ Frank Zappa: Make a Jazz Noise Here – Nearly the entire Z</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>.|GETTING off to a slow start came back to haunt Nowra on Saturday against Shellhar</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> Peace. Information, http://www.dutchesspeace.org.
-Monday,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Daishandao (also called the Peace Ark, pictured here pierside), as well as</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> laws, to violate at will our hearts, and to march over our heads? War. Peace has</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>-inserts HR data into tax forms.|
-|FREEUnlimited tax form and signature storage.|</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> the Veterans Affairs Innovation Initiative (VAi2) contract.
-A Washington Technology profile in 2010</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> 12:00.
-Services & facilities
-- Pets allowed
-- Breakfast in the room
-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Business Community, the San Francisco Jazz Pageant, the Pickle Household Circus, and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>ANSIDCO Notification 2019, there is no application fees to apply this 01 Secretary cum Financial Controller</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>; one only stumbles upon them by chance, in a lucky hour, at the world's end</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> students, pastoral and youth residential internships as well as organizations that equip leaders for lay and vocational</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> God sees best for him.
-While a proud man grumbles that he has no more, a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Kretz Innovation Campus, LADWP officials and City leaders recognized and celebrated the above-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> black tea leaves, like Assam, English Breakfast, or Orange Pekoe
-- 6 egg</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>akes for Breakfast that deliver in spades. This is for a number of reasons, but to the</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark>. My donation of time was nothing compared to the amount of time they spend making this event happen and</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> that I make. This will allow me to focus on my goals with ViperChill and my</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> it's allowed to be fictitious.
-Banned for supporting fictional reasons.
-banned because</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark>
-See on www.ghanaweb.comEmail address capture (scraping?)
-I</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
-                <small>-1</small>
-            </div>
-            <span><mark> many samples in the lab and working with the fingerstyle groups, they determined that a fingerstyle string</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> has some background science knowledge<mark>.|</mark>
-|Can be accessed by||Participation in ceremonies; oral transmission</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>. We are currently looking for an ambitious Registered<mark> Nurse</mark> to help us reach our goals. Unlock</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> Education in<mark> Nursing</mark> (ACEN) or the Commission of Collegiate<mark> Nursing</mark> Education (CCNE)..</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> Park University dedicated the Janice I. Becker<mark> Nursing</mark> Simulation Suite in its state-of-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|><mark>.|</mark>
-|Journal||Neural Comput & Applic|
-Aiming at the problems of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> (GED) examination<mark>.|</mark>
-|Core Subjects||A minimum of a 2.0 GPA</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
-            </div>
-            <span>s Required to be Qualified for LPN Programs?
-Classes to become a Licensed Practical<mark> Nurse</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>, Utah. Attended UVU where he received an<mark> RN</mark> degree in 2003. He worked at Utah</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|>The<mark> Somers</mark> Library would like to thank the teens who participated in the Teen Creative Writers Workshop, Christine</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>||Journal Article|
-|Additional Information:||Copyright of this article belongs to Elsevier Science<mark>.|</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> Google Analytics site does not report that<mark>.|</mark>
-November 07, 2005
-Another episode from Hak.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> needs<mark>.|</mark>
-† Daily Value not established.
-Other Ingredients: Soybean Oil and Soft</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>, }||Suitors to Portia<mark>.|</mark>
-|PRINCE OF ARRAG</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>'t transform into a yandere but stays civil and just wants Yuuki to be happy<mark>.|</mark>
-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>-360-E1A||T.R. Smith Aircraft: Aerostar<mark>.|</mark>
-|</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><mark>.|</mark>
-|Obvious Vice (1)||A strong need for specific type of sin.. Can</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>||Water thoroughly before planting and then keep soil moist through misting<mark>.|</mark>
-|Lucky B</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> (2)||You have a natural resistant to the cold or damage caused by cold<mark>.|</mark>
-|</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|>2.6 × H0.87 in<mark>.|</mark>YEALINK DECT HEADSET
-RED</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> a rather poor nights sleep....all accusing the others of deafening snores<mark>.|</mark>
-|The K</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Daishandao (also called the<mark> Peace</mark> Ark, pictured here pierside), as well as</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>-inserts HR data into tax forms<mark>.|</mark>
-|FREEUnlimited tax form and signature storage<mark>.|</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>ally timely.
-+ Frank Zappa: Make a<mark> Jazz</mark> Noise Here – Nearly the entire Z</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> laws, to violate at will our hearts, and to march over our heads? War.<mark> Peace</mark> has</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> has FAILED to answer the complexity of the issue of Papua.<mark> Peace</mark>ful dialogue with the following</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> the area, while providing homeowners with the following benefits:
-- Greater energy efficiency
--<mark> Peace</mark> of</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|><mark> Peace</mark>. Information, http://www.dutchesspeace.org.
-Monday,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>pm
-NamPyeongHwa Sanga (translates into South<mark> Peace</mark> Market, which</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><mark>.|</mark>GETTING off to a slow start came back to haunt Nowra on Saturday against Shellhar</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Brunswick<mark> Jazz</mark> Project, local businesses, and City government, to Belfast. The ambitious agenda of the three</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Business Community, the San Francisco<mark> Jazz</mark> Pageant, the Pickle Household Circus, and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> students, pastoral and youth residential internships as well as organizations that equip leaders for lay and<mark> vocational</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> 12:00.
-Services & facilities
-- Pets allowed
--<mark> Breakfast</mark> in the room
-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> black tea leaves, like Assam, English<mark> Breakfast</mark>, or Orange Pekoe
-- 6 egg</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> the Veterans Affairs<mark> Innovation</mark> Initiative (VAi2) contract.
-A Washington Technology profile in 2010</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> God sees best for him.
-While a proud man gr<mark>umbles</mark> that he has no more, a</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>ANSIDCO<mark> Notification</mark> 2019, there is no application fees to apply this 01 Secretary cum Financial Controller</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>; one only st<mark>umbles</mark> upon them by chance, in a lucky hour, at the world's end</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>akes for<mark> Breakfast</mark> that deliver in spades. This is for a number of reasons, but to the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Kretz<mark> Innovation</mark> Campus, LADWP officials and City leaders recognized and celebrated the above-</span>
         </div>
         
             </div>

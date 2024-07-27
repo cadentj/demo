@@ -13,24 +13,32 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #f5f5f5;
+                background-color: #FBFBFB;
             }
             h1, h2 {
                 color: #2c3e50;
+                margin-top: 0px;
                 border-bottom: 2px solid #3498db;
                 padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
             }
             .card {
                 background-color: #ffffff;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border: solid #E4E4E7;
+                border-width: .25px;
                 padding: 20px;
                 margin-bottom: 20px;
             }
             .explanation {
                 background-color: #e8f6f3;
                 border-left: 4px solid #1abc9c;
-                padding: 15px;
+                padding: 3px 15px 3px 15px;
                 margin-top: 20px;
             }
             .score-item {
@@ -47,6 +55,7 @@
                 height: 8px;
                 border-radius: 50%;
                 margin-right: 5px;
+                border: 0.5px solid #84848C;
             }
             .true {
                 background-color: #27ae60;
@@ -54,14 +63,12 @@
             .false {
                 background-color: #c0392b;
             }
-            pre {
-                background-color: #f8f8f8;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                padding: 10px;
-                white-space: pre-wrap;
-                word-wrap: break-word;
-                font-size: 14px;
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
             }
         </style>
     </head>
@@ -71,25 +78,569 @@
         <div class="card">
             <h2>Model Generation</h2>
             <h3>Prompt:</h3>
-            <br>Example 1: <|endoftext|> to leave Bollywood and became disciple of Osho between 1982-1986.<mark> His</mark> S<br>Activation  His:10.0, <br>Example 2:  Dallas, Nichols said he in no way believes police officers are “inherently bad.”<mark> His</mark> father<br>Activation  His:10.0, <br>Example 3: <|endoftext|> successful man.<mark> His</mark> well kept farm and nice home is a demonstration of the above facts.<br><br>Activation  His:10.0, <br>Example 4: fiction and documentary) and for contemporary art exhibitions in Belgium.<mark> His</mark> mixed British-German background reflects the<br>Activation  His:10.0, <br>Example 5:  in<mark> His</mark> direction. My only response can be continual worship and continual faith.<br>Peter could have stayed<br>Activation  His:10.0, <br>Example 6:  sense, Carmichael had been dead for many years.<mark> His</mark> appeals to black Americans to return to Africa<br>Activation  His:10.0, <br>Example 7: <|endoftext|> waivers, and that it is<mark> His</mark> grace that enables my hand to even remain outstretched<br>Activation  His:10.0, <br>Example 8:  the state's budget with stimulus money he railed against.<mark> His</mark> record won't back up his br<br>Activation  His:10.0, <br>Example 9:  they go hysterical. He takes his wife out for a date--and their veins bulge.<mark> His</mark><br>Activation  His:10.0, <br>Example 10:  Middlesex Co. N.J. in the later part of 1667.<mark> His</mark> land grant<br>Activation  His:10.0, <br><br>Top_logits: ['imon', 'eches', 'laws', 'ettes', 'idency', 'yers', ' Magazine', 'edo', ' retreat', 'imony']
+            Example 1: <|endoftext|> to leave Bollywood and became disciple of Osho between 1982-1986.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> S<br>Activations: (" His" : 10)<br>Example 2:  Dallas, Nichols said he in no way believes police officers are “inherently bad.”<span style="background-color:rgba(57,212,155, 1.0)"> His</span> father<br>Activations: (" His" : 10)<br>Example 3: <|endoftext|> successful man.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> well kept farm and nice home is a demonstration of the above facts.<br><br>Activations: (" His" : 10)<br>Example 4: fiction and documentary) and for contemporary art exhibitions in Belgium.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> mixed British-German background reflects the<br>Activations: (" His" : 10)<br>Example 5:  in<span style="background-color:rgba(57,212,155, 1.0)"> His</span> direction. My only response can be continual worship and continual faith.<br>Peter could have stayed<br>Activations: (" His" : 10)<br>Example 6:  sense, Carmichael had been dead for many years.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> appeals to black Americans to return to Africa<br>Activations: (" His" : 10)<br>Example 7: <|endoftext|> waivers, and that it is<span style="background-color:rgba(57,212,155, 1.0)"> His</span> grace that enables my hand to even remain outstretched<br>Activations: (" His" : 10)<br>Example 8:  the state's budget with stimulus money he railed against.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> record won't back up his br<br>Activations: (" His" : 10)<br>Example 9:  they go hysterical. He takes his wife out for a date--and their veins bulge.<span style="background-color:rgba(57,212,155, 1.0)"> His</span><br>Activations: (" His" : 10)<br>Example 10:  Middlesex Co. N.J. in the later part of 1667.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> land grant<br>Activations: (" His" : 10)<br>Example 11: <|endoftext|> the family’s ordeal in tiny Yiddish letters.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> daughter doesn’t know<br>Activations: (" His" : 10)<br>Example 12:  counselor and served the Lord for many years.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> life was a living testimony that glorifying the Lord<br>Activations: (" His" : 10)<br>Example 13: Browning began to write verses at the age of six.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> first published work was Pauline:<br>Activations: (" His" : 10)<br>Example 14:  sound of Alleluia shook the air, He reined in<span style="background-color:rgba(57,212,155, 1.0)"> His</span> meek beast and looked<br>Activations: (" His" : 10)<br>Example 15: .<span style="background-color:rgba(57,212,155, 1.0)"> His</span> mother had been a special-education teacher; his cousin had a developmental disability. "I<br>Activations: (" His" : 10)<br>Example 16: <|endoftext|>. He blogs from a normal financial perspective.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> experience will hopefully help you to keep going,<br>Activations: (" His" : 10)<br>Example 17: ers its subject: Christ gets angry and<span style="background-color:rgba(57,212,155, 1.0)"> His</span> Mother inclines Him to mercy and teaches to forgive.<br>Activations: (" His" : 10)<br>Example 18: W (Austria).<span style="background-color:rgba(57,212,155, 1.0)"> His</span> current research interests are in Service Architectures, Communication Services, Social Networks<br>Activations: (" His" : 10)<br>Example 19: <span style="background-color:rgba(57,212,155, 1.0)"> His</span> character isn`t Newton, but himself. But I like that because he is a true comedian<br>Activations: (" His" : 10)<br>Example 20: .<span style="background-color:rgba(57,212,155, 1.0)"> His</span> slapstick routines are hilarious.<br>Goldie Hawn`s performance comes across dull.<br>Activations: (" His" : 10)<br><br>Top_logits: ['imon', 'eches', 'laws', 'ettes', 'idency', 'yers', ' Magazine', 'edo', ' retreat', 'imony']
             <h3>Response:</h3>
-            (Part 1)<br>ACTIVATING TOKENS: "His".<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always "His".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve possessive pronouns, specifically "His".<br>- The activating token is a possessive pronoun.<br><br>STEP 3.<br>- The activation values are consistently high across all examples.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No additional patterns were found.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated words and doesn't provide a clear pattern.<br><br>[EXPLANATION]: The possessive pronoun "His", which is often used to indicate ownership or relation.
+            (Part 1)<br>ACTIVATING TOKENS: " His" (all examples).<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating token is always " His".<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve possessive pronouns, specifically " His".<br>- The activating token is a possessive pronoun.<br><br>Step 3.<br>- The activation values are all high, indicating that the neuron is highly activated by the token " His".<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- No, I didn't miss any.<br><br>(Part 2)<br>SIMILAR TOKENS: None<br>- The top logits list contains unrelated words and doesn't provide any clear insight into the neuron's behavior.<br><br>[EXPLANATION]: The possessive pronoun "His".
         </div>
 
         <div class="card">
             <h2>Explanation</h2>
             <div class="explanation">
-                <p>The possessive pronoun &quot;His&quot;, which is often used to indicate ownership or relation.</p>
+                <p>The possessive pronoun &quot;His&quot;.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2>Recall Scores</h2>
-            <div id="recall-scores">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
                 
         <div class="score-item">
             <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>, also called Paradise, where<span style="background-color:rgba(57,212,155, 1.0)"> His</span> glory resides and where He is forever glorified by the angels,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|><span style="background-color:rgba(57,212,155, 1.0)"> His</span> greatness, but to begin a much needed dialogue. While lacking explicit authority, aside from having</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span>, possessed of wry, self-deprecating wit.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> breakthrough hit Pass Out is a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> southern Rhone with a Burgundian grand cru-like gracefulness and elegance.<span style="background-color:rgba(57,212,155, 1.0)"> His</span> 2011</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|>.
+When the love of Jesus surrounds you, and you are filled with<span style="background-color:rgba(57,212,155, 1.0)"> His</span> Spirit, then</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> His</span> Holy Spirit. This call is in waiting at the point of their birth, and active at</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><|endoftext|> Toronto if he thought that the time was ripe for an African pope.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> His</span> answer attracted much cheering</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> learning some kickass martial art.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> His</span> wife then comes to send some food, and Dongfang</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> Fish Hawk Farms provided lunch.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> His</span> Vegetable Soup (with all the produce coming from his own</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> us.
+2.<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> His</span> form of reasoning is very uncouth, for to prove that the observation</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span>… In a one bedroom apartment.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> dad let us have the bed and First Guy wouldn’t</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> Vampire Slayer."<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> popularity resulted in the spinoff "Angel," which aired from</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> right,” a success with unfortunate footnotes.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> decisions, he still believes, made America safer,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span> like me and<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> Justice demands that my frequent breaches of<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> laws requires a penalty.
+As against</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> observing, listening and reading. He has almost memorized the Lal Kitabs.<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> His</span> interpretation of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> of Missouri, as well as his doctor of
+veterinary medicine degree.<span style="background-color:rgba(57,212,155, 0.76)"> His</span> research focus</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> His</span> brother Taktser Rimpoche added to the sense of inevitability.
+The government</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span>, signs & wonders including raising the dead.<span style="background-color:rgba(57,212,155, 0.76)"> His</span> ministry has raised about 500 people from the dead.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>ian, got started in the events industry at a young age.<span style="background-color:rgba(57,212,155, 0.76)"> His</span> dad owned a catering</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> for interspecies transmission of pathogens.<span style="background-color:rgba(57,212,155, 0.76)"> His</span> genomic approach to harnessing the host response for diagnosis of infectious</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> UFC victories. The 32-year-old Brazilian submitted Tim Elliott in their October bout.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> His</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> are called according to<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> His</span> divine purpose".Never mind If you are a new creation in Christ.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>ataswarupa (embodiment of cosmic Divinity).<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> His</span> is the cosmic form. Each</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>ublai Khan between the years 1271 and 1275 and spent 17 years in his palace.<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> His</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
                 <span class="circle false"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span> of unity among<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> His</span>panics who did not attend. This speaks volumes!!!!
+I understand that only</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span>s bidding in every act that he commits.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> His</span> motive throughout is his desire for Esmeralda</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> in Wittenberg.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> His</span> theses consisted of objections to various practices of the Catholic Church which were</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> His</span> control. I see the fact that God has allowed this [coronavirus] pandemic to occur</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> met appear in everyday scenes...<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> His</span> experience, knowledge, and wry humour invite us to</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><|endoftext|> gave Charles an ultimatum.<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> His</span> daughter or the sea. Fortunately his love for Josephine</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> court leet.<span style="background-color:rgba(57,212,155, 0.52)"> His</span> salary was £6 6s. a year with a fee of a guinea</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> colorist Lee Loughridge throughout the entire story.<span style="background-color:rgba(57,212,155, 0.52)"> His</span> work’s absolutely incredible, but for</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> (Shriram Lagoo) who deals in extravagant luxury handcrafted products.<span style="background-color:rgba(57,212,155, 0.52)"> His</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> the direction Professor Robert F. Snider.<span style="background-color:rgba(57,212,155, 0.52)"> His</span> post-doctoral work was with Professor Jan Been</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> Savior.<span style="background-color:rgba(57,212,155, 0.52)"> His</span> eyes narrowed and his forehead creased in anger.
+“I do not have</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span>. Fort Flowers Professor.<span style="background-color:rgba(57,212,155, 0.44)"> His</span> research interests include the design and control of advanced upper and lower extremity prost</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> God says to<span style="background-color:rgba(57,212,155, 0.44)"> His</span> people, “I am your inheritance” (Num. 18:20). “</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> at Emory University.<span style="background-color:rgba(57,212,155, 0.44)"> His</span> specialties include Islamic law and legal theory, Shi'ite Islam,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><|endoftext|> learning.<span style="background-color:rgba(57,212,155, 0.44)"> His</span> recent work involves developing robust algorithms for self-driving and making autonomous vehicles more reliable</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span> from the Center for Byzantine, Ottoman and Modern Greek Studies, University of Birmingham, England.<span style="background-color:rgba(57,212,155, 0.44)"> His</span> area</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><|endoftext|> false accusations about my wife, then you’re free to go.”<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> His</span> voice was cold and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> PLAY WITH BADOU AND<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> HIS</span> FRIENDS
+***Six educational and entertaining activities:
+</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span>ner, executive director of the Secretariat of<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Divine</span> Worship for the U.S. Conference of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span> always seeking expression through me”. This means that<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> Divine</span> Love-Light (the “Source”) seeks expression</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> Schneider and Keith Strickland.<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> His</span> guitar sound added to the quirkiness of the band. He was</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> Prince of Egypt” and wondering why the same<span style="background-color:rgba(57,212,155, 0.28)"> supernatural</span> being with power over all of existence would ever want</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span>.. and having symbol of your faith with you improves your<span style="background-color:rgba(57,212,155, 0.28)"> supernatural</span> resistance.||True Faith, Symbol,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> – as happened at a recent Phoenix Park concert – little has been done. Now, Coalition and<span style="background-color:rgba(57,212,155, 0.28)"> Opposition</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> you like it anyway. The year the first<span style="background-color:rgba(57,212,155, 0.28)"> Chrysler</span> 200 Limited was sold was 2011.
+The 200</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> our salvation, the Lord Christ made a<span style="background-color:rgba(57,212,155, 0.28)"> supernatural</span> 'intrusion' into our world, that never</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Fund Proposals Due
+The Student Green Energy Fund (SGEF) was established to help</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> 27, 2010
+In Tucson, the best Tex-Mex in town can be found at Pac</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> have been associated with certain untoward reactions including fear, anxiety, tenseness, restlessness,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> it probably won’t happen again for some time.comment (1)
+Just a quick thought</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> film was expected to win over the hearts of the viewers right from the very beginning. The earnings of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>and "Boaz" where groups would meet. Boaz is mentioned time and time again in The</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> drip pan leaks and causes a flare-up? What if it starts raining? What if</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> of Coral Sunset, the brighter and more orange it will look.)
+Today I wore Cor</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>, hospital, doctor, healer, treat, cure, heal, disease, wessels,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> One thing that both the clubs and players have asked for over time is consistency in decision-making.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> He interviewed a tutorial participant whose father had committed suicide. The two men talked about their relationships with their</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> a sarcastic person feels about such things. They say mean things all the time, without even meaning</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>,means a lot :DFull Streaming Queen Crab in High Quality VideoNow you can enjoy</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> there for the afterparties. This one night in particular, he had a terrible toothache.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> June 18, 2016's comic on:
+Boss: Company policy says you have to take a</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> had gone so smoothly.
@@ -98,7 +649,15 @@ Whatever the reason, there seems to be a new sense of agreement among</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> that Have and involve in a external load. Lorem download hitler History make policy, project driving</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
             <span> (such as concrete or wooden decking) or directly onto soft surfaces (such as soil) making</span>
@@ -106,738 +665,186 @@ Whatever the reason, there seems to be a new sense of agreement among</span>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span> a sarcastic person feels about such things. They say mean things all the time, without even meaning</span>
+            <span> and diversity have been elevated to that role. They are a major part of the new reality and they</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle true"></span><span class="circle none"></span>
                 <small>-1</small>
             </div>
-            <span> He interviewed a tutorial participant whose father had committed suicide. The two men talked about their relationships with their</span>
+            <span> assist. Contact a talented Divorce attorney in Albion today.Code4Health is a programme managed</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span>,means a lot :DFull Streaming Queen Crab in High Quality VideoNow you can enjoy</span>
+            <span><|endoftext|>aldane mission<span style="background-color:rgba(57,212,155, 0.2)"> (</span>1912<span style="background-color:rgba(57,212,155, 0.2)">)</span>
+- 7 Opposition in the Reichstag (1912</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> to Senna? Many, more than we can count. His nephew, Bruno, followed his</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> March 1899. His second term was marked by premonitions of further disorder. In Tuly</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>, just a huge dude. His dad probably owned Wyoming, and apparently all the drugs in it.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> be faced with an ever- growing resistance to the Lord and His teachings.
-Thanks Carl. Now</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>486 FG percentage). His size allows him to get inside and score but he has the ability to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> disorders, including autism, specific language impairment and dyslexia. His group was the first to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> our client portal to access this information and more!what if I told you that His Uganda's</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span><|endoftext|> the nature of God and His characteristics, but only concerning obedience to God, piety, and</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span> “His yoke is easy” as you breathe in, choosing His easy yoke. “His</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
-            </div>
-            <span>, also called Paradise, where His glory resides and where He is forever glorified by the angels,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>human inclination to forget the Lord, to overlook His redemptive works in our life, to neglect</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> my shoes, paralyzed. His teeth kept banging against the pencil as he waited for me to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> the ladies seem to adore it." His tone was solemn, his head tilted slightly to the right</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> mankind, from where He shall return, triumphant, first to call to Himself His redeemed</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>ism.
-Alexander Hislop, author of The Two Babylons: The Papal Worship</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span>. His other great classics include “Aicha” and the phenomenal live performance of “Abdel</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> her baby during birth. Your child may not need treatment if his body fights the HCV. His infection</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> host his comments. even easily His priority the Dalai Lama. then increase His Holiness Panc</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> labor and are heavy laden, and I will give you rest." His promise of rest begins with</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> His residence on the outskirts of Wakefield witnessing the old man opening up as never before.
-</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Lord. It is a sign that His power is present today. That He is still coming into His</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to Boone, Robbinsville to Asheville. His local family history goes back 5</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>. His joy.
-We don’t look to God to provide what we need in the dark</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> my love for God; my confidence is in His love for me, not my love for Him.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> runs the center for study of working class life. His most recent book is this one, WHAT'</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to Republicans."
-On the surface, the new GOP report looks good for Hispanics.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> of a Church class, variously styled members of His Body, His Bride, His companions</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> my statement. His
-fellow-citizens, too, my clients, the Locrians,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> floor plan for the house he says he’ll build someday, settlement or not. His son Bl</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span>duchess of Austria and His Royal and Serene Highness, Prince Piotr Gal</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>]
-See His Eye as He Stops Thomas Fried(man): Steve Harris Takes on the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> requirements of hospital pharmacy. His sons, Robert and Mark, continue the tradition for The Medi</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> us of His intimate care.
-Following the progression of thought in this beloved psalm, today</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Forestry to advise the Legislature on forest policy. The Leader of the Opposition criticized the BC Liberals</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> well as LGBT rights. Opposition takes various forms, such as hostile public discourse, street demonstrations or</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>�� »
-cause it is evident from the Divine Attributes, that God doth confirm</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> be glad to have the privilege of enduring something for His Captain and in the interests of the Kingdom to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span> His friendship with Chief Seattle was important in the formation of the city of Seattle, and it was he</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span>CC Lip Tar in Divine
-MAC Magenta Lip Pencil
-Ben Nye Vino Lip P</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> “Who tells me Thou art dark, oh my Mother Divine?”
-Kali is depicted</span>
-        </div>
-        
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Fuzz Scores</h2>
-            <div id="fuzz-scores">
-                
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle false"></span>
                 <small>-1</small>
             </div>
-            <span><mark> He interviewed a tutorial participant whose father had committed suicide. The two men talked about their relationships with their</mark></span>
+            <span><|endoftext|> the dance-<span style="background-color:rgba(57,212,155, 0.2)">mad</span> city of<span style="background-color:rgba(57,212,155, 0.2)"> New</span> York. His accommodation, Giolito’s, at</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> had gone so smoothly.
-Whatever the reason, there seems to be a new sense of agreement among</mark></span>
+            <span> is Duan’<span style="background-color:rgba(57,212,155, 0.2)">s</span> sixth language<span style="background-color:rgba(57,212,155, 0.2)">.</span> His schooling took place under a tree. He sat in the</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle true"></span>
+                <span class="circle none"></span><span class="circle false"></span>
                 <small>-1</small>
             </div>
-            <span><mark>,means a lot :DFull Streaming Queen Crab in High Quality VideoNow you can enjoy</mark></span>
+            <span><|endoftext|> becoming a family<span style="background-color:rgba(57,212,155, 0.2)"> fisher</span>man is<span style="background-color:rgba(57,212,155, 0.2)"> met</span> with numerous challenges. His story parallels that of Darius K</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle false"></span>
                 <small>-1</small>
             </div>
-            <span><mark> (such as concrete or wooden decking) or directly onto soft surfaces (such as soil) making</mark></span>
+            <span><|endoftext|> to use it<span style="background-color:rgba(57,212,155, 0.2)">,</span> dying just<span style="background-color:rgba(57,212,155, 0.2)"> a</span> few weeks after his 67th birthday. His wife offered his</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle false"></span><span class="circle false"></span>
+                <span class="circle none"></span><span class="circle true"></span>
                 <small>-1</small>
             </div>
-            <span><mark> a sarcastic person feels about such things. They say mean things all the time, without even meaning</mark></span>
+            <span><|endoftext|> at a more<span style="background-color:rgba(57,212,155, 0.2)"> convenient</span> time. His<span style="background-color:rgba(57,212,155, 0.2)"> commitment</span> to boundaries would suggest that he should not have answered.</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> the nature of God and<mark> His</mark> characteristics, but only concerning obedience to God, piety, and</span>
+            <span><|endoftext|>. I care<span style="background-color:rgba(57,212,155, 0.2)"> about</span> my students<span style="background-color:rgba(57,212,155, 0.2)"> and</span> I can help them be successful,” he said. His class</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> March 1899.<mark> His</mark> second term was marked by premonitions of further disorder. In Tuly</span>
+            <span><|endoftext|>.
+Example<span style="background-color:rgba(57,212,155, 0.2)">:</span> Player 2<span style="background-color:rgba(57,212,155, 0.2)"> wins</span> the reaction test. His squad was targeted by the enemy's</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> to Senna? Many, more than we can count.<mark> His</mark> nephew, Bruno, followed his</span>
+            <span> gathers the lamb<span style="background-color:rgba(57,212,155, 0.2)">s</span> in His arms<span style="background-color:rgba(57,212,155, 0.2)"> and</span> carries them close to His heart."
+Tuesday & Thursday</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span> “His yoke is easy” as you breathe in, choosing<mark> His</mark> easy yoke. “His</span>
+            <span><|endoftext|> to the praise<span style="background-color:rgba(57,212,155, 0.2)"> of</span> His glory”<span style="background-color:rgba(57,212,155, 0.2)"> (</span>Eph. 1:13–14).
+E</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> our client portal to access this information and more!what if I told you that<mark> His</mark> Uganda's</span>
+            <span><|endoftext|> him awake. His<span style="background-color:rgba(57,212,155, 0.2)"> eyes</span> grew wide<span style="background-color:rgba(57,212,155, 0.2)"> as</span> he exclaimed Dee Dee??!!
+Ahhh,</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> be faced with an ever- growing resistance to the Lord and<mark> His</mark> teachings.
-Thanks Carl. Now</span>
+            <span> the decision up to<span style="background-color:rgba(57,212,155, 0.2)"> Him</span>; then<span style="background-color:rgba(57,212,155, 0.2)"> we</span> will find ourselves looking for His will to be done, rather</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>486 FG percentage).<mark> His</mark> size allows him to get inside and score but he has the ability to</span>
+            <span><|endoftext|> her and she<span style="background-color:rgba(57,212,155, 0.2)"> mirac</span>ulously finds<span style="background-color:rgba(57,212,155, 0.2)"> answers</span> to research she is looking for and attributes that to supernatural help</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span>, also called Paradise, where<mark> His</mark> glory resides and where He is forever glorified by the angels,</span>
+            <span> and starting to read<span style="background-color:rgba(57,212,155, 0.2)">.</span> His voice is<span style="background-color:rgba(57,212,155, 0.2)"> monotone</span>, his face fixed firmly on the book. Just as</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>, just a huge dude.<mark> His</mark> dad probably owned Wyoming, and apparently all the drugs in it.</span>
+            <span><|endoftext|> the Worship<span style="background-color:rgba(57,212,155, 0.2)"> of</span> Nimrod<span style="background-color:rgba(57,212,155, 0.2)"> and</span> His Wife (Loizeaux Brothers, 1959), does this</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>1</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|> disorders, including autism, specific language impairment and dyslexia.<mark> His</mark> group was the first to</span>
+            <span>, yet still resist<span style="background-color:rgba(57,212,155, 0.2)"> the</span> thought that His<span style="background-color:rgba(57,212,155, 0.2)"> grace</span> and Power are best seen in/through my weaknesses (</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>ism.
-Alexander<mark> His</mark>lop, author of The Two Babylons: The Papal Worship</span>
+            <span><|endoftext|> The Divine Comedy's<span style="background-color:rgba(57,212,155, 0.2)"> application</span> of the<span style="background-color:rgba(57,212,155, 0.2)"> symbol</span> to Philip of France.The assumed version is a rather</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span><|endoftext|><mark> His</mark> residence on the outskirts of Wakefield witnessing the old man opening up as never before.
-</span>
+            <span><|endoftext|>s programs haven<span style="background-color:rgba(57,212,155, 0.2)">’</span>t always<span style="background-color:rgba(57,212,155, 0.2)"> been</span> popular. His Pre-K 4 SA measure, which will</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
             </div>
-            <span> the ladies seem to adore it."<mark> His</mark> tone was solemn, his head tilted slightly to the right</span>
+            <span> in Cleveland, Ohio<span style="background-color:rgba(57,212,155, 0.2)">.</span> His speech lasted<span style="background-color:rgba(57,212,155, 0.2)"> about</span> an hour and fifteen minutes.
+As I’ve</span>
         </div>
         
         <div class="score-item">
             <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
             </div>
-            <span>.<mark> His</mark> other great classics include “Aicha” and the phenomenal live performance of “Abdel</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>2</small>
-            </div>
-            <span> her baby during birth. Your child may not need treatment if his body fights the HCV.<mark> His</mark> infection</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span>human inclination to forget the Lord, to overlook<mark> His</mark> redemptive works in our life, to neglect</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> host his comments. even easily<mark> His</mark> priority the Dalai Lama. then increase<mark> His</mark> Holiness Panc</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span><|endoftext|> mankind, from where He shall return, triumphant, first to call to Himself<mark> His</mark> redeemed</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> labor and are heavy laden, and I will give you rest."<mark> His</mark> promise of rest begins with</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>2</small>
-            </div>
-            <span> my shoes, paralyzed.<mark> His</mark> teeth kept banging against the pencil as he waited for me to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>duchess of Austria and<mark> His</mark> Royal and Serene Highness, Prince Piotr Gal</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span>.<mark> His</mark> joy.
-We don’t look to God to provide what we need in the dark</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> my love for God; my confidence is in<mark> His</mark> love for me, not my love for Him.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to Republicans."
-On the surface, the new GOP report looks good for<mark> His</mark>panics.</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> to Boone, Robbinsville to Asheville.<mark> His</mark> local family history goes back 5</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> my statement.<mark> His</mark>
-fellow-citizens, too, my clients, the Locrians,</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span><|endoftext|> of a Church class, variously styled members of<mark> His</mark> Body,<mark> His</mark> Bride,<mark> His</mark> companions</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> floor plan for the house he says he’ll build someday, settlement or not.<mark> His</mark> son Bl</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>3</small>
-            </div>
-            <span> runs the center for study of working class life.<mark> His</mark> most recent book is this one, WHAT'</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>3</small>
-            </div>
-            <span> Lord. It is a sign that<mark> His</mark> power is present today. That He is still coming into<mark> His</mark></span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> Forestry to advise the Legislature on forest policy. The Leader of the<mark> Opposition</mark> criticized the BC Liberals</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span> be glad to have the privilege of enduring something for<mark> His</mark> Captain and in the interests of the Kingdom to</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> us of<mark> His</mark> intimate care.
-Following the progression of thought in this beloved psalm, today</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>]
-See<mark> His</mark> Eye as He Stops Thomas Fried(man): Steve Harris Takes on the</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span>CC Lip Tar in<mark> Divine</mark>
-MAC Magenta Lip Pencil
-Ben Nye Vino Lip P</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><mark> His</mark> friendship with Chief Seattle was important in the formation of the city of Seattle, and it was he</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|>�� »
-cause it is evident from the<mark> Divine</mark> Attributes, that God doth confirm</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle false"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> well as LGBT rights.<mark> Opposition</mark> takes various forms, such as hostile public discourse, street demonstrations or</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> “Who tells me Thou art dark, oh my Mother<mark> Divine</mark>?”
-Kali is depicted</span>
-        </div>
-        
-        <div class="score-item">
-            <div style="min-width: 60px;">
-                <span class="circle true"></span><span class="circle true"></span>
-                <small>4</small>
-            </div>
-            <span><|endoftext|> requirements of hospital pharmacy.<mark> His</mark> sons, Robert and Mark, continue the tradition for The Medi</span>
+            <span> Rabat. His machine<span style="background-color:rgba(57,212,155, 0.2)">
+</span>was damaged<span style="background-color:rgba(57,212,155, 0.2)"> in</span> landing and the
+trans-Atlantic trip will have</span>
         </div>
         
             </div>
