@@ -1,0 +1,869 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature Analysis: resid_4-12420</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #FBFBFB;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                margin-top: 0px;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 10px;
+                color: #666;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            .card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                border: solid #E4E4E7;
+                border-width: .25px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .explanation {
+                background-color: #e8f6f3;
+                border-left: 4px solid #1abc9c;
+                padding: 3px 15px 3px 15px;
+                margin-top: 20px;
+            }
+            .score-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+            .highlighted {
+                background-color: #ffff99;
+            }
+            .circle {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+                border: 0.5px solid #84848C;
+            }
+            .true {
+                background-color: #27ae60;
+            }
+            .false {
+                background-color: #c0392b;
+            }
+            .none {
+                background-color: #ffffff;
+            }
+            .key {
+                font-size: 10px;
+                color: #84848C;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feature Analysis: resid_4-12420</h1>
+
+        <div class="card">
+            <h2>Model Generation</h2>
+            <h3>Prompt:</h3>
+            Example 1: <span style="background-color:rgba(57,212,155, 1.0)"> loves</span> them.<span style="background-color:rgba(57,212,155, 1.0)"> But</span> they never agree on anything (including the weather!). So Governor Sarah Palin reminds them<br>Activations: (" loves" : 10)<br>Example 2: <span style="background-color:rgba(57,212,155, 1.0)"> but</span> gained 1,000 votes in (Republican) counties in<span style="background-color:rgba(57,212,155, 1.0)"> which</span> she had less than 50<span style="background-color:rgba(57,212,155, 1.0)">%.</span><br>Activations: (" but" : 7), (" which" : 8), ("%." : 9)<br>Example 3:  want her to<span style="background-color:rgba(57,212,155, 1.0)"> let</span> her personality shine<span style="background-color:rgba(57,212,155, 1.0)">. So</span> to<span style="background-color:rgba(57,212,155, 1.0)"> compromise</span>, I<span style="background-color:rgba(57,212,155, 1.0)"> make sure</span> every<span style="background-color:rgba(57,212,155, 1.0)"> time</span> we do match<br>Activations: (" let" : 9), (" compromise" : 7), (" sure" : 8)<br>Example 4:  Kindergarten from 1985 to<span style="background-color:rgba(57,212,155, 1.0)"> 2006. When</span> she finally<span style="background-color:rgba(57,212,155, 1.0)"> retired,</span> she<span style="background-color:rgba(57,212,155, 1.0)"> was</span> already in her 60s<br>Activations: (" 2006" : 6), ("." : 8), (" When" : 7), (" retired" : 7), ("," : 9)<br>Example 5: <span style="background-color:rgba(57,212,155, 1.0)"> off</span> I was<span style="background-color:rgba(57,212,155, 1.0)"> about</span> not being able to go<span style="background-color:rgba(57,212,155, 1.0)"> with</span> her. But she had been pushed<span style="background-color:rgba(57,212,155, 1.0)"> inside</span> the taxi<br>Activations: (" off" : 9), (" about" : 6)<br>Example 6: <span style="background-color:rgba(57,212,155, 1.0)"> left</span> Alice<span style="background-color:rgba(57,212,155, 1.0)"> at</span> a daycare center<span style="background-color:rgba(57,212,155, 1.0)"> when</span> she was four years old<span style="background-color:rgba(57,212,155, 1.0)"> and</span> never came back,<span style="background-color:rgba(57,212,155, 1.0)"> appears at</span><br>Activations: (" left" : 6), (" when" : 9), (" and" : 6)<br>Example 7:  office can do to better<span style="background-color:rgba(57,212,155, 1.0)"> serve</span> the troops<span style="background-color:rgba(57,212,155, 1.0)">.<br</span>>Administrator of the Office of Federal Procurement<br>Activations: ("." : 8), ("<br>" : 6)<br>Example 8: <span style="background-color:rgba(57,212,155, 1.0)"> with</span> her mom<span style="background-color:rgba(57,212,155, 1.0)">. And</span> she was<span style="background-color:rgba(57,212,155, 1.0)"> glad that</span> they had<span style="background-color:rgba(57,212,155, 1.0)"> destroyed</span> Klaus. Everything else... Well.<br>Activations: (" with" : 6), (" that" : 8)<br>Example 9:  growing like crazy and is so smart. She<span style="background-color:rgba(57,212,155, 1.0)"> knows</span> so many words<span style="background-color:rgba(57,212,155, 1.0)"> and is</span> such a talker<span style="background-color:rgba(57,212,155, 1.0)">.</span><br>Activations: (" knows" : 6), ("." : 8)<br>Example 10:  issue licenses<span style="background-color:rgba(57,212,155, 1.0)">.</span> She was legally bound to issue them<span style="background-color:rgba(57,212,155, 1.0)">.</span> She refused<span style="background-color:rgba(57,212,155, 1.0)">.<br</span>>Why<span style="background-color:rgba(57,212,155, 1.0)"> did</span> she refuse<span style="background-color:rgba(57,212,155, 1.0)">?</span><br>Activations: ("." : 8), ("." : 8), ("." : 8), ("<br>" : 6), ("?" : 7)<br>Example 11:  daily life<span style="background-color:rgba(57,212,155, 1.0)"> updates while promoting</span> various beauty products and cosmetics<span style="background-color:rgba(57,212,155, 1.0)">.</span><br>Christine<span style="background-color:rgba(57,212,155, 1.0)"> is</span> an<span style="background-color:rgba(57,212,155, 1.0)"> actress and model</span><br>Activations: (" while" : 7), (" promoting" : 6), (" and" : 8)<br>Example 12: <|endoftext|> stops. It has happened to her<span style="background-color:rgba(57,212,155, 1.0)"> when</span> traveling through Brooklyn on the A Train,<span style="background-color:rgba(57,212,155, 1.0)"> on</span> road trips<br>Activations: (" when" : 8)<br>Example 13: <span style="background-color:rgba(57,212,155, 1.0)"> with a large following on Instagram. Besides</span> self-care<span style="background-color:rgba(57,212,155, 1.0)"> updates,</span> she also<span style="background-color:rgba(57,212,155, 1.0)"> posts behind</span> the<span style="background-color:rgba(57,212,155, 1.0)"> scenes of</span><br>Activations: (" with" : 8), (" a" : 6), (" following" : 6), (" on" : 8), ("." : 8), (" Besides" : 8), (" updates" : 6), ("," : 7), (" behind" : 6), (" of" : 7)<br>Example 14:  said she was tired<span style="background-color:rgba(57,212,155, 1.0)"> and</span> 'I'm sitting here.'<span style="background-color:rgba(57,212,155, 1.0)"> And then</span>,<span style="background-color:rgba(57,212,155, 1.0)"> and then</span>, and then,<br>Activations: (" and" : 6), (" And" : 8), (" then" : 7), (" and" : 6)<br>Example 15:  also explained why she'd experienced a bout of righteous indignation<span style="background-color:rgba(57,212,155, 1.0)"> when</span> Elena<span style="background-color:rgba(57,212,155, 1.0)"> told</span> her<span style="background-color:rgba(57,212,155, 1.0)"> that</span> Damon had<br>Activations: (" when" : 6), (" told" : 8), (" that" : 8)<br>Example 16:  Were they in the house with her? Also, how much time did she spend<span style="background-color:rgba(57,212,155, 1.0)"> with</span> studying magic<span style="background-color:rgba(57,212,155, 1.0)"> while</span><br>Activations: (" with" : 7), (" while" : 8)<br>Example 17:  do<span style="background-color:rgba(57,212,155, 1.0)"> by</span> law<span style="background-color:rgba(57,212,155, 1.0)">.</span> She merits no sympathy<span style="background-color:rgba(57,212,155, 1.0)">. Even if</span> I agreed<span style="background-color:rgba(57,212,155, 1.0)"> with</span> her argument<span style="background-color:rgba(57,212,155, 1.0)">,</span> I can’<br>Activations: ("." : 7), ("." : 8), (" Even" : 6), (" if" : 6)<br>Example 18:  knew she were<span style="background-color:rgba(57,212,155, 1.0)">!</span>She speaks<span style="background-color:rgba(57,212,155, 1.0)">, however</span> she states nothing<span style="background-color:rgba(57,212,155, 1.0)">.</span> What that that<span style="background-color:rgba(57,212,155, 1.0)">?</span>Her eye disc<span style="background-color:rgba(57,212,155, 1.0)">ourses</span><br>Activations: ("." : 8), ("?" : 7)<br>Example 19: , my family, my football and everything that was there for me.<br>“When she<span style="background-color:rgba(57,212,155, 1.0)"> found out</span><br>Activations: (" found" : 8), (" out" : 6)<br>Example 20:  has different needs and requirements. This makes her day interesting and fun. She would not<span style="background-color:rgba(57,212,155, 1.0)"> change</span> it<span style="background-color:rgba(57,212,155, 1.0)"> for</span><br>Activations: (" change" : 6), (" for" : 8)<br><br>Top_logits: ['Top logits could not be loaded.']
+            <h3>Response:</h3>
+            (Part 1)<br>ACTIVATING TOKENS: Various function words and punctuation marks.<br>PREVIOUS TOKENS: No interesting patterns.<br><br>Step 1.<br>- The activating tokens are mostly function words (prepositions, conjunctions, etc.) and punctuation marks.<br>- The previous tokens have nothing in common.<br><br>Step 2.<br>- The examples involve various sentence structures and grammatical relationships.<br>- The activating token is often a word that connects or relates to other words in the sentence.<br><br>Step 3.<br>- The activation values are highest for the examples where the token is a crucial connector or relator.<br><br>Let me think carefully. Did I miss any patterns in the text examples? Are there any more linguistic similarities? <br>- Yes, I missed one: The activating token often appears at a sentence boundary or near a punctuation mark.<br><br>(Part 2)<br>SIMILAR TOKENS: None (Top logits could not be loaded)<br>- Unfortunately, the top logits list is not available, so I cannot refine my hypotheses further.<br><br>[EXPLANATION]: Function words and punctuation marks at sentence boundaries or near other grammatical connectors.
+        </div>
+
+        <div class="card">
+            <h2>Explanation</h2>
+            <div class="explanation">
+                <p>Function words and punctuation marks at sentence boundaries or near other grammatical connectors.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                Scores
+                <p class="subtitle">
+                    ● Recall | ● Fuzz | # Distance
+                    <br>
+                    Green indicates a correct prediction, red incorrect.
+                    For recall, -1 indicates a non-activating example. 
+                    For fuzzing, -1 indicates an incorrectly marked example.
+                </p> 
+            </h2>
+            <div id="scores">
+                
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span> have never<span style="background-color:rgba(57,212,155, 1.0)"> approached</span> her<span style="background-color:rgba(57,212,155, 1.0)"> for</span> obvious reasons<span style="background-color:rgba(57,212,155, 1.0)"> but</span> she<span style="background-color:rgba(57,212,155, 1.0)"> called and said that she would like to meet</span> me<span style="background-color:rgba(57,212,155, 1.0)">.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><|endoftext|> birth.
+When she<span style="background-color:rgba(57,212,155, 1.0)"> then became a</span> single<span style="background-color:rgba(57,212,155, 1.0)"> parent to</span> her other<span style="background-color:rgba(57,212,155, 1.0)"> daughter</span> Lex<span style="background-color:rgba(57,212,155, 1.0)">ie, while fighting</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)">, fool.
+its</span> okay<span style="background-color:rgba(57,212,155, 1.0)">, i</span> ge<span style="background-color:rgba(57,212,155, 1.0)">uss</span>,<span style="background-color:rgba(57,212,155, 1.0)"> but really</span>, couldn't you make something of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> activities that</span> she<span style="background-color:rgba(57,212,155, 1.0)"> could spend other time enjoying rather than chasing after imaginary objects and</span> it<span style="background-color:rgba(57,212,155, 1.0)"> worked</span> very<span style="background-color:rgba(57,212,155, 1.0)"> effectively.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 1.0)"> even when she</span> was little<span style="background-color:rgba(57,212,155, 1.0)">,” says Patricia. “She was</span> very<span style="background-color:rgba(57,212,155, 1.0)"> brave, and she was always trying</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> cover</span> her medical<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> expenses.
+</span>We<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> also help pay her rent, but her apartment is a</span> wreck<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> and</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span> everything," she<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> says. She lost</span> her<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> home, her car and eventually her job. Now, she</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span>..." She sque<span style="background-color:rgba(57,212,155, 0.9200000000000002)">aled at</span> the<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> presence of</span> the finger<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> at</span> her rear<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> entrance, then ground</span> a bit<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> against</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>2</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> like</span> a thief<span style="background-color:rgba(57,212,155, 0.9200000000000002)"> in</span> the night [III:ii]<span style="background-color:rgba(57,212,155, 0.9200000000000002)">? She does not cheat on</span> her husband<span style="background-color:rgba(57,212,155, 0.9200000000000002)">;</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>2</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.9200000000000002)"> what saved her, that yoga of</span> her mind<span style="background-color:rgba(57,212,155, 0.9200000000000002)">, and the fact that every time she walks past</span> Grand</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)"> to her</span> friends<span style="background-color:rgba(57,212,155, 0.8400000000000001)">. She was let go November 14, 2007. She is currently trying to become a</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><|endoftext|> mammogram while this darling 80 year old woman<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> was a</span> clinic<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> volunteer. Her job was to guide</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)"> Hollywood celebrities liked</span> to<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> vacation. After thirty years,</span> she<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> packed up, moved to</span> Arkansas<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> where she still</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">Then at</span> bed<span style="background-color:rgba(57,212,155, 0.8400000000000001)">time she had a huge accident. I about laid</span> an<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> egg! She was</span> m<span style="background-color:rgba(57,212,155, 0.8400000000000001)">ucking</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>3</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.8400000000000001)">.</span> "Oh, come on. You miss him. I can tell<span style="background-color:rgba(57,212,155, 0.8400000000000001)">."
+</span>She<span style="background-color:rgba(57,212,155, 0.8400000000000001)"> shook</span> her head</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)"> did, was what I wanted</span> to<span style="background-color:rgba(57,212,155, 0.76)"> do! Can</span> you<span style="background-color:rgba(57,212,155, 0.76)"> believe</span> the<span style="background-color:rgba(57,212,155, 0.76)"> power of</span> television<span style="background-color:rgba(57,212,155, 0.76)">? I saw</span> nothing</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|>, won Readers Favorite Silver Medal for Poetry. She<span style="background-color:rgba(57,212,155, 0.76)"> has written books in multiple genres.</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>4</small>
+            </div>
+            <span><|endoftext|> had been blessed not to have to work so she<span style="background-color:rgba(57,212,155, 0.76)"> could give</span> her<span style="background-color:rgba(57,212,155, 0.76)"> time to</span> ‘<span style="background-color:rgba(57,212,155, 0.76)">helping’</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span> seen her "<span style="background-color:rgba(57,212,155, 0.76)">so many times on</span> this<span style="background-color:rgba(57,212,155, 0.76)"> program"</span> (<span style="background-color:rgba(57,212,155, 0.76)">how</span> would HE know<span style="background-color:rgba(57,212,155, 0.76)">?) and watch</span> David Fl</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>4</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.76)">.
+The Summer of</span> Her<span style="background-color:rgba(57,212,155, 0.76)"> Life</span> is a poetic, touching and profound graphic novel<span style="background-color:rgba(57,212,155, 0.76)"> that</span> grapples<span style="background-color:rgba(57,212,155, 0.76)"> with</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> face as</span> a butter<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> knife), she knows she wants a</span> family<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> (and to</span> “give [her]</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> and</span> a Pupil Personnel Services Credential from Santa Clara University<span style="background-color:rgba(57,212,155, 0.6799999999999999)">.
+</span>I cannot say enough</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6799999999999999)"> Her tongue was</span> dark<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> blue and</span> she<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> was bleeding</span> profus<span style="background-color:rgba(57,212,155, 0.6799999999999999)">ely from</span> her<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> mouth and nose. When</span> D</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>5</small>
+            </div>
+            <span>te<span style="background-color:rgba(57,212,155, 0.6799999999999999)">aches</span> south<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> of</span> the border<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> in</span> SC<span style="background-color:rgba(57,212,155, 0.6799999999999999)">)...
+Here are some examples of</span> their<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> work.
+</span>They</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>5</small>
+            </div>
+            <span><|endoftext|> She said<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> she</span> had<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> read most of these nine books</span> pulled<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> from</span> the<span style="background-color:rgba(57,212,155, 0.6799999999999999)"> shelves of the</span> Cany<span style="background-color:rgba(57,212,155, 0.6799999999999999)">ons</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span> Bruno<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> and</span> Maxo<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> to help</span> her<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> put the</span> school<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> on</span> notice<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> with threats,</span> intimidation, and down</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)">ing</span> the<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> law without ever</span> trans<span style="background-color:rgba(57,212,155, 0.6000000000000001)">gressing</span> the<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> law. All</span>’s<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> well that ends well. She</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> been</span> skydiving<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> twice!
+</span>Sha<span style="background-color:rgba(57,212,155, 0.6000000000000001)">una is one of</span> our very<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> talented</span> dental<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> assistants. She</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.6000000000000001)"> seem</span> able<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> to manage the basic functions of living. Without our help, we honestly believe she'd end</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>6</small>
+            </div>
+            <span> could be her chance<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> at</span> a new life<span style="background-color:rgba(57,212,155, 0.6000000000000001)">--if</span> she<span style="background-color:rgba(57,212,155, 0.6000000000000001)"> hides the truth about</span> her past<span style="background-color:rgba(57,212,155, 0.6000000000000001)">.</span> Esme</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span> in time<span style="background-color:rgba(57,212,155, 0.52)">” that inspire her.
+These include an</span> unusual<span style="background-color:rgba(57,212,155, 0.52)"> pattern</span> or texture, special lighting or shadows</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.52)"> onto</span> the sofa<span style="background-color:rgba(57,212,155, 0.52)">, pulled</span> her<span style="background-color:rgba(57,212,155, 0.52)"> feet up under</span> her<span style="background-color:rgba(57,212,155, 0.52)"> and covered them with</span> an af<span style="background-color:rgba(57,212,155, 0.52)">ghan.
+</span>De</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.52)">: And on</span> that intake<span style="background-color:rgba(57,212,155, 0.52)"> form,</span> you also<span style="background-color:rgba(57,212,155, 0.52)"> expect</span> her<span style="background-color:rgba(57,212,155, 0.52)"> to tell you the</span> truth<span style="background-color:rgba(57,212,155, 0.52)"> and be</span> honest<span style="background-color:rgba(57,212,155, 0.52)"> with</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>7</small>
+            </div>
+            <span>.
+Interestingly, Tiffany<span style="background-color:rgba(57,212,155, 0.52)"> chose to make her</span> Mii<span style="background-color:rgba(57,212,155, 0.52)"> dark</span>-sk<span style="background-color:rgba(57,212,155, 0.52)">inned, even though she</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>7</small>
+            </div>
+            <span><|endoftext|> actually because she<span style="background-color:rgba(57,212,155, 0.52)"> likes</span> choosing the right people to be<span style="background-color:rgba(57,212,155, 0.52)"> by</span> her side<span style="background-color:rgba(57,212,155, 0.52)">.</span> She<span style="background-color:rgba(57,212,155, 0.52)"> also believes that the</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> night<span style="background-color:rgba(57,212,155, 0.44)">.
+</span>Luck<span style="background-color:rgba(57,212,155, 0.44)">ily,</span> her speech won<span style="background-color:rgba(57,212,155, 0.44)">'t</span> be<span style="background-color:rgba(57,212,155, 0.44)"> hard</span> to find<span style="background-color:rgba(57,212,155, 0.44)">. While</span> any Republican (</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> troubles<span style="background-color:rgba(57,212,155, 0.44)"> and sources of stress while experimenting with</span> medications to<span style="background-color:rgba(57,212,155, 0.44)"> find something without</span> too many "side-effects<span style="background-color:rgba(57,212,155, 0.44)">".</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>8</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.44)">,</span> they will last 5 weeks<span style="background-color:rgba(57,212,155, 0.44)">. She has many clients who last that long before a</span> fill<span style="background-color:rgba(57,212,155, 0.44)">. Actually</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span>. Madelyn Monroe<span style="background-color:rgba(57,212,155, 0.44)"> is</span> assf<span style="background-color:rgba(57,212,155, 0.44)">ucked by</span> a bl Assf<span style="background-color:rgba(57,212,155, 0.44)">ucked</span> glam<span style="background-color:rgba(57,212,155, 0.44)">our</span> europe<span style="background-color:rgba(57,212,155, 0.44)">an</span> mil<span style="background-color:rgba(57,212,155, 0.44)">f</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>8</small>
+            </div>
+            <span> her to<span style="background-color:rgba(57,212,155, 0.44)"> leave. When</span> she<span style="background-color:rgba(57,212,155, 0.44)"> did, she walked</span> straight<span style="background-color:rgba(57,212,155, 0.44)"> to him, leaving him with</span> no<span style="background-color:rgba(57,212,155, 0.44)"> doubt that</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)">s expected</span> to<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> play</span> a big<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> role in</span> Avengers<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> 4, her origin movie –</span> set<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> in</span> the 1990s</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)"> just seek out something and also DO</span> NOT GIVE IN<span style="background-color:rgba(57,212,155, 0.36000000000000004)">.
+</span>Don’t # 4:<span style="background-color:rgba(57,212,155, 0.36000000000000004)">
+</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)">s at</span> L<span style="background-color:rgba(57,212,155, 0.36000000000000004)">SU, the</span> Baton Rouge<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> native was</span> inducted<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> into</span> the L<span style="background-color:rgba(57,212,155, 0.36000000000000004)">SU</span> Athletics Hall of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.36000000000000004)"> In</span> the “Restrictions<span style="background-color:rgba(57,212,155, 0.36000000000000004)">” section, she had noted</span> the
+<span style="background-color:rgba(57,212,155, 0.36000000000000004)">one</span> week<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> off</span> prior<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> to</span> and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>9</small>
+            </div>
+            <span> a neglect case<span style="background-color:rgba(57,212,155, 0.36000000000000004)">.</span> She<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> has been used as a</span> breeding<span style="background-color:rgba(57,212,155, 0.36000000000000004)"> machine and</span> star<span style="background-color:rgba(57,212,155, 0.36000000000000004)">ved. She was in a</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span> cares~ things would surely be different<span style="background-color:rgba(57,212,155, 0.28)">.</span> He keeps thinking she’<span style="background-color:rgba(57,212,155, 0.28)">s upset with him because he</span>’</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><|endoftext|> 9.
+The woman<span style="background-color:rgba(57,212,155, 0.28)">,</span> 55<span style="background-color:rgba(57,212,155, 0.28)">, said she was in the car with the boy who had</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span> this Kier figure. Kier stands triumphantly astride her fallen enemy<span style="background-color:rgba(57,212,155, 0.28)">, confident</span>ly<span style="background-color:rgba(57,212,155, 0.28)"> gripping</span> the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle false"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)">ight to train, train and train and with her passion who knows maybe the</span> div<span style="background-color:rgba(57,212,155, 0.28)">as</span> division<span style="background-color:rgba(57,212,155, 0.28)"> will</span> be</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle true"></span>
+                <small>10</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.28)"> observation in</span> an<span style="background-color:rgba(57,212,155, 0.28)"> area that I, who was working daily on it, had missed. When</span> you are</span>
+        </div>
+        <hr>
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> on an article, video presentation, daily work
+English 490: Selected Topics in English
+Dr</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>ance as if he were going through a metamorphosis or having an out-of-body experience</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> thought about it sometimes afterward, about how a girlfriend or wife (in the abstract) would and couldn</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> be cut ott*
+from Edgetield County, to be known
+as - Ben Thompson</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> general overview. It is usually in the form of a desktop study, but can also include a site</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>” because 65-85% of satisfied customers actually switch to the competition. It means the quality of</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>. Analyst
+- Energy & Infrastructure Project Lawyer
+- Energy & Infrastructure Staff Attorney
+-</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> Index measures the volume of trips planned with their mobility app. It does a good job of showing the</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> outcome of an anti-doping matter."
+Expressing his disappointment about the revelation, Wada</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> principle. It is realized over a business with a reasonable profit. Japanese local governments will be the first</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> 2005. also available in Hungarian.
+Ford, R.B., Assane Goudi</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>orter of the milk product concerned. It has stopped sale and has initiated a recall of the affected product</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> old psychedelic Volkswagen bus, he had immediately broken out a bag of three musketeers</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> plugins
+- website overhaul
+- General libplasma
+- add global settings config page, if</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> the administration-led Orientation that new students attend before starting classes).
+For those of us who</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> on the internet:
+Purchase the Lutefisk a day before you want to serve it</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> a reader those are not his most interesting moments, but in his review of the recent premier evening I</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> the first person in their 80's that I have come across that got infected in the 80's and</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle false"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span> of this, of course, is breaking news. We know these things because discussion of finances and money</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle true"></span><span class="circle none"></span>
+                <small>-1</small>
+            </div>
+            <span>cted at checkout for overseas shipments.
+Description: K 50 WPT - 8 Ohm
+Vis</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> finishes. The only time<span style="background-color:rgba(57,212,155, 0.2)"> I would certainly ever</span> pay<span style="background-color:rgba(57,212,155, 0.2)"> is</span> for a<span style="background-color:rgba(57,212,155, 0.2)"> taxi</span> trip back to<span style="background-color:rgba(57,212,155, 0.2)"> my location to</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> can become a<span style="background-color:rgba(57,212,155, 0.2)"> better</span> mother, able to understand, care<span style="background-color:rgba(57,212,155, 0.2)"> and</span> be the best friend.
+Also<span style="background-color:rgba(57,212,155, 0.2)"> uk</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> years and ten fabric collections later it is<span style="background-color:rgba(57,212,155, 0.2)"> her</span> one and<span style="background-color:rgba(57,212,155, 0.2)"> only</span> passion.<span style="background-color:rgba(57,212,155, 0.2)"> T</span>ula began<span style="background-color:rgba(57,212,155, 0.2)"> quil</span>ting</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> a cute</span> girlfriend of hers from class and let her know how much she'd been lusting after her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> like I was<span style="background-color:rgba(57,212,155, 0.2)"> ra</span>ping<span style="background-color:rgba(57,212,155, 0.2)"> her</span> and of course that<span style="background-color:rgba(57,212,155, 0.2)">’</span>s what<span style="background-color:rgba(57,212,155, 0.2)"> Pete</span> saw when<span style="background-color:rgba(57,212,155, 0.2)"> he</span> came in,</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">. She has</span> testified that she helped cover up<span style="background-color:rgba(57,212,155, 0.2)"> the</span> murder and rape of<span style="background-color:rgba(57,212,155, 0.2)"> Marri</span>ott.
+Her</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> Association of American Law</span> Schools<span style="background-color:rgba(57,212,155, 0.2)">' Executive</span> Committee<span style="background-color:rgba(57,212,155, 0.2)"> on Torts</span> and<span style="background-color:rgba(57,212,155, 0.2)"> Compensation</span> Systems. She<span style="background-color:rgba(57,212,155, 0.2)"> was</span> awarded<span style="background-color:rgba(57,212,155, 0.2)"> the first</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> German literature at the<span style="background-color:rgba(57,212,155, 0.2)"> local university</span>. There<span style="background-color:rgba(57,212,155, 0.2)">’</span>s just one<span style="background-color:rgba(57,212,155, 0.2)"> tiny</span> problem. She has no<span style="background-color:rgba(57,212,155, 0.2)"> self-</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> Andy and his girls arrive. Mathilda, the youngest,</span> wears wings. I<span style="background-color:rgba(57,212,155, 0.2)"> ask her</span> if</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> to say</span> about<span style="background-color:rgba(57,212,155, 0.2)"> it</span>,<span style="background-color:rgba(57,212,155, 0.2)"> either</span>.<span style="background-color:rgba(57,212,155, 0.2)"> She’s her own dog</span>, and<span style="background-color:rgba(57,212,155, 0.2)"> she’</span>s not<span style="background-color:rgba(57,212,155, 0.2)"> going</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|>’s Indian Kitchen, Richa showcases her</span> talents<span style="background-color:rgba(57,212,155, 0.2)"> better</span> than<span style="background-color:rgba(57,212,155, 0.2)"> ever</span>.<span style="background-color:rgba(57,212,155, 0.2)"> She</span> photographed nearly<span style="background-color:rgba(57,212,155, 0.2)"> the</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> One elderly</span> lady got<span style="background-color:rgba(57,212,155, 0.2)"> heat</span> exhaustion and was<span style="background-color:rgba(57,212,155, 0.2)"> wandering</span> in<span style="background-color:rgba(57,212,155, 0.2)"> search</span> of shade when she fell and hit<span style="background-color:rgba(57,212,155, 0.2)"> her head</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"><|endoftext|> of going back."
+She</span> says<span style="background-color:rgba(57,212,155, 0.2)"> the</span> decision makes<span style="background-color:rgba(57,212,155, 0.2)"> her</span> feel hurt, alone – and embarrassed.</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> the</span> class but she is also learning that she can be<span style="background-color:rgba(57,212,155, 0.2)"> irresponsible</span> and<span style="background-color:rgba(57,212,155, 0.2)"> lazy</span> and it has<span style="background-color:rgba(57,212,155, 0.2)"> no</span> impact</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">.
+The programme, airing on ITVBe, sees Gemma</span> return to<span style="background-color:rgba(57,212,155, 0.2)"> Essex</span> after<span style="background-color:rgba(57,212,155, 0.2)"> a</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)">rika</span>.<span style="background-color:rgba(57,212,155, 0.2)"> She came</span> out as<span style="background-color:rgba(57,212,155, 0.2)"> b</span>isexual at<span style="background-color:rgba(57,212,155, 0.2)"> a</span> concert in 1996.
+<span style="background-color:rgba(57,212,155, 0.2)">Sylvester – gay</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span> As<span style="background-color:rgba(57,212,155, 0.2)"> she</span> slid<span style="background-color:rgba(57,212,155, 0.2)"> the boots</span> on she declared them to<span style="background-color:rgba(57,212,155, 0.2)"> be</span> so<span style="background-color:rgba(57,212,155, 0.2)">oooo</span> comfortable.<span style="background-color:rgba(57,212,155, 0.2)"> Y</span>ay!<span style="background-color:rgba(57,212,155, 0.2)"> One</span> pair</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle true"></span>
+                <small>-1</small>
+            </div>
+            <span>play community all<span style="background-color:rgba(57,212,155, 0.2)"> the more</span> challenging. Shannon had been looking forward to dressing as<span style="background-color:rgba(57,212,155, 0.2)"> Tak</span>umi from<span style="background-color:rgba(57,212,155, 0.2)"> Fire Em</span></span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span> reported that<span style="background-color:rgba(57,212,155, 0.2)"> Mic</span>hele King will be returning to the parish office<span style="background-color:rgba(57,212,155, 0.2)"> June</span> 4 and<span style="background-color:rgba(57,212,155, 0.2)"> the Rector</span> will return</span>
+        </div>
+        
+        <div class="score-item">
+            <div style="min-width: 60px;">
+                <span class="circle none"></span><span class="circle false"></span>
+                <small>-1</small>
+            </div>
+            <span><span style="background-color:rgba(57,212,155, 0.2)"> forced marriages and prison</span> conditions<span style="background-color:rgba(57,212,155, 0.2)">.
+She</span> did not<span style="background-color:rgba(57,212,155, 0.2)"> immediately respond</span> to<span style="background-color:rgba(57,212,155, 0.2)"> attempts to</span> contact<span style="background-color:rgba(57,212,155, 0.2)"> her</span>.<span style="background-color:rgba(57,212,155, 0.2)">by Re</span></span>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    
