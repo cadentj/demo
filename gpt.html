@@ -72,7 +72,7 @@
       .domain([-1, 1]);
 
     // Read the data
-    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/gpt2_fuzz_scores.csv", function(data) { // replace with your actual data source
+    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/gpt2.csv", function(data) { // replace with your actual data source
       // create a tooltip
       var tooltip = d3.select("body")
         .append("div")
@@ -90,7 +90,7 @@
       };
       var mousemove = function(d) {
         tooltip
-          .html("The exact value of<br>this cell is: " + d.score)
+          .html("Recall:" + d.recall + "<br>Fuzz:" + d.fuzz + "<br>Explanation:" + d.explanation)
           .style("left", (d3.event.pageX + 10) + "px")
           .style("top", (d3.event.pageY - 20) + "px");
       };
@@ -107,7 +107,7 @@
         .attr("y", function(d) { return y(d.layer); })
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
-        .style("fill", function(d) { return myColor(d.score); })
+        .style("fill", function(d) { return myColor(d.combined); })
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave);
