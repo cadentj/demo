@@ -1,0 +1,301 @@
+layer,feature,recall,fuzz,combined,explanation
+0,0,0.6166666666666667,0.55,0.5833333333333334,"The word ""Everybody""."
+0,1,-1.0,-1.0,-1.0,Feature not cached.
+0,2,-1.0,-1.0,-1.0,Feature not cached.
+0,3,0.03333333333333333,0.016666666666666666,0.025,"The organization ""Human Rights Watch""."
+0,4,0.08333333333333333,0.08333333333333333,0.08333333333333333,"The proper noun ""Sutherland"" (and occasionally ""Skinner""), often referring to a geographic location or a person's surname."
+0,5,0.3,0.8,0.55,"The substring ""ipers"" in various words, often related to nouns or objects."
+0,6,0.15,0.15,0.15,"The adjective ""fluorescent"" or the verb ""lashed"", often describing a vivid or intense quality."
+0,7,0.08333333333333333,0.13333333333333333,0.10833333333333334,"The Greek letter ""Mu"" (μ) in various proper nouns, such as names, titles, and words of Greek origin."
+0,8,-1.0,-1.0,-1.0,Feature not cached.
+0,9,0.5833333333333334,0.5833333333333334,0.5833333333333334,"The word ""Heard"" or ""hearings"" in various contexts, often related to names, quotes, or official proceedings."
+0,10,0.6833333333333333,0.7,0.6916666666666667,"The suffixes ""-aid"", ""-assistants"", or ""-supplementation"" in nouns, often related to support or help."
+0,11,0.2,0.2,0.2,"The token ""body"", often in a technical or HTML context."
+0,12,0.5,0.4,0.45,"The number ""480"" in various contexts, often related to technical specifications, resolutions, or step numbers in a process."
+0,13,0.35,0.6166666666666667,0.48333333333333334,"Ordinal numbers (e.g., ""fourth"", ""fifth"") and the suffix ""-ugal"" in words related to music, mathematics, or physics."
+0,14,0.26666666666666666,0.35,0.30833333333333335,"The token ""webpage"" in various contexts, likely related to online content or websites."
+0,15,0.15,0.0,0.075,"The suffix ""-holder"" in nouns, often referring to individuals or groups with a vested interest or responsibility."
+0,16,0.5166666666666667,0.5166666666666667,0.5166666666666667,"The token ""tie"" in various compound words or phrases, often related to binding, connection, or unity."
+0,17,-1.0,-1.0,-1.0,Feature not cached.
+0,18,0.06666666666666667,0.06666666666666667,0.06666666666666667,"The surname ""Hubbard"", often referring to a specific person, particularly L. Ron Hubbard, the founder of Scientology."
+0,19,-1.0,-1.0,-1.0,Feature not cached.
+0,20,-1.0,-1.0,-1.0,Feature not cached.
+0,21,0.36666666666666664,0.6166666666666667,0.4916666666666667,"The suffix ""-URES"" in various nouns, often related to measurements, collections, or structures."
+0,22,-1.0,-1.0,-1.0,Feature not cached.
+0,23,-1.0,-1.0,-1.0,Feature not cached.
+0,24,0.23333333333333334,0.21666666666666667,0.225,"The prefix ""ruth"" or the word ""disreg""."
+0,25,0.36666666666666664,0.4,0.3833333333333333,"The word ""fail"" or its variations, often in the context of evaluation, assessment, or outcome."
+0,26,0.1,0.08333333333333333,0.09166666666666667,"The token ""Gears"" or ""robotic"" in a context related to technology, gaming, or robotics."
+0,27,0.65,0.7166666666666667,0.6833333333333333,"The state ""Massachusetts"" in various contexts, often as part of a location or institution name."
+0,28,-1.0,-1.0,-1.0,Feature not cached.
+0,29,0.65,0.8666666666666667,0.7583333333333333,"The hyphen (-) symbol, often used in scientific or technical contexts to indicate a range, a chemical bond, or a prefix/suffix in a word."
+0,30,-1.0,-1.0,-1.0,Feature not cached.
+0,31,0.5333333333333333,0.5166666666666667,0.525,"The noun ""manufacturing"" in various industrial and technical contexts."
+0,32,-1.0,-1.0,-1.0,Feature not cached.
+0,33,0.4166666666666667,0.5166666666666667,0.4666666666666667,"The token ""Images"" in a Getty Images photo credit."
+0,34,0.26666666666666666,0.3,0.2833333333333333,"The surname ""Silver"" or the word ""Silver"" in a proper noun."
+0,35,0.6166666666666667,0.7333333333333333,0.675,"The word ""lounge"" or ""Studio"" in a context describing a physical space or facility."
+0,36,0.06666666666666667,0.1,0.08333333333333334,"The word ""pageant"" or related terms like ""contestants"", often in the context of a competition or event."
+0,37,-1.0,-1.0,-1.0,Feature not cached.
+0,38,-1.0,-1.0,-1.0,Feature not cached.
+0,39,0.25,0.36666666666666664,0.30833333333333335,"The prefix ""tid"" in various words, often related to tidbits of information or tidying up."
+0,40,-1.0,-1.0,-1.0,Feature not cached.
+0,41,0.2,0.21666666666666667,0.20833333333333334,"The prefix ""Mans"" in proper nouns, often referring to surnames or place names."
+0,42,0.55,0.65,0.6000000000000001,"The verb ""include"" in a sentence, often indicating a list of items or options that are part of a larger set."
+0,43,-1.0,-1.0,-1.0,Feature not cached.
+0,44,-1.0,-1.0,-1.0,Feature not cached.
+0,45,0.7833333333333333,0.8333333333333334,0.8083333333333333,"The word ""apple"" in various contexts, often related to food, technology, or idioms."
+0,46,0.08333333333333333,0.05,0.06666666666666667,"The words ""immature"" and ""begging"", often used to describe a state or action of vulnerability or dependence."
+0,47,-1.0,-1.0,-1.0,Feature not cached.
+0,48,0.35,0.3,0.32499999999999996,"The substring ""yll"" in proper nouns, typically in people's names or scientific terms."
+0,49,-1.0,-1.0,-1.0,Feature not cached.
+2,0,0.7166666666666667,0.7333333333333333,0.725,"The word ""like"" used for comparison or similarity."
+2,1,0.6,0.6166666666666667,0.6083333333333334,"The token ""Other"" in categorical lists or forms, often indicating a miscellaneous or unspecified category."
+2,2,0.7833333333333333,0.7333333333333333,0.7583333333333333,"Verb suffixes (-ing, -ed, -s) indicating action or state."
+2,3,0.75,0.7833333333333333,0.7666666666666666,"The prefix ""pr"" in words, often indicating a sense of pride or precedence."
+2,4,0.6,0.7166666666666667,0.6583333333333333,"The token ""Images"" in a context related to image credits, licensing, or references."
+2,5,0.65,0.5833333333333334,0.6166666666666667,"Terms related to sports, competitions, or events, such as ""card"", ""round"", ""ref"", ""point"", ""side"", ""wing"", ""final"", ""dismissed"", ""takedown"", ""title"", and ""singles"", as well as quotation marks and punctuation marks."
+2,6,0.8,0.8833333333333333,0.8416666666666667,"Two- or three-digit numbers, often representing statistics or scores in sports-related contexts."
+2,7,0.4,0.5666666666666667,0.48333333333333334,"The token ""am"" (or ""AM"") in proper nouns, often as part of a person's name or an acronym."
+2,8,-1.0,-1.0,-1.0,Feature not cached.
+2,9,-1.0,-1.0,-1.0,Feature not cached.
+2,10,-1.0,-1.0,-1.0,Feature not cached.
+2,11,0.7,0.75,0.725,"The token ""pool"" in various contexts, often related to a collection or accumulation of something."
+2,12,-1.0,-1.0,-1.0,Feature not cached.
+2,13,0.38333333333333336,0.5833333333333334,0.4833333333333334,"The prefix ""Por"" in various proper nouns, often indicating a person's surname or a location."
+2,14,-1.0,-1.0,-1.0,Feature not cached.
+2,15,0.23333333333333334,0.8666666666666667,0.55,A double angle quotation mark (>>) used to separate sections or introduce a list in instructional or informative text.
+2,16,-1.0,-1.0,-1.0,Feature not cached.
+2,17,-1.0,-1.0,-1.0,Feature not cached.
+2,18,0.21666666666666667,0.21666666666666667,0.21666666666666667,"The token ""backer"" or ""linebacker"", likely related to American football positions."
+2,19,0.7333333333333333,0.7166666666666667,0.725,"The word ""injury""."
+2,20,0.08333333333333333,0.08333333333333333,0.08333333333333333,"The word ""maid"" in various contexts, often referring to a female domestic worker or servant."
+2,21,0.5333333333333333,0.6,0.5666666666666667,"The word ""throat"" in various contexts, often related to physical actions, injuries, or medical conditions."
+2,22,0.48333333333333334,0.5333333333333333,0.5083333333333333,"The token ""websites"" in a context related to online security, governance, or usage."
+2,23,0.3333333333333333,0.3333333333333333,0.3333333333333333,"Prefixes or suffixes of English words, often indicating grammatical function or word formation."
+2,24,0.65,0.6833333333333333,0.6666666666666667,"The abbreviation for ""United States"" (U.S.), including individual letters ""U"" and ""S"" when part of this abbreviation."
+2,25,0.16666666666666666,0.13333333333333333,0.15,"Geographic locations, specifically ""City"" and ""Canal"", often referring to Panama City or the Panama Canal."
+2,26,0.8,0.7833333333333333,0.7916666666666667,"The comparative conjunction ""than"" in phrases indicating a quantitative comparison."
+2,27,-1.0,-1.0,-1.0,Feature not cached.
+2,28,0.4666666666666667,0.5,0.48333333333333334,"The suffix ""-enda"" in various words, often in proper nouns or loanwords."
+2,29,0.8,0.75,0.775,"The adjective ""robust"" in various contexts, often describing study summaries, growth, analysis, or systems."
+2,30,-1.0,-1.0,-1.0,Feature not cached.
+2,31,0.48333333333333334,0.5,0.4916666666666667,"The word ""measure"" or ""measures"" in a financial or economic context, often related to assessment, evaluation, or quantification."
+2,32,0.7333333333333333,0.7333333333333333,0.7333333333333333,"The token ""Let"" at the beginning of a sentence, often introducing a suggestion or permission."
+2,33,-1.0,-1.0,-1.0,Feature not cached.
+2,34,-1.0,-1.0,-1.0,Feature not cached.
+2,35,0.4,0.31666666666666665,0.35833333333333334,"The suffix ""-ing"" in nouns related to computing, hosting, and networking."
+2,36,0.38333333333333336,0.8,0.5916666666666667,"The prefix ""ad"" in various words, often related to technology, education, or proper nouns."
+2,37,0.65,0.8,0.7250000000000001,"Roman numerals (I, II, III, IV, etc.) in text, often used for chapter or verse references."
+2,38,0.5166666666666667,0.45,0.4833333333333334,"The word ""reunion"" in various contexts, often related to events or gatherings."
+2,39,0.8166666666666667,0.9333333333333333,0.875,"First-person singular pronouns (""I"") and other first-person and third-person pronouns (""he"", ""they"", ""we"") in sentences, often used to express personal thoughts or opinions."
+2,40,0.4166666666666667,0.35,0.3833333333333333,"The suffixes ""Laure"", ""Pri"", or ""el"" in Nobel-related titles, such as Nobel Laureate, Nobel Prize, or Pulitzer Prize."
+2,41,0.016666666666666666,0.016666666666666666,0.016666666666666666,"The team name ""Broncos"", likely referring to the Denver Broncos, an American football team."
+2,42,0.7,0.8,0.75,"The token ""line"" (or ""lines"") in various contexts, often referring to a physical or metaphorical boundary, division, or path."
+2,43,-1.0,-1.0,-1.0,Feature not cached.
+2,44,0.7833333333333333,0.75,0.7666666666666666,"The adjective ""new"" describing a possession, relationship, or situation."
+2,45,0.48333333333333334,0.48333333333333334,0.48333333333333334,"The word ""knee"" in various contexts, often related to body parts, health, or clothing."
+2,46,-1.0,-1.0,-1.0,Feature not cached.
+2,47,0.2833333333333333,0.36666666666666664,0.32499999999999996,"The suffixes ""-ing"" and ""-hing"" in technical or formal writing, often related to diagrams or figures."
+2,48,-1.0,-1.0,-1.0,Feature not cached.
+2,49,0.38333333333333336,0.4,0.3916666666666667,"The verb ""spent"" in the context of time allocation or duration."
+4,0,0.5166666666666667,0.6833333333333333,0.6000000000000001,"Suffixes ""-er"", ""-ager"", or ""-itter"" in nouns, often indicating a person's occupation, role, or relationship."
+4,1,0.65,0.6166666666666667,0.6333333333333333,"The noun ""emergence"", often in an academic or technical context, referring to the process of something coming into existence or prominence."
+4,2,0.5666666666666667,0.4666666666666667,0.5166666666666666,"The neuron activates on suffixes or prefixes of words related to ""store"", such as ""-bought"", ""store-"", or ""y"" in ""storey"", indicating a connection to commerce or retail."
+4,3,0.75,0.7166666666666667,0.7333333333333334,"The infinitive ""to"" in phrases indicating direction or intention."
+4,4,0.7666666666666667,0.8333333333333334,0.8,"The word ""couple"" indicating a small, indefinite number of items or a pair of people."
+4,5,0.8333333333333334,0.85,0.8416666666666667,"Punctuation marks (commas, ""of"", ""or"") in numerical or descriptive contexts, often indicating a list or a part of a whole."
+4,6,0.2833333333333333,0.5,0.39166666666666666,"The prefix ""reat"" or ""reat-"" in a word, often related to wreaths or treats."
+4,7,0.45,0.6166666666666667,0.5333333333333333,"Brand names or product-related nouns, such as ""Capcom"", ""charger"", ""Panasonic"", or ""joystick"", often in the context of technology or gaming."
+4,8,0.5333333333333333,0.7166666666666667,0.625,"Honorific suffixes or endings of surnames, such as ""hon"", ""ek"", ""ls"", ""ham"", ""ze"", ""ault"", ""stein"", ""bes"", and ""au"", typically found in names of philosophers, economists, or historical figures."
+4,9,0.55,0.5666666666666667,0.5583333333333333,"Official names of organizations, countries, or concepts related to Islam, often with a noun or adjective suffix."
+4,10,0.6333333333333333,0.85,0.7416666666666667,"Verbs that indicate a change, addition, or effect, often in a formal or objective tone."
+4,11,0.5333333333333333,0.5,0.5166666666666666,"The verb ""are"" in a sentence, often used to connect two nouns or phrases, indicating a state of being or equality."
+4,12,0.6666666666666666,0.65,0.6583333333333333,"The word ""only"" in a sentence, often indicating a restriction or limitation."
+4,13,0.2833333333333333,0.36666666666666664,0.32499999999999996,"The token ""ROM"" in the context of technology and computing, often referring to read-only memory or a custom firmware."
+4,14,0.4,0.5666666666666667,0.48333333333333334,Period (.) and numbers in the context of US court case citations.
+4,15,0.25,0.38333333333333336,0.31666666666666665,"The word ""mastery"" in various contexts, often related to expertise, skill, or achievement."
+4,16,0.65,0.8,0.7250000000000001,"The dash (-) punctuation mark, often used to indicate a break or separation in text."
+4,17,0.08333333333333333,0.11666666666666667,0.1,"The middle name ""Luther"" in a person's full name, particularly in reference to Martin Luther King Jr."
+4,18,-1.0,-1.0,-1.0,Feature not cached.
+4,19,0.36666666666666664,0.43333333333333335,0.4,"The word ""selection"" in technical or formal contexts, often related to electronics, computing, or scientific fields."
+4,20,0.25,0.25,0.25,"The words ""audience"" and ""crowd"", referring to a group of people gathered for a specific purpose or event."
+4,21,0.23333333333333334,0.35,0.29166666666666663,"The proper noun ""Boone"" or ""Charlie"", likely referring to a person's name."
+4,22,0.3333333333333333,0.48333333333333334,0.4083333333333333,"The adverbs ""formerly"", ""lately"", and ""afterwards"" indicating a time or state in the past."
+4,23,0.6333333333333333,0.65,0.6416666666666666,"The auxiliary verb ""should"" indicating obligation, recommendation, or advisability."
+4,24,0.3333333333333333,0.4,0.3666666666666667,"The names of specific organizations, particularly those related to progress or protection, such as ""Center for American Progress"" and ""Environmental Protection Agency""."
+4,25,0.8,0.7833333333333333,0.7916666666666667,"Units of time (month, year, decade, century, day, week) or related phrases (today, next)."
+4,26,0.6333333333333333,0.6666666666666666,0.6499999999999999,"The token ""User"" in a context related to user profiles, accounts, or authentication."
+4,27,0.8,0.6666666666666666,0.7333333333333334,"Function words and short phrases that introduce or connect clauses, often indicating a transition or relationship between ideas."
+4,28,0.016666666666666666,0.0,0.008333333333333333,"The acronym ""BIT"" in EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization), a financial metric."
+4,29,0.8166666666666667,0.9333333333333333,0.875,"Currency symbols, such as ""$"" or ""£"", indicating prices or monetary values."
+4,30,0.75,0.8166666666666667,0.7833333333333333,"The suffix ""-y"" in words, often indicating an adjective or a proper noun."
+4,31,0.5,0.55,0.525,"The suffix ""let"" in a noun, often referring to a pallet."
+4,32,0.36666666666666664,0.6333333333333333,0.5,"The suffix ""mony"" in words related to formal events or rituals, such as ceremonies."
+4,33,0.36666666666666664,0.55,0.45833333333333337,"The suffix ""-ings"" in proper nouns, often indicating surnames or place names."
+4,34,0.5,0.55,0.525,"The idiomatic phrase ""part and parcel"" or the word ""parcel"" in general, often related to something being an integral component or a package."
+4,35,-1.0,-1.0,-1.0,Feature not cached.
+4,36,0.7,0.7666666666666667,0.7333333333333334,"The preposition ""of"" in a phrase, often indicating possession or belonging."
+4,37,0.25,0.35,0.3,"The noun ""refusal"" in various contexts, often indicating a deliberate choice or action of not doing something."
+4,38,0.5833333333333334,0.65,0.6166666666666667,"The adversative conjunction ""however""."
+4,39,0.8,0.8166666666666667,0.8083333333333333,"The adverb ""just"" used to convey a sense of simplicity, exactness, or minimalism."
+4,40,0.21666666666666667,0.35,0.2833333333333333,"The prefix ""Jab"" in various proper nouns, such as names, places, and organizations."
+4,41,-1.0,-1.0,-1.0,Feature not cached.
+4,42,0.3,0.45,0.375,"The suffixes ""-allergy"" and ""-obia"" in medical or health-related contexts."
+4,43,0.7,0.7333333333333333,0.7166666666666666,"The colon (:) punctuation mark, often used to indicate a relationship or connection between entities, lists, or explanations."
+4,44,0.8666666666666667,0.7833333333333333,0.825,"The preposition ""in"" indicating a location, context, or membership."
+4,45,-1.0,-1.0,-1.0,Feature not cached.
+4,46,0.9666666666666667,0.85,0.9083333333333333,"Punctuation marks and short function words (e.g. ""is"", ""by"", ""at"") that connect or separate clauses, phrases, or items in a list."
+4,47,0.8,0.8166666666666667,0.8083333333333333,"The comparative conjunction ""than""."
+4,48,0.75,0.7666666666666667,0.7583333333333333,"The phrase ""per"" in financial or statistical contexts, often indicating a rate or ratio."
+4,49,0.05,0.016666666666666666,0.03333333333333333,"The verb ""ming"" (likely a typo or variation of ""mingling"") indicating social interaction or mixing of people/things."
+6,0,0.8166666666666667,0.9166666666666666,0.8666666666666667,"Decimal digits in numerical values, often representing measurements or quantities."
+6,1,-1.0,-1.0,-1.0,Feature not cached.
+6,2,0.7166666666666667,0.7333333333333333,0.725,"Auxiliary verbs and linking verbs (e.g. ""have"", ""is"", ""are"", ""be"") in formal or instructional text, often used to form the present perfect or simple present tenses."
+6,3,0.7,0.8,0.75,"The suffix ""-istry"" in various nouns, often related to professions or fields of study."
+6,4,0.4666666666666667,0.4666666666666667,0.4666666666666667,"Phrases expressing gratitude or politeness, typically involving words like ""enough"", ""to"", ""gracious"", or ""sufficient"", indicating a sense of appreciation or courtesy."
+6,5,0.65,0.8333333333333334,0.7416666666666667,"Punctuation marks and special characters, such as colons, dashes, and percentage signs, often used in HTML or formatting codes."
+6,6,0.6,0.6666666666666666,0.6333333333333333,"The prefix ""Con-"" in various words, often indicating a connection or conjunction."
+6,7,0.25,0.55,0.4,"The suffix ""-rans"" or ""-RAN"" in a word, often indicating an action of forcefully taking or searching something."
+6,8,0.5666666666666667,0.5666666666666667,0.5666666666666667,"The adjective ""serious"" in a sentence, often used to emphasize genuine intent or commitment."
+6,9,0.4,0.5,0.45,"The prefix ""tint"" in words related to coloring or shading."
+6,10,0.7666666666666667,0.8,0.7833333333333334,"Left parenthesis in formatted text, often indicating a rating, score, or timestamp."
+6,11,0.4166666666666667,0.2833333333333333,0.35,"The phrase ""up"" in the context of setting or lining up for an action or position, often in sports."
+6,12,0.7,0.8166666666666667,0.7583333333333333,"Punctuation marks, specifically delimiters and separators (/, ||, ,, #, :, _, �) in structured data, such as lists, tables, or technical notation."
+6,13,0.6,0.6333333333333333,0.6166666666666667,"Military-related terms, including ranks, branches, and statuses (e.g., reserve, enlisted, active duty)."
+6,14,0.5,0.4,0.45,"Prepositions and conjunctions indicating exceptions or contrasts, often used in phrases like ""except for"", ""but"", ""save for"", or ""with only""."
+6,15,0.48333333333333334,0.25,0.3666666666666667,"The digit ""2"" in various contexts, often related to R2-D2, a Star Wars character, or as part of a model/series number."
+6,16,0.5166666666666667,0.7333333333333333,0.625,Days of the week.
+6,17,0.8166666666666667,0.9333333333333333,0.875,"Non-ASCII characters, specifically Cyrillic characters or unknown Unicode characters, which may indicate non-English text or corrupted data."
+6,18,0.7333333333333333,0.8,0.7666666666666666,"The first name ""Brian"" in a sentence, often referring to a specific person."
+6,19,0.43333333333333335,0.35,0.39166666666666666,"The word ""what"" in phrases expressing curiosity or inquiry, often in the context of experimentation or exploration."
+6,20,0.55,0.5666666666666667,0.5583333333333333,"The neuron activates on nouns representing abstract concepts, particularly those related to effects, principles, and hypotheses."
+6,21,0.25,0.25,0.25,"The word ""mythology""."
+6,22,0.5833333333333334,0.65,0.6166666666666667,"The adverb ""exactly"" indicating precise knowledge or understanding."
+6,23,-1.0,-1.0,-1.0,Feature not cached.
+6,24,0.8333333333333334,0.8666666666666667,0.8500000000000001,"The prefix ""End"" in a word, often indicating the end or conclusion of something."
+6,25,-1.0,-1.0,-1.0,Feature not cached.
+6,26,0.35,0.4166666666666667,0.3833333333333333,"The verb ""influenced"" or its synonyms (""shaped"", ""informed"") in a sentence, indicating a causal relationship between two entities or concepts."
+6,27,0.6166666666666667,0.6833333333333333,0.65,"The prefix ""Engine"" in various words related to engineering, such as ""Engineering"" or ""Engineer""."
+6,28,0.6166666666666667,0.5833333333333334,0.6000000000000001,"The prefix ""pall-"" or ""pal-"" in a word, often related to medical or aesthetic contexts."
+6,29,0.18333333333333332,0.3333333333333333,0.2583333333333333,"The suffix ""alty"" in real estate-related words, such as ""Realty""."
+6,30,0.7166666666666667,0.7833333333333333,0.75,"The token ""area"" or ""areas"" (or ""region"") referring to a geographic location, often in the context of conflict, crisis, or humanitarian issues."
+6,31,0.8666666666666667,0.9333333333333333,0.9,"The word ""To"" indicating the start of an infinitive phrase, often preceding a verb or action."
+6,32,0.7833333333333333,0.8166666666666667,0.8,"Periods (.) at the end of sentences, often indicating the end of a quotation or a statement."
+6,33,-1.0,-1.0,-1.0,Feature not cached.
+6,34,0.48333333333333334,0.6333333333333333,0.5583333333333333,"The suffix ""-ell"" or ""-ellie"" in proper nouns, typically names."
+6,35,-1.0,-1.0,-1.0,Feature not cached.
+6,36,0.8,0.7666666666666667,0.7833333333333334,"Exclamation marks (!) at the end of a sentence or phrase, often indicating excitement or emphasis."
+6,37,0.08333333333333333,0.38333333333333336,0.23333333333333334,"The suffix ""ral"" in words related to Australia."
+6,38,-1.0,-1.0,-1.0,Feature not cached.
+6,39,0.75,0.7833333333333333,0.7666666666666666,"Ordinal suffixes (""nd"" or ""rd"") in numbers (e.g., 2nd, 3rd)."
+6,40,0.7,0.65,0.675,"The verb ""lived"" in the context of describing a person's past or current residence."
+6,41,0.6,0.6333333333333333,0.6166666666666667,"The phrase ""with the exception"" or the word ""exception"" in a sentence, indicating a specific exclusion or exemption."
+6,42,0.7666666666666667,0.65,0.7083333333333334,"Single-digit or double-digit numbers, often appearing in citations or references, typically enclosed in square brackets."
+6,43,0.5333333333333333,0.8333333333333334,0.6833333333333333,"Adverbs and adverbial phrases indicating uncertainty, addition, or confirmation, often used in informal writing or spoken language."
+6,44,0.16666666666666666,0.2833333333333333,0.22499999999999998,"The neuron activates on the prefixes ""siph"" and ""Cah"", which are parts of specific words, often proper nouns or technical terms."
+6,45,0.23333333333333334,0.36666666666666664,0.3,"The term ""distribution"" or ""distributions"" in the context of Linux operating systems."
+6,46,0.03333333333333333,0.06666666666666667,0.05,"The geographical region ""Kashmir"", often referring to the disputed territory between India and Pakistan."
+6,47,-1.0,-1.0,-1.0,Feature not cached.
+6,48,0.4166666666666667,0.4666666666666667,0.44166666666666665,"The conjunction ""and"" in geographic or anatomical contexts, often connecting two parts of a whole."
+6,49,0.11666666666666667,0.18333333333333332,0.15,"The name ""Leon"" in various contexts, often referring to a person."
+8,0,-1.0,-1.0,-1.0,Feature not cached.
+8,1,-1.0,-1.0,-1.0,Feature not cached.
+8,2,0.8166666666666667,0.65,0.7333333333333334,"The definite article ""the""."
+8,3,0.5166666666666667,0.7,0.6083333333333334,"Proper nouns, names of specific entities, or common nouns that refer to distinct objects, concepts, or categories."
+8,4,0.5666666666666667,0.6833333333333333,0.625,"The verb ""wrote"" or ""writes"" indicating authorship or attribution of a text or quote."
+8,5,0.36666666666666664,0.18333333333333332,0.27499999999999997,"The adjective ""busy"" describing a location or area with high activity."
+8,6,0.3,0.35,0.32499999999999996,"The adverb ""often"" in first-person sentences, indicating a frequent or habitual action."
+8,7,0.5333333333333333,0.6,0.5666666666666667,"The adjective ""growing"" in a phrase indicating an increasing quantity or trend."
+8,8,-1.0,-1.0,-1.0,Feature not cached.
+8,9,0.13333333333333333,0.13333333333333333,0.13333333333333333,"The word ""cannibal"" or its variations, often in the context of discussing or referencing cannibalism."
+8,10,0.7,0.7666666666666667,0.7333333333333334,"The preposition ""as"" indicating a role, function, or purpose."
+8,11,0.6833333333333333,0.65,0.6666666666666667,"The verb ""join"" or ""joined"" in the context of entering or becoming a part of a group, chat, or organization."
+8,12,0.25,0.45,0.35,"Suffixes ""-piration"", ""-oration"", and ""-synthesis"" in scientific or technical contexts, often related to biological or chemical processes."
+8,13,0.45,0.7,0.575,"The token ""ro"" in words, often indicating a prefix or part of a verb."
+8,14,0.6333333333333333,0.8666666666666667,0.75,"Single-digit numbers, often part of a section or statute reference in legal or legislative text."
+8,15,-1.0,-1.0,-1.0,Feature not cached.
+8,16,0.6833333333333333,0.8166666666666667,0.75,"The token ""plate"" or ""plates"" in various contexts, often related to objects or structures with a flat surface."
+8,17,0.6333333333333333,0.7,0.6666666666666666,"The prefix ""tre"" in English words, often indicating a sense of three, trembling, or treasure."
+8,18,0.6166666666666667,0.5833333333333334,0.6000000000000001,"The term ""binding"" in various scientific, technical, and bibliographic contexts."
+8,19,0.4166666666666667,0.4666666666666667,0.44166666666666665,"The country ""Serbia"" when mentioned in a text, often in a list of countries or in a geographical context."
+8,20,0.05,0.11666666666666667,0.08333333333333334,"The token ""t"" in a URL, specifically in the ""t.co"" domain, indicating a Twitter link."
+8,21,0.5333333333333333,0.6166666666666667,0.575,"The verb ""raise"" or its variations (""raised"", ""raises"", ""raising"") in various contexts, often indicating physical movement or action."
+8,22,-1.0,-1.0,-1.0,Feature not cached.
+8,23,0.75,0.75,0.75,"The ""/"" symbol in a date, indicating a separator between month, day, and year."
+8,24,0.5333333333333333,0.7166666666666667,0.625,"The middle initial ""M"" in a person's full name."
+8,25,0.7833333333333333,0.7833333333333333,0.7833333333333333,"The preposition ""of"" and sometimes ""the"" in percentage or proportion phrases, indicating a part-to-whole relationship."
+8,26,0.7833333333333333,0.8,0.7916666666666667,"The auxiliary verb ""have"" in conditional sentences, typically indicating a hypothetical or uncertain situation."
+8,27,0.7,0.6666666666666666,0.6833333333333333,"Prepositions (""with"", ""to"", ""between"") indicating interaction or communication between entities."
+8,28,0.43333333333333335,0.35,0.39166666666666666,"The preposition ""against"" in the context of sports, indicating a team or entity competing or playing a match/game."
+8,29,0.6833333333333333,0.85,0.7666666666666666,"Single digits or single letters, often in a sequence, typically in the context of codes, IDs, or technical information."
+8,30,0.45,0.48333333333333334,0.4666666666666667,"Tokens representing file formats, protocols, or technical terms, often in the context of HTTP headers or file paths."
+8,31,0.5333333333333333,0.4666666666666667,0.5,"The word ""space"" in the context of outer space or a vacuum."
+8,32,0.7833333333333333,0.8333333333333334,0.8083333333333333,"The word ""past"" in a sentence, often indicating a time period prior to the present."
+8,33,0.5,0.6166666666666667,0.5583333333333333,"The ""Rh"" prefix in proper nouns, often indicating a person's name or a geographical location."
+8,34,0.5,0.5,0.5,"Period (.) in abbreviations, typically indicating a state or direction (e.g., N.W., N.E., etc.) in addresses or geographic locations."
+8,35,0.2,0.45,0.325,"The abbreviation ""AMA"", often referring to the American Medical Association or Ask Me Anything."
+8,36,0.43333333333333335,0.6,0.5166666666666666,"The neuron is activated by phrases related to discovering or learning information, such as ""find out"" or ""learn"", often in the context of future events or revelations."
+8,37,0.48333333333333334,0.7333333333333333,0.6083333333333333,"Adverbs and adverbial phrases indicating degree or manner, often used to modify verbs or adjectives."
+8,38,-1.0,-1.0,-1.0,Feature not cached.
+8,39,0.7,0.7,0.7,"Honorific titles (""Mr."", ""Mr"") followed by a surname or a title."
+8,40,-1.0,-1.0,-1.0,Feature not cached.
+8,41,0.6833333333333333,0.55,0.6166666666666667,"The preposition ""to"" in idiomatic expressions."
+8,42,-1.0,-1.0,-1.0,Feature not cached.
+8,43,-1.0,-1.0,-1.0,Feature not cached.
+8,44,0.7,0.6833333333333333,0.6916666666666667,"Prepositions ""in"" or ""on"" indicating location or presence within a space or vehicle."
+8,45,0.36666666666666664,0.6166666666666667,0.4916666666666667,"Multimedia and digital content types (e.g., video, clip, file, shot, scan, recording, copy, edition, cast, diagram, footage)."
+8,46,-1.0,-1.0,-1.0,Feature not cached.
+8,47,0.65,0.7,0.675,"The auxiliary verbs ""would"" and ""will"" in conditional or hypothetical sentences."
+8,48,0.65,0.7166666666666667,0.6833333333333333,"The prefix ""nont"" or ""antit"" in a word, often indicating negation or opposition."
+8,49,0.15,0.11666666666666667,0.13333333333333333,"Two-digit numbers, often percentages or prices, in a numerical context."
+10,0,0.3333333333333333,0.45,0.39166666666666666,"The suffix ""et"" in proper nouns, typically surnames."
+10,1,0.15,0.21666666666666667,0.18333333333333335,"The surname ""Benson"" or ""enson"" in various contexts, often referring to a specific person."
+10,2,0.25,0.3333333333333333,0.29166666666666663,"The first name ""Jeff"" in a professional or formal context, often referring to a person of authority or expertise."
+10,3,-1.0,-1.0,-1.0,Feature not cached.
+10,4,0.7833333333333333,0.8166666666666667,0.8,"Period (.) punctuation mark, often indicating the end of a sentence or a pause in dialogue."
+10,5,0.21666666666666667,0.16666666666666666,0.19166666666666665,"The abbreviations ""DR"" (Doctor), ""STR"" (Abstract), ""MIN"" (Min), and ""V"" (Advanced) in formal or official contexts, often related to addresses or administrative information."
+10,6,0.8333333333333334,0.8166666666666667,0.825,"Linking verbs (""is"", ""'s"", ""was"") in sentences, often used to establish a state or condition."
+10,7,0.8166666666666667,0.7833333333333333,0.8,"Punctuation marks (commas, dashes) and conjunctions (""then"", ""so"", ""but"") that connect clauses or items in a list, often in explanatory or mathematical contexts."
+10,8,0.6666666666666666,0.5666666666666667,0.6166666666666667,"Geographical locations, words related to togetherness, and suffixes (-after, -ies, -fully, -side, -here, -our) indicating a sense of place or unity."
+10,9,0.55,0.5833333333333334,0.5666666666666667,"The verb ""sing"" in various contexts, often related to music or vocal performance."
+10,10,0.5666666666666667,0.65,0.6083333333333334,"Part of a brand name, abbreviation, or numeral in a proper noun, often related to technology or media."
+10,11,0.4666666666666667,0.4666666666666667,0.4666666666666667,"The token ""email"" or similar tokens (""post"", ""shipping"", ""customer"") in the context of online forms, subscriptions, or login credentials."
+10,12,0.3,0.4,0.35,"The names of cities, specifically Osaka and Istanbul, often in the context of geographic locations or events related to those cities."
+10,13,0.7,0.7333333333333333,0.7166666666666666,"The preposition ""of""."
+10,14,0.65,0.6666666666666666,0.6583333333333333,"Special characters and symbols, often used in HTML, XML, or other markup languages, such as quotation marks, equals signs, and angle brackets, as well as some common words and phrases that appear in metadata or technical contexts."
+10,15,-1.0,-1.0,-1.0,Feature not cached.
+10,16,-1.0,-1.0,-1.0,Feature not cached.
+10,17,0.5333333333333333,0.43333333333333335,0.48333333333333334,"The preposition ""of"" in phrases indicating family relationships or possession."
+10,18,0.6166666666666667,0.48333333333333334,0.55,"The pronoun ""this"" preceding a hyperlink or URL, often used to direct the reader to additional information or resources."
+10,19,0.45,0.45,0.45,"The word ""sexual"" in the context of abuse, assault, or exploitation."
+10,20,0.3,0.16666666666666666,0.23333333333333334,"The token ""pouch"", often referring to a container or enclosure."
+10,21,0.36666666666666664,0.2833333333333333,0.32499999999999996,"The adjective ""religious"" in various contexts, often related to freedom, expression, or exemptions."
+10,22,-1.0,-1.0,-1.0,Feature not cached.
+10,23,0.7166666666666667,0.8,0.7583333333333333,"Sentence-ending periods (.) in written text, often following a statement of death or a factual event."
+10,24,0.65,0.6166666666666667,0.6333333333333333,"The word ""This"" in a formal or legal context, often preceding a statement of rights, disclaimers, or copyright information."
+10,25,-1.0,-1.0,-1.0,Feature not cached.
+10,26,0.6166666666666667,0.6833333333333333,0.65,"The definite article ""the"" preceding a proper noun, typically a person's name or title."
+10,27,-1.0,-1.0,-1.0,Feature not cached.
+10,28,0.6666666666666666,0.6333333333333333,0.6499999999999999,"Period (.) in URLs, often preceding a domain or subdomain."
+10,29,-1.0,-1.0,-1.0,Feature not cached.
+10,30,0.6666666666666666,0.7,0.6833333333333333,The trademark symbol (™).
+10,31,0.6,0.6666666666666666,0.6333333333333333,"The phrase ""X <<times>>"" where X is a quantity (e.g. few, several, a couple, numerous), indicating repetition or frequency."
+10,32,-1.0,-1.0,-1.0,Feature not cached.
+10,33,0.8333333333333334,0.6833333333333333,0.7583333333333333,"Punctuation marks ("","", ""."", ""-"", ""–"") and the conjunction ""and"" in text, often used to connect or list items, especially in the context of politics and government."
+10,34,0.7166666666666667,0.8,0.7583333333333333,"The token ""Score"" in various contexts, often related to ratings, evaluations, or results."
+10,35,0.7333333333333333,0.5333333333333333,0.6333333333333333,"Punctuation marks, especially those used to separate clauses or items in a list, as well as proper nouns, particularly names."
+10,36,0.6333333333333333,0.8166666666666667,0.725,"Ellipsis (...) or ""continue reading"" prompts, indicating a continuation or separation of text, often used to truncate or separate content."
+10,37,0.65,0.7,0.675,"Nouns or phrases indicating time, location, or general categories, often used to provide context or specify a particular instance."
+10,38,0.65,0.4666666666666667,0.5583333333333333,"The infinitive verb ""to"" in instructional or procedural text, often indicating a necessary action."
+10,39,0.6166666666666667,0.55,0.5833333333333334,"The word ""accounting"" in a formal or technical context, often related to financial reporting, principles, or standards."
+10,40,-1.0,-1.0,-1.0,Feature not cached.
+10,41,0.5666666666666667,0.5333333333333333,0.55,"The colon (:) symbol, often used to indicate a ratio or separation of values, typically in the context of data or statistics."
+10,42,0.75,0.8666666666666667,0.8083333333333333,"Capital city names, often at the end of a sentence or phrase, indicating a specific location."
+10,43,-1.0,-1.0,-1.0,Feature not cached.
+10,44,0.7166666666666667,0.8166666666666667,0.7666666666666666,"The comma (,) punctuation mark, often used to separate clauses or items in a list, typically preceding descriptive information about a person or entity."
+10,45,0.75,0.8166666666666667,0.7833333333333333,"Indefinite pronouns (""some"", ""many"") used to introduce or quantify a group or subset of people."
+10,46,0.7166666666666667,0.7,0.7083333333333333,"The prefix ""over-"" in a word, often indicating excess or too much of something."
+10,47,0.6833333333333333,0.6666666666666666,0.675,"Non-ASCII characters, diacritics, or special characters, often in the context of non-English words or brand names."
+10,48,0.5,0.55,0.525,"The word ""die"" in various contexts, including as a prefix in compound adjectives (""die-hard""), as a noun referring to a metal stamp or mold, or as part of a phrase (""die cut"")."
+10,49,0.6166666666666667,0.8,0.7083333333333334,"Past tense or past participle verb forms, often indicating a desired or sought-after state."
