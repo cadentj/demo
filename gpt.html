@@ -33,7 +33,7 @@
 
   <script>
     // set the dimensions and margins of the graph
-    var margin = {top: 30, right: 30, bottom: 30, left: 60},
+    var margin = {top: 30, right: 30, bottom: 50, left: 80},
       width = 1200 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
@@ -58,6 +58,14 @@
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
+    // X axis title
+    svg.append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height + margin.bottom - 10)
+      .text("Features");
+
     // Build Y scales and axis (for layers):
     var y = d3.scaleBand()
       .range([height, 0])
@@ -66,9 +74,19 @@
     svg.append("g")
       .call(d3.axisLeft(y));
 
+    // Y axis title
+    svg.append("text")
+      .attr("class", "y label")
+      .attr("text-anchor", "middle")
+      .attr("x", -height / 2)
+      .attr("y", -margin.left + 20)
+      .attr("dy", ".75em")
+      .attr("transform", "rotate(-90)")
+      .text("Layers");
+
     // Build color scale
     var myColor = d3.scaleLinear()
-      .range(["white", "#69b3a2"])
+      .range(["white", "#be123c"])
       .domain([-1, 1]);
 
     // Read the data
@@ -84,18 +102,23 @@
         .style("border-radius", "5px")
         .style("padding", "5px");
 
-      // Three function that change the tooltip when user hover / move / leave a cell
+      // Three functions that change the tooltip when user hover / move / leave a cell
       var mouseover = function(d) {
         tooltip.style("opacity", 1);
       };
       var mousemove = function(d) {
         tooltip
-          .html("Recall:" + d.recall + "<br>Fuzz:" + d.fuzz + "<br>Explanation:" + d.explanation)
+          .html("<b>Explanation:</b> " + d.explanation + "<br><b>Recall:</b> " + d.recall + "<br><b>Fuzz:</b> " + d.fuzz)
           .style("left", (d3.event.pageX + 10) + "px")
           .style("top", (d3.event.pageY - 20) + "px");
       };
       var mouseleave = function(d) {
         tooltip.style("opacity", 0);
+      };
+
+      // Function to handle click event
+      var cellClick = function(d) {
+        open("https://demo-7m2z.onrender.com/gpt2/resid_" + d.layer + "_" + d.feature + ".html", "_blank");
       };
 
       // add the squares
@@ -110,7 +133,8 @@
         .style("fill", function(d) { return myColor(d.combined); })
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave);
+        .on("mouseleave", mouseleave)
+        .on("click", cellClick); // add click event listener
     });
   </script>
 </body>
