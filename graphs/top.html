@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>GPT-2</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Inter", sans-serif;   
+      height: 100vh;
+      margin: 0;
+      background-color: #FBFBFB;
+    }
+    #my_dataviz {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #top-overlay {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 300px;
+      font-size: 10px;
+      z-index: 1000;
+    }
+    #bottom-overlay {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      padding: 15px;   
+      border-radius: 5px;
+      max-width: 300px;
+      font-size: 10px;
+      z-index: 1000;
+    }
+    #right-overlay {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px;  
+      border-radius: 5px;
+      max-width: 300px;
+      font-size: 10px;
+      z-index: 1000;
+    }
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      width: auto;
+      height: auto;
+      pointer-events: none;
+    }
+    #desktop-notice {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      .hidden {
+        display: none;
+      }
+      #desktop-notice {
+        display: block;
+        margin-top: 10px;
+        font-style: italic;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz"></div>
+  <div id="top-overlay" class="hidden">
+    <p>GPT-2</p>
+  </div>
+  <div id="bottom-overlay">
+    <p>Click on cells to view explanations and scores.<br>Darker cells indicate higher scores.</p>
+    <p id="desktop-notice">Note: This page is best viewed on larger screen.</p>
+  </div>
+  <div id="right-overlay" class="hidden">
+    <p><a href="url">Original Post</a></p>
+  </div>
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <script>
+    // set the dimensions and margins of the graph
+    var margin = {top: 30, right: 30, bottom: 50, left: 80},
+      width = 1200 - margin.left - margin.right,
+      height = 300 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Labels of row and columns
+    var myGroups = d3.range(0, 12, 2); // Even layers from 0 to 10
+    var myVars = d3.range(50); // Features ranging from 0 to 49
+
+    // Build X scales and axis (for features):
+    var x = d3.scaleBand()
+      .range([0, width])
+      .domain(myVars)
+      .padding(0.01);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    // X axis title
+    svg.append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height + margin.bottom - 10)
+      .text("Features");
+
+    // Build Y scales and axis (for layers):
+    var y = d3.scaleBand()
+      .range([height, 0])
+      .domain(myGroups)
+      .padding(0.01);
+    svg.append("g")
+      .call(d3.axisLeft(y));
+
+    // Y axis title
+    svg.append("text")
+      .attr("class", "y label")
+      .attr("text-anchor", "middle")
+      .attr("x", -height / 2)
+      .attr("y", -margin.left + 20)
+      .attr("dy", ".75em")
+      .attr("transform", "rotate(-90)")
+      .text("Layers");
+
+    // Build color scale
+    var myColor = d3.scaleLinear()
+      .range(["white", "#be123c"])
+      .domain([-1, 1]);
+
+    // Read the data
+    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/gpt2.csv", function(data) { // replace with your actual data source
+      // create a tooltip
+      var tooltip = d3.select("body")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1.5px")
+        .style("padding", "5px");
+
+      // Three functions that change the tooltip when user hover / move / leave a cell
+      var mouseover = function(d) {
+        tooltip.style("opacity", 1);
+      };
+      var mousemove = function(d) {
+        tooltip
+          .html("<b>Explanation:</b> " + d.explanation + "<br><b>Recall:</b> " + d.recall + "<br><b>Fuzz:</b> " + d.fuzz)
+          .style("left", (d3.event.pageX + 10) + "px")
+          .style("top", (d3.event.pageY - 20) + "px");
+      };
+      var mouseleave = function(d) {
+        tooltip.style("opacity", 0);
+      };
+
+      // Function to handle click event
+      var cellClick = function(d) {
+        open("https://demo-7m2z.onrender.com/gpt2/resid_" + d.layer + "-" + d.feature + ".html", "_blank");
+      };
+
+      // add the squares
+      svg.selectAll()
+        .data(data, function(d) { return d.layer + ':' + d.feature; })
+        .enter()
+        .append("rect")
+        .attr("x", function(d) { return x(d.feature); })
+        .attr("y", function(d) { return y(d.layer); })
+        .attr("width", x.bandwidth())
+        .attr("height", y.bandwidth())
+        .style("fill", function(d) { return myColor(d.combined); })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
+        .on("click", cellClick); // add click event listener
+    });
+  </script>
+</body>
+</html>
