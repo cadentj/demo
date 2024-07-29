@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlation Scatter Plot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/7.8.3/simple-statistics.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .tooltip { position: absolute; background: white; border: 1px solid #ddd; padding: 10px; pointer-events: none; }
+        .legend { font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Correlation Scatter Plot: Recall vs Fuzz</h1>
+    <div id="chart"></div>
+
+    <script>
+        // Set up the chart dimensions
+        const margin = {top: 40, right: 20, bottom: 50, left: 50};
+        const width = 800 - margin.left - margin.right;
+        const height = 500 - margin.top - margin.bottom;
+
+        // Create the SVG element
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Create a tooltip
+        const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // Load the data
+        d3.csv("scores.csv").then(data => {
+            // Create scales
+            const x = d3.scaleLinear()
+                .domain([0, 1])
+                .range([0, width]);
+
+            const y = d3.scaleLinear()
+                .domain([0, 1])
+                .range([height, 0]);
+
+            // Add X axis
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x));
+
+            // Add Y axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            // Add X axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height + margin.bottom - 10)
+                .text("Recall Score");
+
+            // Add Y axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -margin.left + 20)
+                .attr("x", -height / 2)
+                .text("Fuzz Score");
+
+            // Calculate correlation and linear regression
+            const recallValues = data.map(d => parseFloat(d.recall));
+            const fuzzValues = data.map(d => parseFloat(d.fuzz));
+            const correlation = ss.sampleCorrelation(recallValues, fuzzValues);
+            const linearRegression = ss.linearRegression(recallValues.map((d, i) => [d, fuzzValues[i]]));
+            // const r2 = ss.coefficientOfDetermination(recallValues.map((d, i) => [d, fuzzValues[i]]), linearRegression);
+
+            // Add correlation line
+            const line = d3.line()
+                .x(d => x(d))
+                .y(d => y(linearRegression.m * d + linearRegression.b));
+
+            svg.append("path")
+                .datum([0, 1])
+                .attr("fill", "none")
+                .attr("stroke", "red")
+                .attr("stroke-width", 1.5)
+                .attr("d", line);
+
+            // Add legend
+            const legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", `translate(10, 10)`);
+
+            legend.append("rect")
+                .attr("width", 200)
+                .attr("height", 50)
+                .attr("fill", "white")
+                .attr("stroke", "black");
+
+            legend.append("text")
+                .attr("x", 5)
+                .attr("y", 20)
+                .text(`y = ${linearRegression.m.toFixed(2)}x + ${linearRegression.b.toFixed(2)}`);
+
+            legend.append("text")
+                .attr("x", 5)
+                .attr("y", 40)
+                // .text(`R² = ${r2.toFixed(4)}`);
+
+            // Add dots
+            svg.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", d => x(d.recall))
+                .attr("cy", d => y(d.fuzz))
+                .attr("r", 5)
+                .style("fill", "#69b3a2")
+                .style("cursor", "pointer")
+                .on("mouseover", (event, d) => {
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    tooltip.html(`Feature: ${d.feature}<br/>Recall: ${d.recall}<br/>Fuzz: ${d.fuzz}`)
+                        .style("left", (event.pageX + 10) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", () => {
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                })
+                .on("click", (event, d) => {
+                    window.open(d.url, '_blank');
+                });
+        });
+    </script>
+</body>
+</html>
