@@ -23,6 +23,27 @@ body {
     border-radius: 5px;
     max-width: 300px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+
+#top-overlay a,
+#top-overlay p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    text-decoration: none;
+}
+
+#top-overlay p {
+    display: inline;
+    margin-left: 4px; /* Adjust the spacing as needed */
+}
+
+#top-overlay a::after {
+    content: "/";
+    margin-left: 4px; /* Adjust the spacing as needed */
 }
 
 #bottom-overlay {

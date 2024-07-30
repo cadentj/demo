@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <title>Pythia</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     html, body {
       height: 100%;
@@ -22,58 +23,12 @@
       justify-content: center;
       align-items: center;
     }
-    #top-overlay {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      padding: 15px;
-      font-family: "Inter", sans-serif;   
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    #bottom-overlay {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      padding: 15px;
-      font-family: "Inter", sans-serif;   
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    #right-overlay {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 15px;
-      font-family: "Inter", sans-serif;   
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    #desktop-notice {
-      display: none;
-    }
-    @media (max-width: 1024px) {
-      .hidden {
-        display: none;
-      }
-      #desktop-notice {
-        display: block;
-        margin-top: 10px;
-        font-style: italic;
-      }
-    }
   </style>
 </head>
 <body>
   <div id="graph-container"></div>
   <div id="top-overlay" class="hidden">
-    <p>Pythia</p>
+	<a href="..">Home</a><p>Pythia</p>
   </div>
   <div id="bottom-overlay">
     <p>Click on nodes to view explanations and scores.</p>
