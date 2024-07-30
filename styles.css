@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-size: 10px;
+    flex-direction: column;
     background-color: #FBFBFB;
 }
 
@@ -14,6 +15,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#top-heatmap, #bottom-heatmap {
+    width: 100%;
+    height: 50vh;
+  }
 
 #top-overlay {
     position: fixed;
