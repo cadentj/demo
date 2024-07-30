@@ -22,7 +22,7 @@
   <script src="https://d3js.org/d3.v4.js"></script>
 
   <script>
-    function heatmap(title, comp, dataset, x_label) {
+    function heatmap(title, comp, dataset, x_label, type) {
         // set the dimensions and margins of the graph
         var margin = {top: 30, right: 30, bottom: 50, left: 80},
         width = 1200 - margin.left - margin.right,
@@ -118,7 +118,7 @@
 
         // Function to handle click event
         var cellClick = function(d) {
-          open("https://cadentj.github.io/demo/gpt2/top/resid_" + d.layer + "-" + d.feature + ".html", "_blank");
+          open("https://cadentj.github.io/demo/gpt2/" + type + "/resid_" + d.layer + "-" + d.feature + ".html", "_blank");
         };
 
         // add the squares
@@ -138,8 +138,8 @@
       });
     };
 
-    heatmap("Top Twenty Sampling", "top_heatmap", "https://raw.githubusercontent.com/cadentj/demo/main/data/top_heatmap.csv", false);
-    heatmap("Random Twenty Sampling", "bottom_heatmap", "https://raw.githubusercontent.com/cadentj/demo/main/data/random_heatmap.csv", true);
+    heatmap("Top Twenty Sampling", "top_heatmap", "https://raw.githubusercontent.com/cadentj/demo/main/data/top_heatmap.csv", false, "top");
+    heatmap("Random Twenty Sampling", "bottom_heatmap", "https://raw.githubusercontent.com/cadentj/demo/main/data/random_heatmap.csv", true, "random");
   </script>
 </body>
 </html>
