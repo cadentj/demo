@@ -145,11 +145,11 @@
 
     // Build color scale
     var myColor = d3.scaleLinear()
-      .range(["white", "#be123c"])
-      .domain([-1, 1]);
+      .range(["#FBFBFB", "red", "#FBFBFB", "green"])
+      .domain([-1, 0, 0.5, 1]);
 
     // Read the data
-    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/gpt2.csv", function(data) { // replace with your actual data source
+    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/data/gpt2.csv", function(data) { // replace with your actual data source
       // create a tooltip
       var tooltip = d3.select("body")
         .append("div")
@@ -176,7 +176,7 @@
 
       // Function to handle click event
       var cellClick = function(d) {
-        open("https://demo-7m2z.onrender.com/gpt2/resid_" + d.layer + "-" + d.feature + ".html", "_blank");
+        open("https://cadentj.github.io/demo/gpt2/top/resid_" + d.layer + "-" + d.feature + ".html");
       };
 
       // add the squares

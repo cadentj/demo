@@ -259,43 +259,43 @@ layer,feature,explanation,recall,fuzz,combined
 10,7,Punctuation marks and common conjunctions/prepositions in formal or financial writing.,0.61,0.77,0.69
 10,8,"Geographic locations, addresses, or general places, often with a sense of belonging or presence.",0.5,0.47,0.49
 10,9,"Verbs ending in ""-ing"" or ""-ing"" suffix, often related to music or sound.",0.63,0.69,0.66
-10,10,N/A,-1,-1,-1
-10,11,N/A,-1,-1,-1
-10,12,N/A,-1,-1,-1
-10,13,N/A,-1,-1,-1
-10,14,N/A,-1,-1,-1
+10,10,"Fragments of proper nouns, abbreviations, or words, often with non-standard capitalization or diacritics.",0.6,0.73,0.66
+10,11,"Nouns related to identification, authentication, or verification, often in a digital or formal context.",0.34,0.5,0.42
+10,12,"Geographic locations, particularly cities (e.g. Jakarta, Istanbul, Budapest, Osaka) in a news or informative context.",0.7,0.86,0.78
+10,13,"The prepositions ""of"" and ""in"", often indicating possession, origin, or membership.",0.73,0.67,0.7
+10,14,"Function words and short tokens in metadata, URLs, and formatting, often indicating a transition or connection between elements.",0.64,0.74,0.69
 10,15,N/A,-1,-1,-1
 10,16,N/A,-1,-1,-1
-10,17,N/A,-1,-1,-1
-10,18,N/A,-1,-1,-1
-10,19,N/A,-1,-1,-1
-10,20,N/A,-1,-1,-1
-10,21,N/A,-1,-1,-1
+10,17,"Function words indicating possession or relationship, such as ""of"", ""in"", ""at"", ""with"", ""and"", etc.",0.9,0.84,0.87
+10,18,"Demonstrative pronouns (""this"", ""another"", ""following"", ""real"") used to refer to a specific thing or concept in the context.",0.67,0.76,0.71
+10,19,"Tokens related to sensitive or controversial topics, such as sexuality, violence, and mental health.",0.66,0.81,0.74
+10,20,"Containers or enclosures, such as pockets, pouches, or pores, often related to storage or holding objects.",0.51,0.69,0.6
+10,21,"Adjectives and nouns related to religion, faith, and spirituality.",0.61,0.69,0.65
 10,22,N/A,-1,-1,-1
-10,23,N/A,-1,-1,-1
-10,24,N/A,-1,-1,-1
+10,23,"Punctuation marks, specifically periods (.) and commas (,), indicating the end of a sentence or a pause in the text.",0.73,0.81,0.77
+10,24,"The pronoun ""This"" used to introduce or refer to a specific explanation, description, or topic.",0.73,0.87,0.8
 10,25,N/A,-1,-1,-1
-10,26,N/A,-1,-1,-1
+10,26,"The definite article ""the"".",0.73,0.64,0.69
 10,27,N/A,-1,-1,-1
-10,28,N/A,-1,-1,-1
+10,28,"Punctuation marks, particularly ""."", "":"", and ""is"", often used in URLs, email addresses, and abbreviations.",0.76,0.87,0.81
 10,29,N/A,-1,-1,-1
-10,30,N/A,-1,-1,-1
-10,31,N/A,-1,-1,-1
+10,30,"Special characters indicating trademark (™), registered trademark (®), or other diacritical marks (´, Â, *, ä) in a word or phrase.",0.71,0.9,0.81
+10,31,"Adverbs or nouns indicating frequency, duration, or quantity, often in the context of time or repetition.",0.73,0.8,0.76
 10,32,N/A,-1,-1,-1
-10,33,N/A,-1,-1,-1
-10,34,N/A,-1,-1,-1
-10,35,N/A,-1,-1,-1
-10,36,N/A,-1,-1,-1
-10,37,N/A,-1,-1,-1
-10,38,N/A,-1,-1,-1
-10,39,N/A,-1,-1,-1
+10,33,"Punctuation marks and titles/honorifics (e.g. ""chief"", ""president"", ""prime minister"", ""lady"") in formal or official contexts.",0.59,0.56,0.57
+10,34,"The token ""Score"" or its variants, often referring to a numerical value or rating in a specific context.",0.6,0.73,0.66
+10,35,"Punctuation marks, such as periods, commas, and quotation marks, that separate clauses or items in a list.",0.87,0.57,0.72
+10,36,"Punctuation marks, especially those used to indicate a pause or separation, such as ..., ., !, », <<, >>, :, and -.",0.73,0.91,0.82
+10,37,"Tokens that indicate a sense of scope, extent, or magnitude, often related to time, place, or quality.",0.69,0.53,0.61
+10,38,"Function words indicating obligation, necessity, or causality, such as ""to"", ""by"", ""and"", ""then"", and ""are"", which often precede or follow verbs in instructional or explanatory texts.",0.74,0.79,0.76
+10,39,"Financial and accounting-related terms, including nouns and adjectives.",0.7,0.81,0.76
 10,40,N/A,-1,-1,-1
-10,41,N/A,-1,-1,-1
-10,42,N/A,-1,-1,-1
+10,41,"Colon (:) or similar punctuation marks used to indicate a label or a key, often in a data-like or informative context.",0.57,0.63,0.6
+10,42,"Capital city or location names, often at the end of a sentence or phrase.",0.67,0.86,0.76
 10,43,N/A,-1,-1,-1
-10,44,N/A,-1,-1,-1
-10,45,N/A,-1,-1,-1
-10,46,N/A,-1,-1,-1
-10,47,N/A,-1,-1,-1
-10,48,N/A,-1,-1,-1
-10,49,N/A,-1,-1,-1
+10,44,"The comma ("","") punctuation mark, often used to separate items in a list or to set off nonessential clauses.",0.71,0.74,0.73
+10,45,"Determiners or quantifiers indicating an unspecified or approximate amount, such as ""most"", ""many"", ""some"", or ""several"", often used to introduce a clause or phrase.",0.7,0.8,0.75
+10,46,"The prefix ""over-"" in words, often indicating excess or surpassing a limit.",0.61,0.67,0.64
+10,47,"Punctuation marks, such as periods, commas, and quotation marks, as well as special characters like �, <?>, and <<>>.",0.8,0.91,0.86
+10,48,"German words (""die"", ""Ware"") and English words related to death or cessation (""die"", ""dying"", ""retire"", ""shrink"", ""odes"", ""tire""), often in specific contexts or phrases.",0.57,0.67,0.62
+10,49,"Past participles or past tense verbs, often used to describe a state or action.",0.64,0.74,0.69

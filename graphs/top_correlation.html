@@ -13,7 +13,6 @@
     </style>
 </head>
 <body>
-    <h1>Correlation Scatter Plot: Recall vs Fuzz</h1>
     <div id="chart"></div>
 
     <script>
@@ -36,7 +35,7 @@
             .style("opacity", 0);
 
         // Load the data
-        d3.csv("scores.csv").then(data => {
+        d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/data/top_correlation.csv").then(data => {
             // Create scales
             const x = d3.scaleLinear()
                 .domain([0, 1])
@@ -134,7 +133,7 @@
                         .style("opacity", 0);
                 })
                 .on("click", (event, d) => {
-                    window.open(d.url, '_blank');
+                    window.open("https://cadentj.github.io/demo/gpt2/top/resid_" + d.layer + "-" + d.feature + ".html", '_blank');
                 });
         });
     </script>
