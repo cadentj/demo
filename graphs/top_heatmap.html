@@ -6,85 +6,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <title>GPT-2</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Inter", sans-serif;   
-      height: 100vh;
-      margin: 0;
-      background-color: #FBFBFB;
-    }
-    #my_dataviz {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #top-overlay {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      padding: 15px;
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    #bottom-overlay {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      padding: 15px;   
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    #right-overlay {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 15px;  
-      border-radius: 5px;
-      max-width: 300px;
-      font-size: 10px;
-      z-index: 1000;
-    }
-    .tooltip {
-      position: absolute;
-      text-align: center;
-      width: auto;
-      height: auto;
-      pointer-events: none;
-    }
-    #desktop-notice {
-      display: none;
-    }
-    @media (max-width: 1024px) {
-      .hidden {
-        display: none;
-      }
-      #desktop-notice {
-        display: block;
-        margin-top: 10px;
-        font-style: italic;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <!-- Create a div where the graph will take place -->
   <div id="my_dataviz"></div>
-  <div id="top-overlay" class="hidden">
-    <p>GPT-2</p>
-  </div>
   <div id="bottom-overlay">
-    <p>Click on cells to view explanations and scores.<br>Darker cells indicate higher scores.</p>
+    <p>Click on cells to view explanations and scores.<br>Lighter cells indicate higher average scores.</p>
+    <div class="viridis-scale"></div>
     <p id="desktop-notice">Note: This page is best viewed on larger screen.</p>
-  </div>
-  <div id="right-overlay" class="hidden">
-    <p><a href="url">Original Post</a></p>
   </div>
 
   <!-- Load d3.js -->
@@ -145,11 +75,11 @@
 
     // Build color scale
     var myColor = d3.scaleLinear()
-      .range(["#FBFBFB", "red", "#FBFBFB", "green"])
+      .range(["#FBFBFB", "#450D54", "#1F968B", "#FBE725"])
       .domain([-1, 0, 0.5, 1]);
 
     // Read the data
-    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/data/gpt2.csv", function(data) { // replace with your actual data source
+    d3.csv("https://raw.githubusercontent.com/cadentj/demo/main/data/top_heatmap.csv", function(data) { // replace with your actual data source
       // create a tooltip
       var tooltip = d3.select("body")
         .append("div")
@@ -176,7 +106,7 @@
 
       // Function to handle click event
       var cellClick = function(d) {
-        open("https://cadentj.github.io/demo/gpt2/top/resid_" + d.layer + "-" + d.feature + ".html");
+        open("https://cadentj.github.io/demo/gpt2/top/resid_" + d.layer + "-" + d.feature + ".html", "_blank");
       };
 
       // add the squares

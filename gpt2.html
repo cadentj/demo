@@ -11,13 +11,19 @@
 </head>
 <body>
     <div id="sidebar">
-        <h2>Graphs</h2>
+        <b>Options</b>
         <ul>
-            <li><a href="#" data-graph="top_heatmap">GPT-2</a></li>
-            <li><a href="#" data-graph="top_correlation">Graph 2</a></li>
-            <li><a href="#" data-graph="random_heatmap">Graph 3</a></li>
-            <li><a href="#" data-graph="random_correlation">Graph 3</a></li>
+            <li><a href="#" data-graph="top_heatmap">Top Heatmap</a></li>
+            <li><a href="#" data-graph="random_heatmap">Random Heatmap</a></li>
+            <li><a href="#" data-graph="top_correlation">Top Correlation</a></li>
+            <li><a href="#" data-graph="random_correlation">Random Correlation</a></li>
         </ul>
+    </div>
+    <div id="top-overlay" class="hidden">
+        <p>GPT-2</p>
+    </div>
+    <div id="right-overlay" class="hidden">
+        <p><a href="url">Original Post</a></p>
     </div>
     <div id="content">
         <iframe id="graph-frame" src="graphs/top_heatmap.html" frameborder="0"></iframe>

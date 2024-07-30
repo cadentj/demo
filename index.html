@@ -7,57 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #FBFBFB;
-            font-family: "Inter", sans-serif;   
-        }
-        #bottom-overlay {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            padding: 15px; 
-            border-radius: 5px;
-            max-width: 300px;
-            font-size: 10px;
-            z-index: 1000;
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Adds space between the buttons */
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 12px;
-            font-family: "Inter", sans-serif;
-            width: 120px;
-            height: 135px;
-            cursor: pointer;
-            background-color: #FFFFFF;
-            color: black;
-            border: solid #E4E4E7;
-            border-width: 1px;
-        }
-        button:hover {
-            background-color: #FBFBFB;
-        }
-        #desktop-notice {
-            display: none;
-        }
-        @media (max-width: 1024px) {
-            #desktop-notice {
-                display: block;
-                margin-top: 10px;
-                font-style: italic;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <div id="bottom-overlay">
